@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Borel&family=Protest+Riot&family=Sedgwick+Ave+Display&family=Tangerine:wght@400;700&display=swap');
+
+
+
+
+.nav-box {
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    border: 2px solid #d826e2;
+    border-radius: 8px;
+    margin: -8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    background-color: #eca3f0;;;
+    z-index: 999;
+  }
+  
+  .nav-header {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eb1dd9;
+    position: relative;
+    
+  }
+  .nav-header img {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+  }
+  
+  
+  
+  .main {
+    font-size: 60px;
+    color: #9e5aa2;
+    color: #d826e2;; 
+    font-family: 'Tangerine', cursive;
+    font-size: 90px;
+    margin-bottom: 30px; /* Add some spacing below the text */
+    margin-left: 180px;
+    text-shadow: -1px -1px 0 #000, /* Top-left shadow */
+    1px -1px 0 #000, /* Top-right shadow */
+   -1px  1px 0 #000, /* Bottom-left shadow */
+    1px  1px 0 #000; /* Bottom-right shadow */ 
+  }
+  
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: auto;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #d826e2;;
+    font-size: 20px;
+    margin: 10px 20px;
+    position: relative;
+  }
+  
+  .nav-link:hover {
+    animation: fadeIn 0.3s ease-in-out;
+      text-decoration: underline;
+      color: #ec0df8;; 
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
+  }
+  
+  .logout-button {
+    background-color: transparent;
+    color: #b3202c;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .logout-button:hover {
+    text-decoration: underline;
+    color: #b3202c;
+  }
+  body {
+  padding-top: 150px;
+}
