@@ -11,8 +11,30 @@ return (
     <div>
     <Navabr/>
     <div className="homepage">
-        <img src={lashtech1} alt="lash office" />
     </div>
+
+    <div className="lash-cont">
+    <div className="lash-card">
+
+            <h1>Lash Extensions</h1>
+                <div className="card-font">
+            <h3> Lash Extensions redefine, lengthen and add volume to your eyelashes. 
+                These are individual lash extensions applied directly onto your natural lashes one by one.</h3>
+                </div>
+                <button className="lash-btn">LASH EXTENSIONS</button>
+            </div>
+
+
+            <div className="lash-card">
+            <h1>Lash Lifts</h1>
+            <div className="card-font">
+            <h3>A low maintenance lash treatment that lifts, curls and boosts your natural 
+                lashes instantly without the use of mascara, lash curler or extensions.</h3>
+                </div>
+                <button className="lash-btn">LASH LIFTS</button>
+            </div>
+    </div>
+
     <div className="home-container">
         <div className="content-container">
             <div className="brush-img">
@@ -30,11 +52,12 @@ return (
 <h1> Acuerdese en DivaLash la bellza la pones tu!</h1>
                 <div className="service-btn">
             <NavLink className="nav-link" to="/services">
-                Services Menu
+                SERVICE MENU
             </NavLink>
         </div>
             </div>
         </div>
+        
        
     </div>
 </div>

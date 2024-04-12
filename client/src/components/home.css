@@ -13,13 +13,55 @@
     bottom: 0;
     left: 0;
     z-index: 2; 
-    width: 40%;
-    margin-left: 300px;
-    margin-bottom: 150px;
+    width: 55%;
+    margin-left: 150px;
+    margin-bottom: 110px;
 }
 
+
+.lash-cont{
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center the cards */
+    gap: 50px; /* Decrease the gap to bring the cards closer together */
+    padding: 20px; /* Add padding to the container */
+    border-bottom: 1px solid white
+    
+}
+
+.lash-card{
+    border: 1px solid #08192A; /* Add a border */
+    padding: 20px; /* Add padding to the card */
+    width: 400px; /* Set the card width to 45% of the container */
+    height: 400px;
+    text-align: center; /* Center the text */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    font-size: 25px;
+    background-color:#08192A;
+    color: white;
+    
+}
+
+.card-font{
+    border-top: 1px solid white;;
+    font-size: 22px;
+    color: white;
+
+}
+
+.lash-btn{
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: bold;
+    background-color: #08192A;
+    border-color: #d826e2;
+    color:#d826e2
+
+}
+
+
 .text-container {
-    border: 5px solid #000000;
+    border: 5px solid #08192A;
     padding: 50px;
     padding-top: 100px;
     text-align: center;
@@ -29,14 +71,19 @@
     padding-left: 400px;
     margin-bottom: 1px;
     margin-top: -60px;
+    color: white;
+    background-color: #08192A;
 }
 .homepage {
     background-image: url('lashtech1.jpeg');
-    background-size: 100% 100%; /* Stretch image horizontally */
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
+    background-size: cover; /* Stretch the image to cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    width: 100%; /* Full width */
+    height: 120vh; /* Full height of the viewport */
+    margin-top: -350px;
 }
+
 
 
 .homebox{
@@ -45,22 +92,22 @@
     text-align: right;
     border-radius: 0px;
     width: 1000px;
-    margin-left: 700px;
+    margin: 20px auto; /* Center the element */
    
 }
 
-.service-btn{
-    border: 5px solid #000000;
+.service-btn {
+    border: 1px solid #d826e2;
     padding: 20px;
     text-align: center;
-    background-image: linear-gradient(-90deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
+    background-color: #08192A;
     border-radius: 20px;
-    width: 160px;
-    transition: background-image 0.3s ease-in-out; 
-    margin: 150px;
-    margin-left: 380px;
-    margin-top: 100px;
-    margin-bottom: 10px;
+    width: 100%; /* Full width in its parent */
+    max-width: 200px; /* Set maximum width */
+    margin: 20px auto; /* Center the button */
+    font-size: 20px;
+    font-weight: bold;
+    
 }
 
 .brush-img img {
@@ -75,5 +122,73 @@
 }
 
 body{
-    background-color: #eca3f0;
+    background-color: #02121d;
 }
+
+@media (max-width: 768px) {
+    /* Adjust the flex direction to column */
+    .content-container {
+        flex-direction: column;
+        align-items: center; /* Align the content centrally */
+    }
+
+    /* Adjust the width and layout of the brush image */
+    .brush-img {
+        position: static; /* Change to static for proper layout */
+        width: 100%; /* Let the image take the full width */
+        margin: 0; /* Remove margins */
+    }
+
+    /* Set the image to take full width */
+    .brush-img img {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Adjust the text container to be full width */
+    .text-container {
+        width: 100%; /* Take up full width */
+        padding: 100px; /* Add some padding for spacing */
+        text-align: center; /* Center the text */
+        margin-top: 20px; /* Add some spacing from the image */
+        margin-left: 350px;
+    }
+
+    /* Adjust service button margin */
+    .service-btn {
+        width: 90%; /* Reduce width for smaller screens */
+        max-width: none; /* Remove maximum width constraint */
+        margin-left: auto; /* Center the button */
+        margin-right: auto; /* Center the button */
+        margin-top: 20px; /* Adjust spacing */
+    }
+
+    .homepage{
+        background-image: url('lashtech1.jpeg');
+        background-size: cover; /* Stretch the image to cover the entire area */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        width: 100%; /* Full width */
+        height: 100vh; /* Full height of the viewport */
+    }
+
+    .homebox {
+        width: 90%; /* Reduce width for smaller screens */
+        margin-left: auto; /* Center the box */
+        margin-right: auto; /* Center the box */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .lash-cont {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center the cards */
+        gap: 10px; /* Adjust space between the cards */
+    }
+
+    .lash-card {
+        width: 90%; /* Adjust card width for smaller screens */
+    }
+}
+
+
+
