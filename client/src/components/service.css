@@ -91,23 +91,20 @@ margin-top: -350px;
     text-shadow: rgb(51, 51, 51) 5px 5px 5px;
 }
 
-.lash-title{
-    color: white;
+.lash-lift-cont {
+    padding: 20px;
     text-align: center;
-    font-size: 26px;
 }
 
-.lash-lift-cont{
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center; 
-    gap: 50px; 
-    border-bottom: 1px solid white;
-    background-color: var(--theme-ui-colors-card);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    border-radius: 0.25rem;
-    text-align: center;
-    overflow: hidden;
-    padding: 0.5rem 600px;
-    padding-bottom: 150px;
+.lift-title {
+    font-size: 26px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.lash-title{
+    font-size: 26px;
+    color: white;
+    padding-bottom: 20px;
+    text-align: center; 
 }

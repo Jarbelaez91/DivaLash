@@ -1,0 +1,78 @@
+.classic-cont{
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center; 
+    gap: 50px; 
+    border-bottom: 1px solid white;
+    background-color:#08192A;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 0.25rem;
+    text-align: left;
+    overflow: hidden;
+    padding: 32px;
+    padding-bottom: 150px;
+    margin-left: 400px;
+    margin-right:1000px;
+    margin-top: 30px;
+}
+
+.classic-title{
+    color:white;
+    font-size: 36px;
+    color: white;
+    padding: 0px 0px 16px;
+    box-sizing: border-box;
+    font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    padding: 0px 25px 16px;
+}
+
+.classic-desc{
+    color: white;
+    padding: 0px 25px 16px;
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+    line-height: 1.625;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: -0.025em;
+
+}
+
+.class-sub-title{
+    color: white;
+    font-size: 26px;
+    margin-bottom: -200px;
+    padding: 0px 25px 16px;
+}
+
+.classic-nav-link{
+    color: #d826e2;
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 0px 25px 16px;
+}
+
+.faq{
+    color: #d826e2;
+    padding: 0px 25px 16px;
+}
+
+.faq-questions{
+    color: white;
+    background-color: #02121d;
+    font-size: 22px;
+    margin: 25px;
+    padding: 20px;
+}
+
+.photo-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 4px solid white;
+    gap:7px;
+    background-color: white;
+    padding: 0px 0px 1px;
+}

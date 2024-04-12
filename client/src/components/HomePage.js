@@ -1,7 +1,6 @@
 import React from "react";
 import Navabr from "./Navbar";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
-import lashtech1 from './lashtech1.jpeg'
 import './home.css'
 import brushing from './brushing.jpeg'
 
