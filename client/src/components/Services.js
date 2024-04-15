@@ -11,6 +11,30 @@ function Services() {
     const seeMore = () => {
         history.push("/classic-lash-extensions")
     }
+    const hybrid = () => {
+        history.push("/hybrid-lash-extensions")
+    }
+    const strip = () => {
+        history.push ("/strip-lash-look-extensions")
+    }
+    const wet = () => {
+        history.push ("/wet-look-lash-extensions")
+    }
+    const volume = () => {
+        history.push ("/volume-lash-extensions")
+    }
+    const mega = () => {
+        history.push ("/mega-volume-lash-extensions")
+    }
+    const removal = () => {
+        history.push("/lash-removal")
+    }
+    const keratin = () => {
+        history.push ("/keratin-lashes")
+    }
+    const mineral = () => {
+        history.push ("/mineral-lashes")
+    }
 
 
     return (
@@ -56,7 +80,7 @@ function Services() {
                 <h4> Full Set: $130 Refill: $70</h4>
                 </div>
     
-                <button className="services-btn">View Photos & Learn More →</button>
+                <button onClick= {hybrid} className="services-btn">View Photos & Learn More →</button>
             </div>
 
             <div className="services-card">
@@ -70,7 +94,7 @@ function Services() {
                 <div className="price-font">
                 <h4> Full Set: $180 Refill: $90</h4>
                 </div>
-                <button className="services-btn">View Photos & Learn More →</button>
+                <button onClick= { strip } className="services-btn">View Photos & Learn More →</button>
             </div>
 
             <div className="services-card">
@@ -88,7 +112,7 @@ function Services() {
                 <div className="price-font">
                 <h4> Full Set: $140 Refill: $65</h4>
                 </div>
-                <button className="services-btn">View Photos & Learn More →</button>
+                <button onClick= { wet }className="services-btn">View Photos & Learn More →</button>
             </div>
 
             <div className="services-card">
@@ -104,7 +128,7 @@ function Services() {
                 <div className="price-font">
                 <h4> Full Set: $150 Refill: $80</h4>
                 </div>
-                <button className="services-btn">View Photos & Learn More →</button>
+                <button onClick = { volume } className="services-btn">View Photos & Learn More →</button>
             </div>
 
             <div className="services-card">
@@ -121,7 +145,7 @@ function Services() {
                 <div className="price-font">
                 <h4> Full Set: $170 Refill: $90</h4>
                 </div>
-                <button className="services-btn">View Photos & Learn More →</button>
+                <button onClick = { mega } className="services-btn">View Photos & Learn More →</button>
             </div>
 
             <div className="services-card">
@@ -142,7 +166,7 @@ function Services() {
                 <div className="price-font">
                 <h4> Lash Removal: $60</h4>
                 </div>
-                <button className="services-btn">View Photos & Learn More →</button>
+                <button onClick = { removal } className="services-btn">View Photos & Learn More →</button>
             </div>
 
 
@@ -157,23 +181,29 @@ function Services() {
                         <div className="services-card">
                             <h1>Keratin Lash Lift & Tint</h1>
                             <div className="services-font">
-                                <p>Our vegan, cruelty-free lash lift treatment is specifically formulated to lift and maintain hair elasticity by controlling its loss of humidity, preventing hair breakage. This formula can even be used on those with gaps or damaged lashes.</p>
+                                <p>Our vegan, cruelty-free lash lift treatment is specifically formulated 
+                                    to lift and maintain hair elasticity by controlling its loss of 
+                                    humidity, preventing hair breakage. This formula can even be used on 
+                                    those with gaps or damaged lashes.</p>
                             </div>
                             <div className="price-font">
                                 <h4>Keratin Lash Lift: $155</h4>
                             </div>
-                            <button className="services-btn">View Photos & Learn More →</button>
+                            <button onClick = { keratin }className="services-btn">View Photos & Learn More →</button>
                         </div>
 
                         <div className="services-card">
                             <h1>Mineral Boost Lash Lift & Tint</h1>
                             <div className="services-font">
-                                <p>Our Mineral Boost Lash Lift has the exact same formula as our traditional keratin lash lift, except we are adding this exclusive mask. It extends the longevity of your lash lift for up to 3 weeks and provides maximum protection, strength, and hydration.</p>
+                                <p>Our Mineral Boost Lash Lift has the exact same formula as our traditional 
+                                    keratin lash lift, except we are adding this exclusive mask. It extends 
+                                    the longevity of your lash lift for up to 3 weeks and provides maximum 
+                                    protection, strength, and hydration.</p>
                             </div>
                             <div class="price-font">
                                 <h4>Mineral Boost Lash Lift & Tint: $170</h4>
                             </div>
-                            <button className="services-btn">View Photos & Learn More →</button>
+                            <button onClick = { mineral } className="services-btn">View Photos & Learn More →</button>
                         </div>
                     </div>
                 </div>
