@@ -9,6 +9,7 @@ function LashClassic () {
     return (
         <div>
             <Navbar/>
+        <div className="layout-container">
         <div className="classic-cont">
         <NavLink className="classic-nav-link" to="/services"> ← Services </NavLink>
             <h1 className="classic-title">Classic Lash Extensions</h1>
@@ -50,13 +51,27 @@ function LashClassic () {
                     <p className="faq-questions"> ⦊ Can I swim, shower, exercise, or visit a spa while wearing eyelash extensions?</p>
                     <p className="faq-questions"> ⦊ How do I take care of my new eyelash extensions?</p>
                     </div>
+                    <div>
         </div>
-        
         </div>
-
         </div>
+                <div className="price-cont">
+                <div className="classic-price">
+                        <div className="fullset-cont">
+                            <h1 className="price-full-set">FULL SET </h1>
+                            <h3 className="price">$120</h3>
+                        </div>
+                        <p className="time-font">Time</p>
+                        <p className="duration">~3hours</p>
+                        <button>Book Now!</button>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
     )
 
 }
 
 export default LashClassic
+
+
