@@ -164,7 +164,7 @@ function Services() {
                 complications such as eye or eyelash damage or irritation.</p>
                 </div>
                 <div className="price-font">
-                <h4> Lash Removal: $60</h4>
+                <h4> Lash Removal: $30</h4>
                 </div>
                 <button onClick = { removal } className="services-btn">View Photos & Learn More →</button>
             </div>

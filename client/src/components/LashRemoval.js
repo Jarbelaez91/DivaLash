@@ -9,20 +9,17 @@ function LashRemoval () {
     return (
         <div>
             <Navbar/>
+        <div className="layout-container">
         <div className="classic-cont">
         <NavLink className="classic-nav-link" to="/services"> ← Services </NavLink>
             <h1 className="classic-title">Lash Removal</h1>
-            <p className="classic-desc">When you book for a lash removal a special lash removing cream is 
-                used to gently remove all of the lash extensions without causing any 
-                damage to your natural lashes. These specialized lash removing creams 
-                insure all the lash adhesive is removed from your natural lashes. We 
-                also include a lash bath using a special lash shampoo that thoroughly 
-                cleans the lashes. Eyelash extensions should properly be removed by 
-                a professional lash artist and the correct adhesive remover. Home 
-                and self-removal of one’s eyelash extension is highly not recommended 
-                and can result in harm, damage, or loss of eyelashes. In some cases, 
-                improper removal can result in (but not limited to) undesired health 
-                complications such as eye or eyelash damage or irritation. </p>
+            <p className="classic-desc">When you book for a lash removal a special lash removing cream is used to 
+            gently remove all of the lash extensions without causing any damage to your natural lashes. 
+            These specialized lash removing creams insure all the lash adhesive is removed from your natural lashes. 
+            We also include a lash bath using a special lash shampoo that thoroughly cleans the lashes. Eyelash extensions 
+            should properly be removed by a professional lash artist and the correct adhesive remover. Home and self-removal 
+            of one’s eyelash extension is highly not recommended and can result in harm, damage, or loss of eyelashes. 
+            In some cases, improper removal can result in (but not limited to) undesired health complications such as eye or eyelash damage or irritation. </p>
             <h1 className="class-sub-title">OUTSIDE FILLS FOR LASHES</h1>
             <p className="classic-desc">We do not perform refill services on work that was done from 
                 another outside salon/artist. If you currently have lash 
@@ -57,11 +54,41 @@ function LashRemoval () {
                     <p className="faq-questions"> ⦊ Can I swim, shower, exercise, or visit a spa while wearing eyelash extensions?</p>
                     <p className="faq-questions"> ⦊ How do I take care of my new eyelash extensions?</p>
                     </div>
+                    <div>
         </div>
-        
         </div>
+        </div>
+                <div className="side-boxes">
 
-        </div>
+                        <div className="price-cont">
+                            <div className="classic-price">
+                            <div className="fullset-cont">
+                                <h1 className="price-full-set">LASH REMOVAL </h1>
+                                <h3 className="price">$30</h3>
+                            </div>
+                            </div>
+                            <div className="fullset-cont">
+                            <p className="time-font">🕒 Time</p>
+                            <p className="duration">~30min</p>
+                            </div><NavLink
+                                    to={{
+                                        pathname: "/booking",
+                                        state: {
+                                        style: "Lash Removal",
+                                        type: "Lash Removal",
+                                        price: "$30",
+                                        },
+                                    }}
+                                    >
+                                    <button className="booknow">Book Now!</button>
+                            </NavLink>
+                            </div>
+                            </div>
+
+
+                        </div>
+                </div>
+                    
     )
 
 }

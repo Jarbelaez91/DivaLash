@@ -9,13 +9,14 @@ function LashStrip () {
     return (
         <div>
             <Navbar/>
+        <div className="layout-container">
         <div className="classic-cont">
         <NavLink className="classic-nav-link" to="/services"> ← Services </NavLink>
             <h1 className="classic-title">Strip Lash Look Extensions</h1>
-            <p className="classic-desc">The ‘Strip Lash Look’ is a new styling technique 
-            that achieves a wispy effect similar to strip lashes. The application is
-             done with Volume lashes plus a number of ‘spikes’ throughout the lash line to create 
-                texture. We customize each set using different lengths, thickness and curls. </p>
+            <p className="classic-desc">The ‘Strip Lash Look’ is a new styling technique that achieves a 
+            wispy effect similar to strip lashes. The application is done with Volume lashes plus 
+            a number of ‘spikes’ throughout the lash line to create texture. 
+            We customize each set using different lengths, thickness and curls. </p>
             <h1 className="class-sub-title">OUTSIDE FILLS FOR LASHES</h1>
             <p className="classic-desc">We do not perform refill services on work that was done from 
                 another outside salon/artist. If you currently have lash 
@@ -50,13 +51,68 @@ function LashStrip () {
                     <p className="faq-questions"> ⦊ Can I swim, shower, exercise, or visit a spa while wearing eyelash extensions?</p>
                     <p className="faq-questions"> ⦊ How do I take care of my new eyelash extensions?</p>
                     </div>
+                    <div>
         </div>
-        
         </div>
+        </div>
+                <div className="side-boxes">
 
-        </div>
+                        <div className="price-cont">
+                            <div className="classic-price">
+                            <div className="fullset-cont">
+                                <h1 className="price-full-set">FULL SET </h1>
+                                <h3 className="price">$180</h3>
+                            </div>
+                            </div>
+                            <div className="fullset-cont">
+                            <p className="time-font">🕒 Time</p>
+                            <p className="duration">~3hours</p>
+                            </div><NavLink
+                                    to={{
+                                        pathname: "/booking",
+                                        state: {
+                                        style: "Strip Lash Look Extensions",
+                                        type: "Full Set",
+                                        price: "$180",
+                                        },
+                                    }}
+                                    >
+                                    <button className="booknow">Book Now!</button>
+                            </NavLink>
+                            </div>
+
+                            <div className="refill-cont">
+                            <div className="classic-price">
+                            <div className="fullset-cont">
+                                <h1 className="price-full-set">REFILL </h1>
+                                <h3 className="price">$90</h3>
+                            </div>
+                            <div className="fullset-cont">
+                            <p className="time-font">🕒 Time</p>
+                            <p className="duration">~2hours</p>
+                            </div><NavLink
+                                    to={{
+                                        pathname: "/booking",
+                                        state: {
+                                        style: "Strip Lash Look Extensions",
+                                        type: "Refill",
+                                        price: "$90",
+                                        },
+                                    }}
+                                    >
+                                    <button className="booknow">Book Now!</button>
+                            </NavLink>
+                            </div>
+                            </div>
+                            </div>
+
+
+                        </div>
+                </div>
+                    
     )
 
 }
+
 
 export default LashStrip

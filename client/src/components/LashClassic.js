@@ -55,19 +55,62 @@ function LashClassic () {
         </div>
         </div>
         </div>
-                <div className="price-cont">
-                <div className="classic-price">
-                        <div className="fullset-cont">
-                            <h1 className="price-full-set">FULL SET </h1>
-                            <h3 className="price">$120</h3>
+                <div className="side-boxes">
+
+                        <div className="price-cont">
+                            <div className="classic-price">
+                            <div className="fullset-cont">
+                                <h1 className="price-full-set">FULL SET </h1>
+                                <h3 className="price">$120</h3>
+                            </div>
+                            </div>
+                            <div className="fullset-cont">
+                            <p className="time-font">🕒 Time</p>
+                            <p className="duration">~3hours</p>
+                            </div>
+                            <NavLink
+                                    to={{
+                                        pathname: "/booking",
+                                        state: {
+                                        style: "Classic Lash Extensions",
+                                        price: "$120",
+                                        type: "Full Set",
+                                        },
+                                    }}
+                                    >
+                                    <button className="booknow">Book Now!</button>
+                            </NavLink>
+                            </div>
+
+                            <div className="refill-cont">
+                            <div className="classic-price">
+                            <div className="fullset-cont">
+                                <h1 className="price-full-set">REFILL </h1>
+                                <h3 className="price">$60</h3>
+                            </div>
+                            <div className="fullset-cont">
+                            <p className="time-font">🕒 Time</p>
+                            <p className="duration">~2hours</p>
+                            </div>
+                            <NavLink
+                                    to={{
+                                        pathname: "/booking",
+                                        state: {
+                                        style: "Classic Lash Extensions",
+                                        price: "$60",
+                                        type: "Refill",
+                                        },
+                                    }}
+                                    >
+                                    <button className="booknow">Book Now!</button>
+                            </NavLink>
+                            </div>
+                            </div>
+
+                            </div>
                         </div>
-                        <p className="time-font">Time</p>
-                        <p className="duration">~3hours</p>
-                        <button>Book Now!</button>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
+                </div>
+                    
     )
 
 }

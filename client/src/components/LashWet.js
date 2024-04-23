@@ -9,19 +9,16 @@ function LashWet () {
     return (
         <div>
             <Navbar/>
+        <div className="layout-container">
         <div className="classic-cont">
         <NavLink className="classic-nav-link" to="/services"> ← Services </NavLink>
-            <h1 className="classic-title">Wet Look Lash Extensions</h1>
-            <p className="classic-desc">This look mimics the look of your lash extensions 
-            when you get them wet; creating a spikier and more wispy effect. 
-            The Wet Lash Look appears similar to Classic Lash Extensions, 
-            but they are thicker and bolder looking because of the wider 
-            appearance of the lash bundles. There are certain lashes who are suitable 
-            for this look, a person with natural lashes that are moderate to full.
-            If you are unsure feel free to text us a picture of your lashes for a quick 
-            consultation. We wouldn’t recommend this look for someone with sparse 
-            lashes since sparse lashes benefit most from volume fans that are fat 
-            and wide as opposed to skinny and straight like the style demanded from this look. </p>
+            <h1 className="classic-title">Classic Lash Extensions</h1>
+            <p className="classic-desc">This look mimics the look of your lash extensions when you get them wet; creating a spikier and more wispy effect. 
+            The Wet Lash Look appears similar to Classic Lash Extensions, but they are thicker and bolder looking because of the wider appearance of the lash bundles. 
+            There are certain lashes who are suitable for this look, a person with natural lashes that are moderate to full.If you are unsure 
+            feel free to text us a picture of your lashes for a quick consultation. We wouldn’t recommend this look for someone 
+            with sparse lashes since sparse lashes benefit most from volume fans that are fat and wide as opposed to skinny and 
+            straight like the style demanded from this look.</p>
             <h1 className="class-sub-title">OUTSIDE FILLS FOR LASHES</h1>
             <p className="classic-desc">We do not perform refill services on work that was done from 
                 another outside salon/artist. If you currently have lash 
@@ -56,13 +53,68 @@ function LashWet () {
                     <p className="faq-questions"> ⦊ Can I swim, shower, exercise, or visit a spa while wearing eyelash extensions?</p>
                     <p className="faq-questions"> ⦊ How do I take care of my new eyelash extensions?</p>
                     </div>
+                    <div>
         </div>
-        
         </div>
+        </div>
+                <div className="side-boxes">
 
-        </div>
+                        <div className="price-cont">
+                            <div className="classic-price">
+                            <div className="fullset-cont">
+                                <h1 className="price-full-set">FULL SET </h1>
+                                <h3 className="price">$140</h3>
+                            </div>
+                            </div>
+                            <div className="fullset-cont">
+                            <p className="time-font">🕒 Time</p>
+                            <p className="duration">~2hours</p>
+                            </div><NavLink
+                                    to={{
+                                        pathname: "/booking",
+                                        state: {
+                                        style: "Wet Look Lash Extensions",
+                                        type: "Full Set",
+                                        price: "$140",
+                                        },
+                                    }}
+                                    >
+                                    <button className="booknow">Book Now!</button>
+                            </NavLink>
+                            </div>
+
+                            <div className="refill-cont">
+                            <div className="classic-price">
+                            <div className="fullset-cont">
+                                <h1 className="price-full-set">REFILL </h1>
+                                <h3 className="price">$65</h3>
+                            </div>
+                            <div className="fullset-cont">
+                            <p className="time-font">🕒 Time</p>
+                            <p className="duration">~1h 30min</p>
+                            </div><NavLink
+                                    to={{
+                                        pathname: "/booking",
+                                        state: {
+                                        style: "Wet Look Lash Extensions",
+                                        type: "Refill",
+                                        price: "$65",
+                                        },
+                                    }}
+                                    >
+                                    <button className="booknow">Book Now!</button>
+                            </NavLink>
+                            </div>
+                            </div>
+                            </div>
+
+
+                        </div>
+                </div>
+                    
     )
 
 }
+
 
 export default LashWet

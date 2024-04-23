@@ -98,15 +98,16 @@
 
 .service-btn {
     border: 1px solid #d826e2;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     background-color: #08192A;
     border-radius: 20px;
-    width: 100%; /* Full width in its parent */
-    max-width: 200px; /* Set maximum width */
-    margin: 20px auto; /* Center the button */
+    width: 100%; 
+    max-width: 200px; 
+    margin: 20px auto; 
     font-size: 20px;
     font-weight: bold;
+    color:#d826e2;
     
 }
 

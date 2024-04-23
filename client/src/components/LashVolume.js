@@ -9,15 +9,14 @@ function LashVolume () {
     return (
         <div>
             <Navbar/>
+        <div className="layout-container">
         <div className="classic-cont">
         <NavLink className="classic-nav-link" to="/services"> ← Services </NavLink>
             <h1 className="classic-title">Volume Lash Extensions</h1>
-            <p className="classic-desc">Volume lash extensions involves applying 2-6 very fine lashes (2D - 6D) 
-                to each one natural lash. Volume Extensions are lighter, fluffy and 
-                give the client a full look. Volume lashes are perfect for clients who 
-                don’t have a lot of lashes, have sparse lashes, bald spots or just want
-                more of a dramatic look without having to use a thicker lash extension. 
-                We customize each set using different lengths, thickness and curls. </p>
+            <p className="classic-desc">Volume lash extensions involves applying 2-6 very fine lashes (2D - 6D) to each one natural lash. 
+            Volume Extensions are lighter, fluffy and give the client a full look. Volume lashes are perfect for clients who don’t 
+            have a lot of lashes, have sparse lashes, bald spots or just want more of a dramatic look without having to use a thicker lash extension. 
+            We customize each set using different lengths, thickness and curls. </p>
             <h1 className="class-sub-title">OUTSIDE FILLS FOR LASHES</h1>
             <p className="classic-desc">We do not perform refill services on work that was done from 
                 another outside salon/artist. If you currently have lash 
@@ -52,11 +51,65 @@ function LashVolume () {
                     <p className="faq-questions"> ⦊ Can I swim, shower, exercise, or visit a spa while wearing eyelash extensions?</p>
                     <p className="faq-questions"> ⦊ How do I take care of my new eyelash extensions?</p>
                     </div>
+                    <div>
         </div>
-        
         </div>
+        </div>
+                <div className="side-boxes">
 
-        </div>
+                        <div className="price-cont">
+                            <div className="classic-price">
+                            <div className="fullset-cont">
+                                <h1 className="price-full-set">FULL SET </h1>
+                                <h3 className="price">$150</h3>
+                            </div>
+                            </div>
+                            <div className="fullset-cont">
+                            <p className="time-font">🕒 Time</p>
+                            <p className="duration">~2h 30min</p>
+                            </div><NavLink
+                                    to={{
+                                        pathname: "/booking",
+                                        state: {
+                                        style: "Volume Lash Extensions",
+                                        type: "Full Set",
+                                        price: "$150",
+                                        },
+                                    }}
+                                    >
+                                    <button className="booknow">Book Now!</button>
+                            </NavLink>
+                            </div>
+
+                            <div className="refill-cont">
+                            <div className="classic-price">
+                            <div className="fullset-cont">
+                                <h1 className="price-full-set">REFILL </h1>
+                                <h3 className="price">$80</h3>
+                            </div>
+                            <div className="fullset-cont">
+                            <p className="time-font">🕒 Time</p>
+                            <p className="duration">~1h 30min</p>
+                            </div><NavLink
+                                    to={{
+                                        pathname: "/booking",
+                                        state: {
+                                        style: "Volume Lash Extensions",
+                                        type: "Refill",
+                                        price: "$80",
+                                        },
+                                    }}
+                                    >
+                                    <button className="booknow">Book Now!</button>
+                            </NavLink>
+                            </div>
+                            </div>
+                            </div>
+
+
+                        </div>
+                </div>
+                    
     )
 
 }

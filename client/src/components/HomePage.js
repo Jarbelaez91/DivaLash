@@ -3,8 +3,14 @@ import Navabr from "./Navbar";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import './home.css'
 import brushing from './brushing.jpeg'
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 function HomePage () {
+
+    const history = useHistory()
+    const serviceMenu = () => {
+        history.push("/services")
+    }
 
 return (
     <div>
@@ -49,10 +55,8 @@ return (
     Esta combinación de capacitación de alta calidad y experiencia extensa 
     garantizará que recibas el conjunto más fabuloso de pestañas.</h3>
 <h1> Acuerdese en DivaLash la bellza la pones tu!</h1>
-                <div className="service-btn">
-            <NavLink className="nav-link" to="/services">
-                SERVICE MENU
-            </NavLink>
+                <div>
+            <button className="service-btn" onClick={serviceMenu}> SERVICE MENU</button>
         </div>
             </div>
         </div>
@@ -66,4 +70,3 @@ return (
 
 
 export default HomePage;
-

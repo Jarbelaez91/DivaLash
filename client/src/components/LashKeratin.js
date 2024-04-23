@@ -9,24 +9,22 @@ function LashKeratin () {
     return (
         <div>
             <Navbar/>
+        <div className="layout-container">
         <div className="classic-cont">
         <NavLink className="classic-nav-link" to="/services"> ← Services </NavLink>
             <h1 className="classic-title">Keratin Lash Lift & Tint</h1>
-            <p className="classic-desc">
-                Our vegan, cruelty-free lash lift treatment is specifically formulated 
-                                    to lift and maintain hair elasticity by controlling its loss of 
-                                    humidity, preventing hair breakage. This formula can even be used on 
-                                    those with gaps or damaged lashes.</p>
-            <h1 className="class-sub-title">OUTSIDE FILLS FOR LASHES</h1>
-            <p className="classic-desc">We do not perform refill services on work that was done from 
-                another outside salon/artist. If you currently have lash 
-                extensions on from another salon/artist, you must have them 
-                removed and have a consultation before receiving your first 
-                full set service with us (lash removal fee will apply). 
-                We encourage you when booking to allow yourself sufficient 
-                time and not bringing children or extra people to your 
-                appointment. We want to give you the best service possible 
-                and direct all of our time to you during your appointment.</p>
+            <p className="classic-desc">Our vegan, cruelty free lash lift treatment is specifically formulated to lift and maintain 
+            hair elasticity by controlling its loss of humidity, preventing hair breakage. This formula can even be used on those 
+            with gaps or damaged lashes. The damaged lash hair is infused with specialized proteins, thus preventing any further 
+            weakening of the hair fiber, and reducing hair loss. The more the hair has been damaged, the easier it is for the formula 
+            to penetrate. Likewise, this treatment makes the lash hair easier to comb and detangle, giving it a soft and silky feel 
+            and fully moisturizing the root of the hair helping maintain its natural structure. All of these benefits are due to the 
+            formula’s capacity to strengthen hair follicles, generate collagen production, keeping hair moisturized, nourished and shiny. 
+            It also prevents cell damage by preventing premature hair ageing and dryness. <br></br><br></br>This unique lash lift treatment also infuses 
+            powerful growth enhancers into the hair shaft while the cuticle is open, and your lashes are being lifted. It improves the rate of hair growth. 
+            <br></br><br></br>This treatment is vegan, environmentally friendly, cruelty free, sulfate free, sodium bromate free, and low odor. Gentle Ph level, 
+            chemicals that are used are of the highest quality grades only. Developed in Sweden. If you have extremely short lashes, 
+            we recommend you purchase our lash serum to grow your lashes until they are a suitable length for this treatment. Lasts 4 - 8 weeks depending on lash cycle and aftercare. </p>
                 <div className="photo-grid">
                     <img src={eyebrush} ></img>
                     <img src={eyebrush} ></img>
@@ -51,11 +49,65 @@ function LashKeratin () {
                     <p className="faq-questions"> ⦊ Can I swim, shower, exercise, or visit a spa while wearing eyelash extensions?</p>
                     <p className="faq-questions"> ⦊ How do I take care of my new eyelash extensions?</p>
                     </div>
+                    <div>
         </div>
-        
         </div>
+        </div>
+                <div className="side-boxes">
 
-        </div>
+                        <div className="keratin-price-cont">
+                            <div className="keratin-price">
+                            <div className="fullset-cont">
+                                <h1 className="keratin-full-set">KERATIN LASH LIFT & TINT </h1>
+                                <h3 className="keratin-price">$155</h3>
+                            </div>
+                            </div>
+                            <div className="keratin-cont">
+                            <p className="time-font">🕒 Time</p>
+                            <p className="duration">~1hour</p>
+                            </div><NavLink
+                                    to={{
+                                        pathname: "/booking",
+                                        state: {
+                                        style: "KERATIN LASH LIFT & TINT",
+                                        type: "Keratin-Basic",
+                                        price: "$155",
+                                        },
+                                    }}
+                                    >
+                                    <button className="booknow">Book Now!</button>
+                            </NavLink>
+                            </div>
+
+                            <div className="keratin-price-cont-2">
+                            <div className="keratin-price">
+                            <div className="fullset-cont">
+                                <h1 className="keratin-full-set">KERATIN LASH LIFT & TINT + HYDROJELLY FACIAL MASK </h1>
+                                <h3 className="keratin-price">$175</h3>
+                            </div>
+                            <div className="fullset-cont">
+                            <p className="time-font">🕒 Time</p>
+                            <p className="duration">~1h 30min</p>
+                            </div><NavLink
+                                    to={{
+                                        pathname: "/booking",
+                                        state: {
+                                        style: "KERATIN LASH LIFT & TINT + HYDROJELLY FACIAL MASK",
+                                        type: "Keratin-Full",
+                                        price: "$175",
+                                        },
+                                    }}
+                                    >
+                                    <button className="booknow">Book Now!</button>
+                            </NavLink>
+                            </div>
+                            </div>
+                            </div>
+
+
+                        </div>
+                </div>
+                    
     )
 
 }

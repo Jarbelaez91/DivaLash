@@ -9,16 +9,16 @@ function LashMega () {
     return (
         <div>
             <Navbar/>
+        <div className="layout-container">
         <div className="classic-cont">
         <NavLink className="classic-nav-link" to="/services"> ← Services </NavLink>
             <h1 className="classic-title">Mega Volume Lash Extensions</h1>
-            <p className="classic-desc">Mega volume lash extensions are soft and super light. The thinnest 
-                imaginable lashes! Beautiful 0.03 lashes the lightest weight possible 
-                that are perfect for a Mega Volume look. These lashes are designed to 
-                be very lightweight to make fans of 10-16D! This does not damage the 
-                natural lash at all. A set made of these lashes is dramatic, soft, 
-                wispy, giving intense density and blackness to the lashes. We 
-                customize each set using different lengths, thickness and curls. </p>
+            <p className="classic-desc">Mega volume lash extensions are soft and super light. 
+            The thinnest imaginable lashes! Beautiful 0.03 lashes the lightest weight possible 
+            that are perfect for a Mega Volume look. These lashes are designed to be very 
+            lightweight to make fans of 10-16D! This does not damage the natural lash at all. 
+            A set made of these lashes is dramatic, soft, wispy, giving intense density and 
+            blackness to the lashes. We customize each set using different lengths, thickness and curls. </p>
             <h1 className="class-sub-title">OUTSIDE FILLS FOR LASHES</h1>
             <p className="classic-desc">We do not perform refill services on work that was done from 
                 another outside salon/artist. If you currently have lash 
@@ -53,11 +53,65 @@ function LashMega () {
                     <p className="faq-questions"> ⦊ Can I swim, shower, exercise, or visit a spa while wearing eyelash extensions?</p>
                     <p className="faq-questions"> ⦊ How do I take care of my new eyelash extensions?</p>
                     </div>
+                    <div>
         </div>
-        
         </div>
+        </div>
+                <div className="side-boxes">
 
-        </div>
+                        <div className="price-cont">
+                            <div className="classic-price">
+                            <div className="fullset-cont">
+                                <h1 className="price-full-set">FULL SET </h1>
+                                <h3 className="price">$170</h3>
+                            </div>
+                            </div>
+                            <div className="fullset-cont">
+                            <p className="time-font">🕒 Time</p>
+                            <p className="duration">~3hours</p>
+                            </div><NavLink
+                                    to={{
+                                        pathname: "/booking",
+                                        state: {
+                                        style: "Mega Volume Extensions",
+                                        type: "Full Set",
+                                        price: "$170",
+                                        },
+                                    }}
+                                    >
+                                    <button className="booknow">Book Now!</button>
+                            </NavLink>
+                            </div>
+
+                            <div className="refill-cont">
+                            <div className="classic-price">
+                            <div className="fullset-cont">
+                                <h1 className="price-full-set">REFILL </h1>
+                                <h3 className="price">$90</h3>
+                            </div>
+                            <div className="fullset-cont">
+                            <p className="time-font">🕒 Time</p>
+                            <p className="duration">~2hours</p>
+                            </div><NavLink
+                                    to={{
+                                        pathname: "/booking",
+                                        state: {
+                                        style: "Mega Volume Extension",
+                                        type: "Refill",
+                                        price: "$90",
+                                        },
+                                    }}
+                                    >
+                                    <button className="booknow">Book Now!</button>
+                            </NavLink>
+                            </div>
+                            </div>
+                            </div>
+
+
+                        </div>
+                </div>
+                    
     )
 
 }
