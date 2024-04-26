@@ -1,6 +1,75 @@
-.calendar{
-    font-size: 40px;
-    border-bottom: red solid 2px;
+.calendar-button{
+    font-size: 20px;
     margin: 20px;
-    padding-bottom: 40px;
+    border-radius: 8px;
+    padding: 20px 45px 20px 45px;
+    font-weight:bold;
+}
+
+.calendar-cont{
+    display:grid  ;
+    grid-template-columns: 2fr 1fr; 
+    justify-content: center;
+    max-width: 1900px; 
+    gap: 1px;
+}
+
+.calendar{
+    justify-content: center;  
+    background-color:#08192A;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    overflow: hidden;
+    padding: 30px;
+    padding-bottom: 50px;
+    max-width: 500px;
+    margin: 30px auto;
+    margin-left: 10px;
+    border-radius: 15px;
+    font-size: 50px;
+}
+
+
+.calendar-appointment{
+    justify-content: center; 
+    background-color:#08192A;
+    text-align: left;
+    max-width: 500px;
+    max-height: 210px;
+    border-radius: 15px;
+    padding: 18px;
+}
+
+.calendar-input1{
+    font-size: 25px;
+    background-color: #08192A;
+    border: 1px solid #08192A;
+    color: white;
+    margin-left: 10px;
+    overflow-wrap: break-word;
+}
+.calendar-input2{
+    font-size: 25px;
+    background-color: #08192A;
+    border: 1px solid #08192A;
+    color: white;
+    width: 210px;
+    flex: 1; 
+    margin-left: 140px;
+    white-space: normal;
+}
+
+
+.calendar-summary{
+    color: #d826e2;
+    text-align: center;
+    font-size: 30px;
+}
+
+.month{
+    color: #d826e2;
+    margin-left: 260px;
+}
+
+.daysofweek{
+    color: #d826e2;
 }

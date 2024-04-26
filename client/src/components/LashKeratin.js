@@ -67,11 +67,12 @@ function LashKeratin () {
                             <p className="duration">~1hour</p>
                             </div><NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "KERATIN LASH LIFT & TINT",
                                         type: "Keratin-Basic",
                                         price: "$155",
+                                        duration:"1 hour"
                                         },
                                     }}
                                     >
@@ -90,11 +91,12 @@ function LashKeratin () {
                             <p className="duration">~1h 30min</p>
                             </div><NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "KERATIN LASH LIFT & TINT + HYDROJELLY FACIAL MASK",
                                         type: "Keratin-Full",
                                         price: "$175",
+                                        duration:"1h 30min"
                                         },
                                     }}
                                     >

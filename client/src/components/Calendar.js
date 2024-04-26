@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Calendar.css"
+import { useHistory, useLocation } from "react-router-dom";
 
 function Calendar() {
   // Get current date
@@ -7,6 +8,13 @@ function Calendar() {
   const currentYear = currentDate.getFullYear();
   const currentMonth = currentDate.getMonth();
   const currentDay = currentDate.getDate();
+  
+  const history = useHistory();
+  const location = useLocation();
+
+  const goBack = () => {
+    history.goBack();
+  };
 
   // Get number of days in the current month
   const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
@@ -43,17 +51,41 @@ function Calendar() {
       // Set selected date
       setSelectedDate(new Date(currentYear, currentMonth, day.day));
 
-      // Set available times for the selected date
+    
       setAvailableTimes(["10:00 AM", "12:00 PM", "2:30 PM", "4:30 PM"]);
     }
   };
 
+   // Function to handle time selection
+   const handleTimeSelect = (time) => {
+    // Do something with the selected time
+    console.log("Selected time:", time);
+  };
+
+
+  const [formData, setFormData] = useState({
+    style: "",
+    price: "",
+    type: "",
+    time: "",
+  });
+
+  useEffect(() => {
+    const { style = "", price = "", type = "" ,duration =""} = location.state || {};
+    setFormData({ style, price, type, duration });
+  }, [location.state]);
+
+  const appointmentSummary = formData.style + " ・ " + formData.type;
+  const appointmentPrice = formData.price + " ・ " + formData.duration;
+
   return (
-    <div className="calendar">
-      <h1>Calendar - {currentDate.toLocaleString("default", { month: "long" })} {currentYear}</h1>
-      <table>
-        <thead>
-          <tr>
+    <div  className="calendar-cont">
+    <div>
+    <button onClick={goBack}>← Back</button>
+      <h1 className="month"> {currentDate.toLocaleString("default", { month: "long" })} {currentYear}</h1>
+      <table className= "calendar">
+        <thead >
+          <tr className="daysofweek">
             <th>Sun</th>
             <th>Mon</th>
             <th>Tue</th>
@@ -69,10 +101,10 @@ function Calendar() {
               {week.map((day, idx) => (
                 <td
                   key={idx}
-                  style={{ color: day.selectable ? "black" : "grey", cursor: day.selectable ? "pointer" : "not-allowed" }}
+                  style={{ color: day.selectable ? "#d826e2" : "black", textDecoration: !day.selectable ? "line-through" : "none", cursor: day.selectable ? "pointer" : "not-allowed" }}
                   onClick={() => handleDayClick(day)}
                 >
-                  {day.day}
+                  {day.day && day.day}
                 </td>
               ))}
             </tr>
@@ -82,13 +114,27 @@ function Calendar() {
       {selectedDate && (
         <div>
           <h2>Available Times for {selectedDate.toLocaleDateString()}</h2>
-          <ul>
+          <div>
             {availableTimes.map((time, index) => (
-              <li key={index}>{time}</li>
+              <button className="calendar-button" key={index} onClick={() => handleTimeSelect(time)}>{time}</button>
             ))}
-          </ul>
+          </div>
         </div>
       )}
+    </div>
+    <div className="calendar-appointment">
+    <h2 className="calendar-summary"> Appointment Summary</h2>
+      <form >
+        <div>
+          <h2 className="calendar-input1"> {appointmentSummary}  </h2>
+        </div>
+        <div className="classic-price">
+          <input className="calendar-input2" type="text" value={appointmentPrice} readOnly />
+        </div>
+        
+        </form>
+    </div>
+    
     </div>
   );
 }

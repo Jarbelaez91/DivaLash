@@ -69,11 +69,12 @@ function LashHybrid () {
                             <p className="duration">~2h 30min</p>
                             </div><NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "Hybrid Lash Extensions",
                                         type: "Full Set",
                                         price: "$130",
+                                        duration:"2h 30min"
                                         },
                                     }}
                                     >
@@ -92,11 +93,12 @@ function LashHybrid () {
                             <p className="duration">~1h 30min</p>
                             </div><NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "Hybrid Lash Extensions",
                                         type: "Refill",
                                         price: "$70",
+                                        duration:"1h 30min"
                                         },
                                     }}
                                     >

@@ -71,11 +71,12 @@ function LashMega () {
                             <p className="duration">~3hours</p>
                             </div><NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "Mega Volume Extensions",
                                         type: "Full Set",
                                         price: "$170",
+                                        duration:"3 hours"
                                         },
                                     }}
                                     >
@@ -94,11 +95,12 @@ function LashMega () {
                             <p className="duration">~2hours</p>
                             </div><NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "Mega Volume Extension",
                                         type: "Refill",
                                         price: "$90",
+                                        duration:"2 hours"
                                         },
                                     }}
                                     >

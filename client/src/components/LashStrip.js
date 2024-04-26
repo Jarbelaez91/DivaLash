@@ -69,11 +69,12 @@ function LashStrip () {
                             <p className="duration">~3hours</p>
                             </div><NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "Strip Lash Look Extensions",
                                         type: "Full Set",
                                         price: "$180",
+                                        duration:"3 hours"
                                         },
                                     }}
                                     >
@@ -92,11 +93,12 @@ function LashStrip () {
                             <p className="duration">~2hours</p>
                             </div><NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "Strip Lash Look Extensions",
                                         type: "Refill",
                                         price: "$90",
+                                        duration:"2 hours"
                                         },
                                     }}
                                     >

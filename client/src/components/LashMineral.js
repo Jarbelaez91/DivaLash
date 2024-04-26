@@ -73,11 +73,12 @@ function LashMineral () {
                             <p className="duration">~1hour</p>
                             </div><NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "Mineral Boost Lash Lift & Tint",
                                         type: "Mineral-Basic",
                                         price: "$155",
+                                        duration:"1 hour"
                                         },
                                     }}
                                     >
@@ -96,11 +97,12 @@ function LashMineral () {
                             <p className="duration">~1h 30min</p>
                             </div><NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "Mineral Boost Lash Lift & Tint + Hydrojelly Facial Mask",
                                         type: "Mineral-full",
                                         price: "$175",
+                                        duration:"1h 30min"
                                         },
                                     }}
                                     >

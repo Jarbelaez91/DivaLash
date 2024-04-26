@@ -69,11 +69,12 @@ function LashVolume () {
                             <p className="duration">~2h 30min</p>
                             </div><NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "Volume Lash Extensions",
                                         type: "Full Set",
                                         price: "$150",
+                                        duration:"2h 30min"
                                         },
                                     }}
                                     >
@@ -92,11 +93,12 @@ function LashVolume () {
                             <p className="duration">~1h 30min</p>
                             </div><NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "Volume Lash Extensions",
                                         type: "Refill",
                                         price: "$80",
+                                        duration:"1h 30min"
                                         },
                                     }}
                                     >

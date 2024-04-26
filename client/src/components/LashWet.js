@@ -71,11 +71,12 @@ function LashWet () {
                             <p className="duration">~2hours</p>
                             </div><NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "Wet Look Lash Extensions",
                                         type: "Full Set",
                                         price: "$140",
+                                        duration:"2 hours "
                                         },
                                     }}
                                     >
@@ -94,11 +95,12 @@ function LashWet () {
                             <p className="duration">~1h 30min</p>
                             </div><NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "Wet Look Lash Extensions",
                                         type: "Refill",
                                         price: "$65",
+                                        duration:"1h 30min"
                                         },
                                     }}
                                     >

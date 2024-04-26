@@ -72,11 +72,12 @@ function LashRemoval () {
                             <p className="duration">~30min</p>
                             </div><NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "Lash Removal",
                                         type: "Lash Removal",
                                         price: "$30",
+                                        duration:"30min"
                                         },
                                     }}
                                     >

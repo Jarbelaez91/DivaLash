@@ -70,11 +70,12 @@ function LashClassic () {
                             </div>
                             <NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "Classic Lash Extensions",
                                         price: "$120",
                                         type: "Full Set",
+                                        duration: "3 hours"
                                         },
                                     }}
                                     >
@@ -94,11 +95,12 @@ function LashClassic () {
                             </div>
                             <NavLink
                                     to={{
-                                        pathname: "/booking",
+                                        pathname: "/calendar",
                                         state: {
                                         style: "Classic Lash Extensions",
                                         price: "$60",
                                         type: "Refill",
+                                        duration: "2 hours"
                                         },
                                     }}
                                     >
