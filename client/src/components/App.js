@@ -15,6 +15,7 @@ import LashKeratin from "./LashKeratin";
 import LashMineral from "./LashMineral"
 import BookingForm from "./BookingForm";
 import Calendar from "./Calendar";
+import Checkout from "./Checkout";
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
           <Route path = "/mineral-lashes" component = {LashMineral} />
           <Route path = "/booking" component = {BookingForm} />
           <Route path= "/calendar" component ={Calendar} />
+          <Route path= "/checkout" component ={Checkout} />
         </Switch>
       </div>
     </Router>

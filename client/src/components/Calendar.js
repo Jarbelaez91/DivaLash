@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Calendar.css"
 import { useHistory, useLocation } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function Calendar() {
   // Get current date
@@ -116,7 +117,9 @@ function Calendar() {
           <h2>Available Times for {selectedDate.toLocaleDateString()}</h2>
           <div>
             {availableTimes.map((time, index) => (
+                <Link to="/checkout" key={index}>
               <button className="calendar-button" key={index} onClick={() => handleTimeSelect(time)}>{time}</button>
+              </Link>
             ))}
           </div>
         </div>
