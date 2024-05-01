@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import "./bookingForm.css"
+import "./checkout.css"
 
 function BookingForm({ location }) {
   const history = useHistory();

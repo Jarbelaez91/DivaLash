@@ -62,9 +62,21 @@
   .nav-link {
     text-decoration: none;
     color: #d826e2;;
+    font-size: 22px;
+    margin: 10px 20px;
+    position: relative;
+  }
+
+  .nav-link1 {
+    text-decoration: none;
+    color: white;
     font-size: 20px;
     margin: 10px 20px;
     position: relative;
+    border: solid 1px  #d826e2;
+    background-color: #d826e2;
+    padding: 5px 20px 5px;
+    border-radius: 15px;
   }
   
   .nav-link:hover {

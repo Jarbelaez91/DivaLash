@@ -1,16 +1,16 @@
+// Navbar.js
 import React from "react";
-import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
-import "./navbar.css"
+import { NavLink } from "react-router-dom";
+import DarkModeToggle from "./DarkModeToggle";
+import "./navbar.css";
 
-function Navbar() {
-    return (
-        <div className="nav-box">
+function Navbar({ darkModeEnabled, toggleDarkMode }) {
+  return (
+    <div className="nav-box">
       <div className="nav-header">
-      {/* <img src={logoImage} alt="SoleTalk Logo" /> */}
         <header className="main">Diva Lashes</header>
-      {/* <img src={iconImage} alt="SoleTalk Logo2" />   */}
         <div className="navbar">
-            <NavLink className="nav-link" exact to="/">
+          <NavLink className="nav-link" exact to="/">
             Home
           </NavLink>
           <NavLink className="nav-link" to="/about">
@@ -19,13 +19,14 @@ function Navbar() {
           <NavLink className="nav-link" to="/services">
             Services
           </NavLink>
-          <NavLink className="nav-link" to="/bookonline">
+          <NavLink className="nav-link1" to="/bookonline">
             BOOK NOW
           </NavLink>
-          </div>
+          <DarkModeToggle darkModeEnabled={darkModeEnabled} toggleDarkMode={toggleDarkMode} />
+        </div>
       </div>
     </div>
-    );
+  );
 }
 
 export default Navbar;

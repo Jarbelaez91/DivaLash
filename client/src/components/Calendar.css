@@ -26,6 +26,7 @@
     margin-left: 10px;
     border-radius: 15px;
     font-size: 50px;
+    margin-left: 150px;
 }
 
 
@@ -67,9 +68,38 @@
 
 .month{
     color: #d826e2;
-    margin-left: 260px;
+    margin-left: 470px;
 }
 
 .daysofweek{
     color: #d826e2;
 }
+
+.weekday {
+    padding: 0 6px;
+    text-align: center;
+  }
+
+.prev-month{
+    margin-left: 300px;
+    margin-right: 10px;
+    color: #d826e2;
+    background-color:  #02121d;
+    font-size: 25px;
+    padding: 12px 25px 10px;
+    border: 1px #02121d;
+}
+.calendar-back-btn{
+    color: #d826e2;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #02121d;
+    border: 1px #02121d;
+}
+
+.available-times{
+    color: white;
+    margin-left: 10px;
+
+}
+  

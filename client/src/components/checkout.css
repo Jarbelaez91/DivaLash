@@ -1,0 +1,178 @@
+.checkout-page{
+    font-size: 30px;
+    display:grid  ;
+    justify-content: center; 
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    text-align: left;
+    overflow: hidden;
+    padding: 20px;
+    max-width: 1900px;
+    margin: 1px auto;
+    border-radius: 15px;
+
+}
+
+
+.booking-container{
+    background-color: #08192a;
+    font-size: 30px;
+    display:grid  ;
+    justify-content: center; 
+    grid-template-columns: repeat(1, 1fr);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    text-align: left;
+    overflow: hidden;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+
+.booking-title{
+    font-size: 50px;
+    text-align: center;
+    color: #d826e2;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+}
+
+.appointment-sum{
+    justify-content: center; 
+    background-color:#08192A;
+    text-align: left;
+    max-width: 520px;
+    max-height: 610px;
+    border-radius: 15px;
+    padding: 18px;
+    margin-left: 120px;
+    margin: 10px auto;
+    text-align: left;
+    overflow-wrap: break-word;
+    
+}
+
+.appointment-title{
+    font-size: 35px;
+    text-align: center;
+    color: #d826e2;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+}
+
+.style-summary{
+    color: #d826e2;
+    padding-bottom: 50px;
+    border-bottom: 1px solid white;
+}
+
+.book-appointment{
+    width: 490px;
+    height: 60px;
+    font-size: 25px;
+    margin-top: 60px;
+    border-radius: 9px;
+    background-color: #08192A;
+    color: #d826e2;
+    font-weight: bold;
+    border: 1px solid #08192A;
+    
+}
+
+.name-container {
+    display: flex;
+}
+
+.name-input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px 10px 10px;
+    font-size: 25px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+
+.email-input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px 10px 10px;
+    font-size: 25px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+
+.number-input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px 10px 10px;
+    font-size: 25px;
+    border-radius: 9px;
+    margin-bottom: 80px;
+}
+
+.cancellation-policy{
+    font-size: 25px;
+    color: white;
+}
+
+.cancellation-policy1{
+    font-size: 25px;
+    color: white;
+}
+
+.cancellation-policy2{
+    font-size: 18px;
+    color: white;
+}
+
+.appointment-time{
+    color: white;
+    text-align: center;
+}
+
+.price-total{
+    color: white;
+}
+
+.subtotal-container {
+    flex: 1;
+  }
+  
+  .subtotal, .tax, .price-total {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .price-section {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .subtotal1 {
+    text-align: right;
+    color: white;
+  }
+
+  .subtotal {
+    text-align: left;
+    color: white;
+  }
+  
+  .tax, .price-total {
+    text-align: left;
+    color: white;
+
+
+  }
+
+  .price-total1 {
+    border-top: 1px solid white;
+    color:#d826e2;
+    font-weight: bold;
+  }
+
+ 
+  
+  

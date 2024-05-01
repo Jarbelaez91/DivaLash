@@ -1,3 +1,20 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #02121d;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    --background-color: #02121d;
+    --text-color: white
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+
 .home-container {
     position: relative;
     display: flex;

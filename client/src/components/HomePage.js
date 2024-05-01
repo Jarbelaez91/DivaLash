@@ -46,15 +46,14 @@ return (
                 <img src={brushing} alt="lash brush" />
             </div>
             <div className="text-container">
-                <h1>Que Hacemos en Diva Lashes?</h1>
+                <h1>What does Diva Lashes do?</h1>
 
-<h3>¡Nuestra misión en Diva Lashes es proporcionar los mejores servicios de pestañas y cejas en todo Nueva York! <br></br>
-    ¡Nos esforzamos por lograr la satisfacción del cliente al 100% y tenemos los testimonios para demostrarlo.</h3>
-
-<h3>Nuestra artista de pestañas está certificada en la mejor institutacion de Barcelona. Nuestra artista es estetica con licencia. 
-    Esta combinación de capacitación de alta calidad y experiencia extensa 
-    garantizará que recibas el conjunto más fabuloso de pestañas.</h3>
-<h1> Acuerdese en DivaLash la bellza la pones tu!</h1>
+                <h3>Our mission at Diva Lashes is to provide the best eyelash and eyebrow services in all of New York!<br></br>
+    We strive for 100% customer satisfaction and have the testimonials to prove it.</h3>
+<h3>Our lash artist is certified by the best institution in Barcelona. Our artist is a licensed esthetician. 
+    This combination of high-quality training and extensive experience 
+    will ensure that you receive the most fabulous set of lashes.</h3>
+<h1>Remember, if you lower your gaze, let it be only to show off your lashes!</h1>
                 <div>
             <button className="service-btn" onClick={serviceMenu}> SERVICE MENU</button>
         </div>
