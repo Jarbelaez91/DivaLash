@@ -1,0 +1,73 @@
+/* App.css */
+.light-mode {
+    background-color: white;
+    color: #02121d; 
+  }
+  
+  .light-mode-toggle button {
+    background-color: #fff; /* Button background color */
+    color: #333; /* Button text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add some padding */
+    cursor: pointer; /* Add pointer cursor */
+    margin-left: 1300px;
+    z-index: 1000;
+  }
+  
+  /* Additional styles for DarkModeToggle button */
+  .light-mode-toggle button:hover {
+    background-color: #ccc; /* Button background color on hover */
+    z-index: 1000;
+  }
+
+  
+
+
+  /* App.css */
+.light-mode-toggle {
+    position: fixed; /* Set the position to fixed */
+    top: 10px; /* Adjust the top position */
+    right: 10px; /* Adjust the right position */
+    z-index: 1000; /* Ensure it's above the navbar */
+  }
+  
+  .light-mode-toggle button {
+    background-color: #fff; /* Button background color */
+    color: #333; /* Button text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add some padding */
+    cursor: pointer; /* Add pointer cursor */
+  }
+  
+  .light-mode-toggle button:hover {
+    background-color: #ccc; /* Button background color on hover */
+  }
+  
+  .nav-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid #d826e2;
+    border-radius: 8px;
+    margin: -8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    background-color: #02121d;
+    z-index: 999;
+  }
+  
+
+.light-mode .nav-box {
+    background-color: white; /* Change background color for light mode */
+    color: #02121d; /* Change text color for light mode */
+  }
+  
+.homepage-light{
+    background-color: white;
+    color: #02121d;
+}
+  

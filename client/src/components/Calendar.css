@@ -12,6 +12,7 @@
     justify-content: center;
     max-width: 1900px; 
     gap: 1px;
+    margin-top: 20px;
 }
 
 .calendar{
@@ -38,20 +39,17 @@
     max-height: 210px;
     border-radius: 15px;
     padding: 18px;
+    margin-top: 10px;
 }
 
 .calendar-input1{
     font-size: 25px;
-    background-color: #08192A;
-    border: 1px solid #08192A;
     color: white;
     margin-left: 10px;
     overflow-wrap: break-word;
 }
 .calendar-input2{
     font-size: 25px;
-    background-color: #08192A;
-    border: 1px solid #08192A;
     color: white;
     width: 210px;
     flex: 1; 
@@ -95,6 +93,7 @@
     font-weight: bold;
     background-color: #02121d;
     border: 1px #02121d;
+    margin-top: 20px;
 }
 
 .available-times{
@@ -103,3 +102,26 @@
 
 }
   
+
+
+
+
+.light-mode-calendar{
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+}
+
+.light-mode-available-times{
+    color: #02121d;
+}
+
+.light-mode-calendar-appointment{
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+}
+
+.light-mode-calendar-input1{
+    color: #02121d;
+}
+
+.light-mode-calendar-back-btn{
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+}

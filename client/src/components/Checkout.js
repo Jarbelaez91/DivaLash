@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import "./checkout.css";
 
-function Checkout() {
+function Checkout({darkModeEnabled}) {
   const history = useHistory();
   const location = useLocation(); // Import useLocation from react-router-dom
   const [isChecked, setIsChecked] = useState(false);
@@ -53,20 +53,17 @@ function Checkout() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your logic here to handle form submission
-    // You can access formData.name, formData.lastname, etc.
 
-    // Redirect after form submission
     history.push("/");
   }
 
   return (
     <div>
-        <button className="calendar-back-btn" onClick={() => history.goBack()}>← Back</button>
+        <button className={`calendar-back-btn ${darkModeEnabled ? "light-mode-calendar-back-btn" : ""}`} onClick={() => history.goBack()}>← Back</button>
     <div className="checkout-page">
-      <div className="booking-container">
+      <div className={`booking-container ${darkModeEnabled ? "light-mode-booking-container" : ""}`}>
         <div>
-          <h2 className="booking-title">Contact Info</h2>
+          <h2 className={`booking-title ${darkModeEnabled ? "light-mode-booking-title" : ""}`}> Contact Info</h2>
           <form onSubmit={handleSubmit}>
             <div>
             <div className="name-container">
@@ -110,19 +107,74 @@ function Checkout() {
                 required
               />
             </div>
+           
+
+
+    <div className="cc-container">
+
+    <input 
+    className="credit-card-input" 
+    type="number" 
+    placeholder="Card Number" 
+    value={formData.cardNumber} 
+    onChange={(e) => setFormData({ ...formData, cardNumber: e.target.value })} 
+    required 
+    maxLength="10" 
+    pattern="\d{10}"  
+    title="Please enter exactly 10 numbers" 
+/>
+
+    
+<input
+    className="credit-card-input1"
+    type="text"
+    placeholder="Exp (MM/YY)"
+    value={formData.expiration}
+    onChange={(e) => {
+        const input = e.target.value;
+        const formattedInput = input
+            // Remove any non-numeric characters
+            .replace(/\D/g, "")
+            // Ensure only 4 digits are allowed
+            .slice(0, 4)
+            // Insert "/" after the first two digits
+            .replace(/^(\d{2})(\d{0,2})/, "$1/$2");
+        
+        // Update state with the formatted input
+        setFormData({ ...formData, expiration: formattedInput });
+    }}
+    required
+    pattern="(0[1-9]|1[0-2])\/(2[5-9]|3[0-9])" // Pattern for MM/YY format, with ranges for months and years
+    title="Please enter a valid expiration date in the format MM/YY, where MM is from 01 to 12 and YY is from 25 to 39" // Error message for pattern validation
+/>
+
+
+
+    <input
+        className="credit-card-input2"
+        type="number"
+        placeholder="CVC"
+        value={formData.cvc}
+        onChange={(e) => setFormData({ ...formData, cvc: e.target.value })}
+        required
+        maxLength="3"
+        pattern="\d{3}"   
+    />
+</div>
+
             <button type="submit">Submit</button>
           </form>
         </div>
         <div>
-          <h2 className="cancellation-policy">Cancellation policy</h2>
-          <h3 className="cancellation-policy1">
+          <h2 className= {`cancellation-policy ${darkModeEnabled ? "light-mode-cancellation-policy" : ""}`} > Cancellation policy</h2>
+          <h3 className={`cancellation-policy1 ${darkModeEnabled ? "light-mode-cancellation-policy" : ""}`} >
             Please reach out to Diva Lashes to cancel or reschedule at least 24 hours before your scheduled appointment.
             After that, you may be charged a cancellation fee of $50.00.
           </h3>
           <div>
             <p>See full policy</p>
             <div>
-              <label className="cancellation-policy2">
+              <label className={`cancellation-policy2 ${darkModeEnabled ? "light-mode-cancellation-policy" : ""}`} >
                 <input
                   type="checkbox"
                   checked={isChecked}
@@ -134,28 +186,28 @@ function Checkout() {
           </div>
         </div>
       </div>
-      <div className="appointment-sum">
-  <h2 className="appointment-title">Appointment Summary</h2>
+      <div className={`appointment-sum ${darkModeEnabled ? "light-mode-appointment-sum" : ""}`}>
+  <h2 className={`appointment-title ${darkModeEnabled ? "light-mode-booking-title" : ""}`}>Appointment Summary</h2>
   <div>
-    <p className="appointment-time">
+    <p className={`appointment-time ${darkModeEnabled ? "light-mode-appointment-time" : ""}`}>
       {selectedDate && getDayOfWeek(selectedDate)}, {getMonthName(selectedDate)} {selectedDate.getDate()}{getDaySuffix(selectedDate.getDate())} {selectedDate.getFullYear()} &nbsp; - &nbsp;  {selectedTime}
     </p>
-    <p className="style-summary">{appointmentSummary}</p>
+    <p className={`style-summary ${darkModeEnabled ? "light-mode-booking-title" : ""}`}>{appointmentSummary}</p>
     <div className="price-section">
       <div className="subtotal-container">
-        <p className="subtotal">Subtotal:</p>
-        <p className="tax">Tax: </p>
-        <p className="price-total">Total:</p>
+        <p className={`subtotal ${darkModeEnabled ? "light-mode-appointment-time" : ""}`}> Subtotal:</p>
+        <p className={`tax ${darkModeEnabled ? "light-mode-appointment-time" : ""}`}> Tax: </p>
+        <p className={`price-total ${darkModeEnabled ? "light-mode-appointment-time" : ""}`}> Total:</p>
       </div>
       {/* Prices on the right */}
-      <div className="subtotal1">
+      <div className={`subtotal1 ${darkModeEnabled ? "light-mode-appointment-time" : ""}`}>
         <p>{parseFloat(price).toFixed(2)}</p>
         <p>${(parseFloat(price) * 0.08).toFixed(2)}</p>
-        <p className="price-total1">${(parseFloat(price) + (parseFloat(price) * 0.08)).toFixed(2)}</p>
+        <p className={`price-total1 ${darkModeEnabled ? "light-mode-appointment-time" : ""}`}> ${(parseFloat(price) + (parseFloat(price) * 0.08)).toFixed(2)}</p>
       </div>
     </div>
     <div> 
-      <button className="book-appointment">Book Appointment</button>
+      <button className={`book-appointment ${darkModeEnabled ? "light-mode-appointment-sum" : ""}`}> Book Appointment</button>
     </div>
   </div>
 </div>

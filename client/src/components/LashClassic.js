@@ -4,21 +4,22 @@ import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import "./lashclassic.css"
 import eyebrush from "./eyelash-brush.jpeg"
 
-function LashClassic () {
+function LashClassic ({darkModeEnabled}) {
 
     return (
         <div>
             <Navbar/>
         <div className="layout-container">
-        <div className="classic-cont">
+        <div className= {`classic-cont ${darkModeEnabled ? "light-mode-classic-cont" : ""}`}>
         <NavLink className="classic-nav-link" to="/services"> ← Services </NavLink>
-            <h1 className="classic-title">Classic Lash Extensions</h1>
-            <p className="classic-desc">Classic lash extensions are created with one individual 
+            <h1 className= {`classic-title ${darkModeEnabled ? "light-mode-classic-title" : ""}`}> Classic Lash Extensions </h1>
+            <p className= {`classic-desc ${darkModeEnabled ? "light-mode-classic-desc" : ""}`}>Classic lash extensions are created with one individual 
                 synthetic mink or silk lash extension placed on each of 
                 your natural lashes, creating a natural look. We customize 
                 each set using different lengths, thickness and curls. </p>
-            <h1 className="class-sub-title">OUTSIDE FILLS FOR LASHES</h1>
-            <p className="classic-desc">We do not perform refill services on work that was done from 
+            <h1 className= {`class-sub-title ${darkModeEnabled ? "light-mode-classic-desc" : ""}`}>OUTSIDE FILLS FOR LASHES</h1>
+            <p className= {`classic-desc ${darkModeEnabled ? "light-mode-classic-desc" : ""}`}>
+                We do not perform refill services on work that was done from 
                 another outside salon/artist. If you currently have lash 
                 extensions on from another salon/artist, you must have them 
                 removed and have a consultation before receiving your first 
@@ -41,15 +42,15 @@ function LashClassic () {
                 <div className="faq">
             <h2 className="faq"> FAQ'S</h2>
                     <div>
-                    <p className="faq-questions">  ⦊  What do I do to prepare for my lash extension appointment?</p>
-                    <p className="faq-questions"> ⦊ How long do lash extensions last?</p>
-                    <p className="faq-questions"> ⦊ When should I get my lash extensions filled?</p>
-                    <p className="faq-questions"> ⦊ I had my lashes done at a different salon or by another person; can I still get a fill at Lash Love Beauty Bar?</p>
-                    <p className="faq-questions"> ⦊ Will lash extensions damage my natural lashes?</p>
-                    <p className="faq-questions"> ⦊ I just had my lashes done and a few have fallen out, or I had an allergic reaction what should I do?</p>
-                    <p className="faq-questions"> ⦊ I have a wedding, special occasion, trip coming up and I have never had lash extensions, what set should I get?</p>
-                    <p className="faq-questions"> ⦊ Can I swim, shower, exercise, or visit a spa while wearing eyelash extensions?</p>
-                    <p className="faq-questions"> ⦊ How do I take care of my new eyelash extensions?</p>
+                    <p className= {`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>  ⦊  What do I do to prepare for my lash extension appointment?</p>
+                    <p className= {`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}> ⦊ How long do lash extensions last?</p>
+                    <p className= {`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}> ⦊ When should I get my lash extensions filled?</p>
+                    <p className= {`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}> ⦊ I had my lashes done at a different salon or by another person; can I still get a fill at Lash Love Beauty Bar?</p>
+                    <p className= {`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}> ⦊ Will lash extensions damage my natural lashes?</p>
+                    <p className= {`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}> ⦊ I just had my lashes done and a few have fallen out, or I had an allergic reaction what should I do?</p>
+                    <p className= {`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}> ⦊ I have a wedding, special occasion, trip coming up and I have never had lash extensions, what set should I get?</p>
+                    <p className= {`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}> ⦊ Can I swim, shower, exercise, or visit a spa while wearing eyelash extensions?</p>
+                    <p className= {`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}> ⦊ How do I take care of my new eyelash extensions?</p>
                     </div>
                     <div>
         </div>
@@ -57,16 +58,16 @@ function LashClassic () {
         </div>
                 <div className="side-boxes">
 
-                        <div className="price-cont">
+                        <div className= {`price-cont ${darkModeEnabled ? "light-mode-price-cont" : ""}`}>
                             <div className="classic-price">
                             <div className="fullset-cont">
                                 <h1 className="price-full-set">FULL SET </h1>
-                                <h3 className="price">$120</h3>
+                                <h3 className= {`price ${darkModeEnabled ? "light-mode-classic-price" : ""}`}>$120</h3>
                             </div>
                             </div>
                             <div className="fullset-cont">
-                            <p className="time-font">🕒 Time</p>
-                            <p className="duration">~3hours</p>
+                            <p className= {`time-font ${darkModeEnabled ? "light-mode-classic-price" : ""}`}>🕒 Time</p>
+                            <p className= {`duration ${darkModeEnabled ? "light-mode-classic-price" : ""}`}>~3hours</p>
                             </div>
                             <NavLink
                                     to={{
@@ -79,19 +80,19 @@ function LashClassic () {
                                         },
                                     }}
                                     >
-                                    <button className="booknow">Book Now!</button>
+                                    <button className= {`booknow ${darkModeEnabled ? "light-mode-booknow" : ""}`}>Book Now!</button>
                             </NavLink>
                             </div>
 
-                            <div className="refill-cont">
+                            <div className= {`refill-cont ${darkModeEnabled ? "light-mode-price-cont" : ""}`}>
                             <div className="classic-price">
                             <div className="fullset-cont">
                                 <h1 className="price-full-set">REFILL </h1>
-                                <h3 className="price">$60</h3>
+                                <h3 className= {`price ${darkModeEnabled ? "light-mode-classic-price" : ""}`}>$60</h3>
                             </div>
                             <div className="fullset-cont">
-                            <p className="time-font">🕒 Time</p>
-                            <p className="duration">~2hours</p>
+                            <p className= {`time-font ${darkModeEnabled ? "light-mode-classic-price" : ""}`}>🕒 Time</p>
+                            <p className= {`duration ${darkModeEnabled ? "light-mode-classic-price" : ""}`}>~2hours</p>
                             </div>
                             <NavLink
                                     to={{
@@ -104,7 +105,7 @@ function LashClassic () {
                                         },
                                     }}
                                     >
-                                    <button className="booknow">Book Now!</button>
+                                    <button className= {`booknow ${darkModeEnabled ? "light-mode-booknow" : ""}`}>Book Now!</button>
                             </NavLink>
                             </div>
                             </div>

@@ -3,13 +3,13 @@ import React from "react";
 
 function DarkModeToggle({ darkModeEnabled, toggleDarkMode }) {
   const handleToggle = () => {
-    toggleDarkMode(); // Toggle the dark mode state
+    toggleDarkMode(); 
   };
 
   return (
-    <div className="dark-mode-toggle">
+    <div className="light-mode-toggle">
       <button onClick={handleToggle}>
-        {darkModeEnabled ? "Switch to Light Mode" : "Switch to Dark Mode"}
+        {darkModeEnabled ? "Switch to Dark Mode" : "Switch to Light Mode"}
       </button>
     </div>
   );

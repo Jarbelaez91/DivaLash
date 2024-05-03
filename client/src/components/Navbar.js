@@ -1,12 +1,11 @@
 // Navbar.js
 import React from "react";
 import { NavLink } from "react-router-dom";
-import DarkModeToggle from "./DarkModeToggle";
 import "./navbar.css";
 
-function Navbar({ darkModeEnabled, toggleDarkMode }) {
+function Navbar({ darkModeEnabled }) {
   return (
-    <div className="nav-box">
+    <div className={`nav-box ${darkModeEnabled ? "light-mode" : ""}`}>
       <div className="nav-header">
         <header className="main">Diva Lashes</header>
         <div className="navbar">
@@ -22,7 +21,6 @@ function Navbar({ darkModeEnabled, toggleDarkMode }) {
           <NavLink className="nav-link1" to="/bookonline">
             BOOK NOW
           </NavLink>
-          <DarkModeToggle darkModeEnabled={darkModeEnabled} toggleDarkMode={toggleDarkMode} />
         </div>
       </div>
     </div>

@@ -25,7 +25,6 @@ margin-top: -350px;
 }
 
 .services-card{
-    border: 1px solid #08192A; 
     padding: 20px; 
     width: 450px; 
     height: 330px;
@@ -34,6 +33,7 @@ margin-top: -350px;
     font-size: 16px;
     background-color:#08192A;
     color: white;
+    border-radius: 12px;
     
 }
 .services-card p {
@@ -107,4 +107,22 @@ margin-top: -350px;
     color: white;
     padding-bottom: 20px;
     text-align: center; 
+    padding-top: 40px;
+}
+
+
+/* light mode*/
+
+.light-mode-lash-title{
+    color: #08192A;
+}
+
+.light-mode-service-card{
+    color: #08192A;
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    font-weight: bold;
+}
+
+.light-mode-services-font{
+    color: #08192A;
 }

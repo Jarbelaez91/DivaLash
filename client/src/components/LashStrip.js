@@ -4,13 +4,13 @@ import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import "./lashclassic.css"
 import eyebrush from "./eyelash-brush.jpeg"
 
-function LashStrip () {
+function LashStrip ({darkModeEnabled}) {
 
     return (
         <div>
             <Navbar/>
         <div className="layout-container">
-        <div className="classic-cont">
+        <div className= {`classic-cont ${darkModeEnabled ? "light-mode-classic-cont" : ""}`}>
         <NavLink className="classic-nav-link" to="/services"> ← Services </NavLink>
             <h1 className="classic-title">Strip Lash Look Extensions</h1>
             <p className="classic-desc">The ‘Strip Lash Look’ is a new styling technique that achieves a 

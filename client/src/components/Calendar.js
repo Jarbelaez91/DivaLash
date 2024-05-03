@@ -3,7 +3,7 @@ import "./Calendar.css";
 import { useHistory, useLocation } from "react-router-dom";
 import { Link } from 'react-router-dom';
 
-function Calendar() {
+function Calendar({darkModeEnabled}) {
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
   const currentMonth = currentDate.getMonth();
@@ -120,11 +120,11 @@ function Calendar() {
   return (
     <div className="calendar-cont">
       <div>
-        <button className="calendar-back-btn" onClick={goBack}>← Back</button>
+        <button className={`calendar-back-btn ${darkModeEnabled ? "light-mode-calendar-back-btn" : ""}`}  onClick={goBack}>← Back</button>
         <h1 className="month">{getDisplayedMonthName(displayedYear, displayedMonth)} {displayedYear}</h1>
-        <button className="prev-month" onClick={handlePrevMonth} disabled={displayedMonth === currentMonth && displayedYear === currentYear}>←</button>
-        <button className="prev-month" onClick={handleNextMonth} disabled={displayedMonth === currentMonth + 2 && displayedYear === currentYear}>→</button>
-        <table className="calendar">
+        <button className={`prev-month ${darkModeEnabled ? "light-mode-calendar-back-btn" : ""}`} onClick={handlePrevMonth} disabled={displayedMonth === currentMonth && displayedYear === currentYear}>←</button>
+        <button className={`prev-month ${darkModeEnabled ? "light-mode-calendar-back-btn" : ""}`} onClick={handleNextMonth} disabled={displayedMonth === currentMonth + 2 && displayedYear === currentYear}>→</button>
+        <table className={`calendar ${darkModeEnabled ? "light-mode-calendar" : ""}`}>
           <thead className="daysofweek">
           <tr>
             <th className="weekday">Sun</th>
@@ -145,7 +145,9 @@ function Calendar() {
                     style={{
                       color: day.selectable ? "white" : "black",
                       textDecoration: !day.selectable ? "line-through" : "none",
-                      cursor: day.selectable ? "pointer" : "not-allowed"
+                      cursor: day.selectable ? "pointer" : "not-allowed",
+                      color: darkModeEnabled ? (day.selectable ? "#08192A" : "black") : (day.selectable ? "white" : "black"),
+                      border: selectedDate && day.day === selectedDate.getDate() ? (darkModeEnabled ? "4px solid black" : "4px solid white") : "none"
                     }}
                     onClick={() => handleDayClick(day)}
                   >
@@ -158,7 +160,7 @@ function Calendar() {
         </table>
         {selectedDate && (
           <div>
-            <h2 className="available-times"> Available Times For &nbsp;    
+            <h2 className={`available-times ${darkModeEnabled ? "light-mode-available-times" : ""}`}> Available Times For &nbsp;    
             {getDayOfWeek(selectedDate)}, {getMonthName(selectedDate)} {selectedDate.getDate()}, {selectedDate.getFullYear()}
             </h2>
 
@@ -186,14 +188,14 @@ function Calendar() {
           </div>
         )}
       </div>
-      <div className="calendar-appointment">
+      <div className={`calendar-appointment ${darkModeEnabled ? "light-mode-calendar-appointment" : ""}`}>
         <h2 className="calendar-summary"> Appointment Summary</h2>
         <form>
           <div>
-            <h2 className="calendar-input1"> {appointmentSummary}  </h2>
+            <h2 className={`calendar-input1 ${darkModeEnabled ? "light-mode-calendar-input1" : ""}`}> {appointmentSummary}  </h2>
           </div>
           <div className="classic-price">
-            <input className="calendar-input2" type="text" value={appointmentPrice} readOnly />
+            <h2 className={`calendar-input2 ${darkModeEnabled ? "light-mode-calendar-input1" : ""}`}> {appointmentPrice} </h2>
           </div>
         </form>
       </div>

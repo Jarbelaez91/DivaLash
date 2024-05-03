@@ -1,6 +1,7 @@
 // App.js
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import DarkModeToggle from "./DarkModeToggle";
 import Navbar from "./Navbar";
 import HomePage from "./HomePage";
 import About from "./About";
@@ -18,49 +19,48 @@ import LashMineral from "./LashMineral";
 import BookingForm from "./BookingForm";
 import Calendar from "./Calendar";
 import Checkout from "./Checkout";
+import "./app.css";
 
 function App() {
   const [darkModeEnabled, setDarkModeEnabled] = useState(
     localStorage.getItem("darkModeEnabled") === "true"
   );
 
-  // Function to toggle dark mode
   const toggleDarkMode = () => {
     setDarkModeEnabled(prevMode => !prevMode);
   };
 
-  // Set initial dark mode state from local storage
   useEffect(() => {
     const storedDarkMode = localStorage.getItem("darkModeEnabled") === "true";
     setDarkModeEnabled(storedDarkMode);
   }, []);
 
-  // Update local storage when dark mode changes
   useEffect(() => {
     localStorage.setItem("darkModeEnabled", darkModeEnabled);
   }, [darkModeEnabled]);
 
   return (
     <Router>
-      <div className={`App ${darkModeEnabled ? "dark-mode" : ""}`}>
-        <Navbar darkModeEnabled={darkModeEnabled} toggleDarkMode={toggleDarkMode} />
+      <div className={`App ${darkModeEnabled ? "light-mode" : ""}`}>
+        <DarkModeToggle darkModeEnabled={darkModeEnabled} toggleDarkMode={toggleDarkMode} />
+        <Navbar />
         <Switch>
-          <Route exact path="/" component={HomePage} />
+        <Route exact path="/">  <HomePage darkModeEnabled={darkModeEnabled} /> </Route>
           <Route path="/about" component={About} />
-          <Route path="/services" component={Services} />
+          <Route exact path="/services"> <Services darkModeEnabled={darkModeEnabled} /> </Route>
           <Route path="/bookonline" component={BookOnline} />
-          <Route path="/classic-lash-extensions" component={LashClassic} />
-          <Route path="/hybrid-lash-extensions" component={LashHybrid} />
-          <Route path="/strip-lash-look-extensions/" component={LashStrip} />
-          <Route path="/wet-look-lash-extensions" component={LashWet} />
-          <Route path="/volume-lash-extensions/" component={LashVolume} />
-          <Route path="/mega-volume-lash-extensions/" component={LashMega} />
-          <Route path="/lash-removal" component={LashRemoval} />
-          <Route path="/keratin-lashes" component={LashKeratin} />
-          <Route path="/mineral-lashes" component={LashMineral} />
-          <Route path="/booking" component={BookingForm} />
-          <Route path="/calendar" component={Calendar} />
-          <Route path="/checkout" component={Checkout} />
+          <Route exact path="/classic-lash-extensions"> <LashClassic darkModeEnabled={darkModeEnabled} /> </Route>
+          <Route exact path="/hybrid-lash-extensions"> <LashHybrid darkModeEnabled={darkModeEnabled} /> </Route>
+          <Route exact path="/strip-lash-look-extensions/"> <LashStrip darkModeEnabled={darkModeEnabled} /> </Route>
+          <Route exact path="/wet-look-lash-extensions"> <LashWet darkModeEnabled={darkModeEnabled} /> </Route>
+          <Route exact path="/volume-lash-extensions/"> <LashVolume darkModeEnabled={darkModeEnabled} /> </Route>
+          <Route exact path="/mega-volume-lash-extensions/"> <LashMega darkModeEnabled={darkModeEnabled} /> </Route>
+          <Route exact path="/lash-removal"> <LashRemoval darkModeEnabled={darkModeEnabled} /> </Route>
+          <Route exact path="/keratin-lashes"> <LashKeratin darkModeEnabled={darkModeEnabled} /> </Route>
+          <Route exact path="//mineral-lashes"> <LashMineral darkModeEnabled={darkModeEnabled} /> </Route>
+          <Route exact path="/booking"> <BookingForm darkModeEnabled={darkModeEnabled} /> </Route>
+          <Route exact path="/calendar"> <Calendar darkModeEnabled={darkModeEnabled} /> </Route>
+          <Route exact path="/checkout"> <Checkout darkModeEnabled={darkModeEnabled} /> </Route>
         </Switch>
       </div>
     </Router>

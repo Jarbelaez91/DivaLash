@@ -1,20 +1,3 @@
-:root {
-    --background-color: #ffffff;
-    --text-color: #02121d;
-  }
-  
-  /* Dark Mode */
-  .dark-mode {
-    --background-color: #02121d;
-    --text-color: white
-  }
-  
-  body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-
-
 .home-container {
     position: relative;
     display: flex;
@@ -46,7 +29,6 @@
 }
 
 .lash-card{
-    border: 1px solid #08192A; /* Add a border */
     padding: 20px; /* Add padding to the card */
     width: 400px; /* Set the card width to 45% of the container */
     height: 400px;
@@ -55,6 +37,7 @@
     font-size: 25px;
     background-color:#08192A;
     color: white;
+    border-radius: 12px;
     
 }
 
@@ -71,14 +54,14 @@
     padding: 20px;
     font-weight: bold;
     background-color: #08192A;
-    border-color: #d826e2;
-    color:#d826e2
+    border-color: #ed64a6;
+    color:#ed64a6;
 
 }
 
 
 .text-container {
-    border: 5px solid #08192A;
+
     padding: 50px;
     padding-top: 100px;
     text-align: center;
@@ -90,6 +73,8 @@
     margin-top: -60px;
     color: white;
     background-color: #08192A;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 .homepage {
     background-image: url('lashtech1.jpeg');
@@ -114,17 +99,17 @@
 }
 
 .service-btn {
-    border: 1px solid #d826e2;
+    border: 1px solid #ed64a6;
     padding: 10px;
     text-align: center;
     background-color: #08192A;
-    border-radius: 20px;
+    border-radius: 12px;
     width: 100%; 
     max-width: 200px; 
     margin: 20px auto; 
     font-size: 20px;
     font-weight: bold;
-    color:#d826e2;
+    color:#ed64a6
     
 }
 
@@ -141,6 +126,7 @@
 
 body{
     background-color: #02121d;
+    
 }
 
 @media (max-width: 768px) {
@@ -209,4 +195,36 @@ body{
 }
 
 
+
+
+
+
+/* light mode*/
+
+
+.light-mode-lash-card {
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 40%, #fed7e2 70%);
+    color: #02121d; /* Changing text color to dark */
+    
+}
+
+
+.light-mode-card-font{
+    color: #02121d;
+}
+
+.light-mode-text-container{
+  
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 40%, #fed7e2 70%);
+    color: #02121d;
+}
+
+.light-mode-service-btn{
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    
+}
+
+.light-mode-lash-btn{
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+}
 

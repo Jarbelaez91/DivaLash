@@ -5,7 +5,7 @@ import './home.css'
 import brushing from './brushing.jpeg'
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
-function HomePage () {
+function HomePage ({ darkModeEnabled }) {
 
     const history = useHistory()
     const serviceMenu = () => {
@@ -19,24 +19,24 @@ return (
     </div>
 
     <div className="lash-cont">
-    <div className="lash-card">
+    <div className={`lash-card ${darkModeEnabled ? "light-mode-lash-card" : ""}`}>
 
             <h1>Lash Extensions</h1>
-                <div className="card-font">
+                <div className={`card-font ${darkModeEnabled ? "light-mode-card-font" : ""}`}>
             <h3> Lash Extensions redefine, lengthen and add volume to your eyelashes. 
                 These are individual lash extensions applied directly onto your natural lashes one by one.</h3>
                 </div>
-                <button className="lash-btn">LASH EXTENSIONS</button>
+                <button className={`lash-btn ${darkModeEnabled ? "light-mode-lash-btn" : ""}`}>LASH EXTENSIONS</button>
             </div>
 
 
-            <div className="lash-card">
+            <div className={`lash-card ${darkModeEnabled ? "light-mode-lash-card" : ""}`}>
             <h1>Lash Lifts</h1>
-            <div className="card-font">
+            <div className={`card-font ${darkModeEnabled ? "light-mode-card-font" : ""}`}>
             <h3>A low maintenance lash treatment that lifts, curls and boosts your natural 
                 lashes instantly without the use of mascara, lash curler or extensions.</h3>
                 </div>
-                <button className="lash-btn">LASH LIFTS</button>
+                <button className={`lash-btn ${darkModeEnabled ? "light-mode-lash-btn" : ""}`}>LASH LIFTS</button>
             </div>
     </div>
 
@@ -45,7 +45,7 @@ return (
             <div className="brush-img">
                 <img src={brushing} alt="lash brush" />
             </div>
-            <div className="text-container">
+            <div className={`text-container ${darkModeEnabled ? "light-mode-text-container" : ""}`}>
                 <h1>What does Diva Lashes do?</h1>
 
                 <h3>Our mission at Diva Lashes is to provide the best eyelash and eyebrow services in all of New York!<br></br>
@@ -55,7 +55,7 @@ return (
     will ensure that you receive the most fabulous set of lashes.</h3>
 <h1>Remember, if you lower your gaze, let it be only to show off your lashes!</h1>
                 <div>
-            <button className="service-btn" onClick={serviceMenu}> SERVICE MENU</button>
+            <button className={`service-btn ${darkModeEnabled ? "light-mode-service-btn" : ""}`} onClick={serviceMenu}> SERVICE MENU</button>
         </div>
             </div>
         </div>

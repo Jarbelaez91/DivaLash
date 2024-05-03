@@ -4,7 +4,7 @@ import "./service.css"
 import { useHistory } from 'react-router-dom';
 
 
-function Services() {
+function Services({darkModeEnabled}) {
 
 
     const history = useHistory()
@@ -47,16 +47,16 @@ function Services() {
         <h1> Services Menu</h1>
         </div>
 
-        <div className="lash-title">
+        <div className={`lash-title ${darkModeEnabled ? "light-mode-lash-title" : ""}`}>
             <h1> EYELASH EXTENSIONS</h1>
         </div>
 
       <div>
           <div className="services-cont">
-    <div className="services-card">
+    <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
 
             <h1>Classic Lash Extensions</h1>
-                <div className="services-font">
+                <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
             <p> Classic lash extensions are created with one individual synthetic mink or silk lash extension placed on 
                 each of your natural lashes, creating a natural look. We customize each set 
                 using different lengths, thickness and curls.</p>
@@ -69,9 +69,9 @@ function Services() {
             </div>
 
 
-            <div className="services-card">
+            <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
             <h1>Hybrid Lash Extensions</h1>
-            <div className="services-font">
+            <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
             <p>Hybrid lashes are combined with Volume lashes and Classic lashes to create the perfect in-between set. This is a great 
                 option for those that desire a little more volume than the Classic lashes. We customize each set 
                 using different lengths, thickness and curls.</p>
@@ -83,9 +83,9 @@ function Services() {
                 <button onClick= {hybrid} className="services-btn">View Photos & Learn More →</button>
             </div>
 
-            <div className="services-card">
+            <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
             <h1>Strip Lash Look Extensions</h1>
-            <div className="services-font">
+            <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
             <p>The ‘Strip Lash Look’ is a new styling technique that achieves a wispy effect 
                 similar to strip lashes. The application is done with Volume lashes plus 
                 a number of ‘spikes’ throughout the lash line to create 
@@ -97,9 +97,9 @@ function Services() {
                 <button onClick= { strip } className="services-btn">View Photos & Learn More →</button>
             </div>
 
-            <div className="services-card">
+            <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
             <h1>Wet Look Lash Extensions</h1>
-            <div className="services-font">
+            <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
             <p>This look mimics the look of your lash extensions when you get them wet; creating 
                 a spikier and more wispy effect. The Wet Lash Look appears similar to Classic Lash Extensions, 
                 but they are thicker and bolder looking because of the wider appearance of the lash bundles. 
@@ -115,9 +115,9 @@ function Services() {
                 <button onClick= { wet }className="services-btn">View Photos & Learn More →</button>
             </div>
 
-            <div className="services-card">
+            <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
             <h1>Volume Lash Extensions</h1>
-            <div className="services-font">
+            <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
             <p>Volume lash extensions involves applying 2-6 very fine lashes (2D - 6D) 
                 to each one natural lash. Volume Extensions are lighter, fluffy and 
                 give the client a full look. Volume lashes are perfect for clients who 
@@ -131,9 +131,9 @@ function Services() {
                 <button onClick = { volume } className="services-btn">View Photos & Learn More →</button>
             </div>
 
-            <div className="services-card">
+            <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
             <h1>Mega Volume Extensions</h1>
-            <div className="services-font">
+            <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
             <p>Mega volume lash extensions are soft and super light. The thinnest 
                 imaginable lashes! Beautiful 0.03 lashes the lightest weight possible 
                 that are perfect for a Mega Volume look. These lashes are designed to 
@@ -148,9 +148,9 @@ function Services() {
                 <button onClick = { mega } className="services-btn">View Photos & Learn More →</button>
             </div>
 
-            <div className="services-card">
+            <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
             <h1>Lash Removal</h1>
-            <div className="services-font">
+            <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
             <p>When you book for a lash removal a special lash removing cream is 
                 used to gently remove all of the lash extensions without causing any 
                 damage to your natural lashes. These specialized lash removing creams 
@@ -178,9 +178,9 @@ function Services() {
                     </div>
 
                     <div className="services-cont">
-                        <div className="services-card">
+                    <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
                             <h1>Keratin Lash Lift & Tint</h1>
-                            <div className="services-font">
+                            <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
                                 <p>Our vegan, cruelty-free lash lift treatment is specifically formulated 
                                     to lift and maintain hair elasticity by controlling its loss of 
                                     humidity, preventing hair breakage. This formula can even be used on 
@@ -192,9 +192,9 @@ function Services() {
                             <button onClick = { keratin }className="services-btn">View Photos & Learn More →</button>
                         </div>
 
-                        <div className="services-card">
+                        <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
                             <h1>Mineral Boost Lash Lift & Tint</h1>
-                            <div className="services-font">
+                            <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
                                 <p>Our Mineral Boost Lash Lift has the exact same formula as our traditional 
                                     keratin lash lift, except we are adding this exclusive mask. It extends 
                                     the longevity of your lash lift for up to 3 weeks and provides maximum 
