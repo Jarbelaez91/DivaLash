@@ -1,0 +1,61 @@
+.modal {
+  display: none; /* Hide the modal by default */
+  position: fixed; /* Fixed position to overlay the entire page */
+  top: 0;
+  left: 0;
+  width: 100%; /* Take up the full width of the viewport */
+  height: 100%; /* Take up the full height of the viewport */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 9999; /* Ensure it appears above everything else */
+}
+
+.modal.open {
+  display: block; /* Display the modal when it's open */
+}
+
+.modal-content {
+  position: absolute; /* Position the content relative to the modal */
+  top: 50%; /* Place it in the middle vertically */
+  left: 50%; /* Place it in the middle horizontally */
+  transform: translate(-50%, -50%); /* Center the content */
+  background-color: #08192A; /* Dark background for the content */
+  padding: 20px; /* Add padding */
+  max-width: 80%; /* Set a maximum width for the content */
+  max-height: 80%; /* Set a maximum height for the content */
+  overflow-y: auto; /* Add scroll if content overflows vertically */
+  border-radius: 10px; /* Rounded corners */
+  color: white;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer; /* Add cursor pointer on hover */
+  font-size: 25px; /* Increase font size */
+}
+
+.close:hover {
+  color: red; /* Change color on hover */
+}
+
+.modal-content h2 {
+  font-size: 25px; /* Adjust font size */
+  text-align: center;
+}
+
+.modal-content h3 {
+  font-size: 25px; /* Adjust font size */
+  margin-bottom: 10px; /* Add margin to separate paragraphs */
+}
+
+.light-mode-modal {
+  background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+  color: #08192A;
+}
+
+/* Style for the modal in light mode */
+.light-mode .modal-content {
+  background-color: #fff; /* Light background for the content */
+  color: #08192A; /* Dark text color */
+}

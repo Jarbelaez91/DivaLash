@@ -1,6 +1,5 @@
-// App.js
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, useLocation } from "react-router-dom";
 import DarkModeToggle from "./DarkModeToggle";
 import Navbar from "./Navbar";
 import HomePage from "./HomePage";
@@ -19,6 +18,8 @@ import LashMineral from "./LashMineral";
 import BookingForm from "./BookingForm";
 import Calendar from "./Calendar";
 import Checkout from "./Checkout";
+import ConfirmationPage from "./ConfirmationPage";
+import Policy from "./Policy";
 import "./app.css";
 
 function App() {
@@ -40,12 +41,11 @@ function App() {
   }, [darkModeEnabled]);
 
   return (
-    <Router>
-      <div className={`App ${darkModeEnabled ? "light-mode" : ""}`}>
-        <DarkModeToggle darkModeEnabled={darkModeEnabled} toggleDarkMode={toggleDarkMode} />
-        <Navbar />
+    <div className={`App ${darkModeEnabled ? "light-mode" : ""}`}>
+      <DarkModeToggle darkModeEnabled={darkModeEnabled} toggleDarkMode={toggleDarkMode} />
+      <Router> {/* Move Router here */}
         <Switch>
-        <Route exact path="/">  <HomePage darkModeEnabled={darkModeEnabled} /> </Route>
+          <Route exact path="/"> <HomePage darkModeEnabled={darkModeEnabled} /> </Route>
           <Route path="/about" component={About} />
           <Route exact path="/services"> <Services darkModeEnabled={darkModeEnabled} /> </Route>
           <Route path="/bookonline" component={BookOnline} />
@@ -61,9 +61,12 @@ function App() {
           <Route exact path="/booking"> <BookingForm darkModeEnabled={darkModeEnabled} /> </Route>
           <Route exact path="/calendar"> <Calendar darkModeEnabled={darkModeEnabled} /> </Route>
           <Route exact path="/checkout"> <Checkout darkModeEnabled={darkModeEnabled} /> </Route>
+          <Route exact path="/confirmation"> <ConfirmationPage darkModeEnabled={darkModeEnabled} /> </Route>
+          <Route exact path="/checkout"> <Policy isOpen={true} onClose={() => {}} darkModeEnabled={darkModeEnabled} />
+        </Route>
         </Switch>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

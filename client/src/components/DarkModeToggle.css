@@ -1,0 +1,7 @@
+.light-mode-toggle{
+    background-color: transparent; 
+    border: none; 
+    padding: 0; 
+    font-size: 25px; 
+    cursor: pointer; 
+}
