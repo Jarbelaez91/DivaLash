@@ -4,13 +4,17 @@ import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import './home.css'
 import brushing from './brushing.jpeg'
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import englishText from "./englishHomePage";
+import spanishText from "./spanish";
 
-function HomePage ({ darkModeEnabled }) {
+function HomePage ({ darkModeEnabled, language }) {
 
     const history = useHistory()
     const serviceMenu = () => {
         history.push("/services")
     }
+
+    const text = language === "english" ? englishText : spanishText;
 
 return (
     <div>
@@ -21,12 +25,11 @@ return (
     <div className="lash-cont">
     <div className={`lash-card ${darkModeEnabled ? "light-mode-lash-card" : ""}`}>
 
-            <h1>Lash Extensions</h1>
-                <div className={`card-font ${darkModeEnabled ? "light-mode-card-font" : ""}`}>
-            <h3> Lash Extensions redefine, lengthen and add volume to your eyelashes. 
-                These are individual lash extensions applied directly onto your natural lashes one by one.</h3>
+        <h1>{text.lashExtensions.title}</h1>
+        <div className={`card-font ${darkModeEnabled ? "light-mode-card-font" : ""} ${language === 'spanish' ? 'spanish-font' : ''}`}>
+            <h3>{text.lashExtensions.description}</h3>
                 </div>
-                <button className={`lash-btn ${darkModeEnabled ? "light-mode-lash-btn" : ""}`}>LASH EXTENSIONS</button>
+                <button className={`lash-btn ${darkModeEnabled ? "light-mode-lash-btn" : ""}`}>{text.lashExtensions.button}</button>
             </div>
 
 
@@ -46,16 +49,13 @@ return (
                 <img src={brushing} alt="lash brush" />
             </div>
             <div className={`text-container ${darkModeEnabled ? "light-mode-text-container" : ""}`}>
-                <h1>What does Diva Lashes do?</h1>
+            <h1>{text.about.title}</h1>
 
-                <h3>Our mission at Diva Lashes is to provide the best eyelash and eyebrow services in all of New York!<br></br>
-    We strive for 100% customer satisfaction and have the testimonials to prove it.</h3>
-<h3>Our lash artist is certified by the best institution in Barcelona. Our artist is a licensed esthetician. 
-    This combination of high-quality training and extensive experience 
-    will ensure that you receive the most fabulous set of lashes.</h3>
-<h1>Remember, if you lower your gaze, let it be only to show off your lashes!</h1>
+                        <h3>{text.about.mission}</h3>
+                        <h3>{text.about.certification}</h3>
+                        <h1>{text.about.reminder}</h1>
                 <div>
-            <button className={`service-btn ${darkModeEnabled ? "light-mode-service-btn" : ""}`} onClick={serviceMenu}> SERVICE MENU</button>
+            <button className={`service-btn ${darkModeEnabled ? "light-mode-service-btn" : ""}`} onClick={serviceMenu}> {text.about.serviceMenu}</button>
         </div>
             </div>
         </div>

@@ -27,6 +27,8 @@ function App() {
     localStorage.getItem("darkModeEnabled") === "true"
   );
 
+  const [language, setLanguage] = useState("english");
+
   const toggleDarkMode = () => {
     setDarkModeEnabled(prevMode => !prevMode);
   };
@@ -40,12 +42,18 @@ function App() {
     localStorage.setItem("darkModeEnabled", darkModeEnabled);
   }, [darkModeEnabled]);
 
+  const toggleLanguage = () => {
+    setLanguage((prevLanguage) => (prevLanguage === "english" ? "spanish" : "english"));
+  };
+
   return (
     <div className={`App ${darkModeEnabled ? "light-mode" : ""}`}>
+
       <DarkModeToggle darkModeEnabled={darkModeEnabled} toggleDarkMode={toggleDarkMode} />
-      <Router> {/* Move Router here */}
+      <button className="language-button" onClick={toggleLanguage}> {language === "english" ? "🇪🇸" : "🇺🇸"}</button>
+      <Router>
         <Switch>
-          <Route exact path="/"> <HomePage darkModeEnabled={darkModeEnabled} /> </Route>
+          <Route exact path="/"> <HomePage darkModeEnabled={darkModeEnabled} language={language} /> </Route>
           <Route path="/about" component={About} />
           <Route exact path="/services"> <Services darkModeEnabled={darkModeEnabled} /> </Route>
           <Route path="/bookonline" component={BookOnline} />
