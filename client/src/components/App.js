@@ -55,22 +55,22 @@ function App() {
         <Switch>
           <Route exact path="/"> <HomePage darkModeEnabled={darkModeEnabled} language={language} /> </Route>
           <Route path="/about" component={About} />
-          <Route exact path="/services"> <Services darkModeEnabled={darkModeEnabled} /> </Route>
+          <Route exact path="/services"> <Services darkModeEnabled={darkModeEnabled} language={language} /> </Route>
           <Route path="/bookonline" component={BookOnline} />
-          <Route exact path="/classic-lash-extensions"> <LashClassic darkModeEnabled={darkModeEnabled} /> </Route>
-          <Route exact path="/hybrid-lash-extensions"> <LashHybrid darkModeEnabled={darkModeEnabled} /> </Route>
-          <Route exact path="/strip-lash-look-extensions/"> <LashStrip darkModeEnabled={darkModeEnabled} /> </Route>
-          <Route exact path="/wet-look-lash-extensions"> <LashWet darkModeEnabled={darkModeEnabled} /> </Route>
-          <Route exact path="/volume-lash-extensions/"> <LashVolume darkModeEnabled={darkModeEnabled} /> </Route>
-          <Route exact path="/mega-volume-lash-extensions/"> <LashMega darkModeEnabled={darkModeEnabled} /> </Route>
-          <Route exact path="/lash-removal"> <LashRemoval darkModeEnabled={darkModeEnabled} /> </Route>
-          <Route exact path="/keratin-lashes"> <LashKeratin darkModeEnabled={darkModeEnabled} /> </Route>
-          <Route exact path="//mineral-lashes"> <LashMineral darkModeEnabled={darkModeEnabled} /> </Route>
-          <Route exact path="/booking"> <BookingForm darkModeEnabled={darkModeEnabled} /> </Route>
-          <Route exact path="/calendar"> <Calendar darkModeEnabled={darkModeEnabled} /> </Route>
-          <Route exact path="/checkout"> <Checkout darkModeEnabled={darkModeEnabled} /> </Route>
-          <Route exact path="/confirmation"> <ConfirmationPage darkModeEnabled={darkModeEnabled} /> </Route>
-          <Route exact path="/checkout"> <Policy isOpen={true} onClose={() => {}} darkModeEnabled={darkModeEnabled} />
+          <Route exact path="/classic-lash-extensions"> <LashClassic darkModeEnabled={darkModeEnabled} language={language}/> </Route>
+          <Route exact path="/hybrid-lash-extensions"> <LashHybrid darkModeEnabled={darkModeEnabled} language={language}/> </Route>
+          <Route exact path="/strip-lash-look-extensions/"> <LashStrip darkModeEnabled={darkModeEnabled} language={language}/> </Route>
+          <Route exact path="/wet-look-lash-extensions"> <LashWet darkModeEnabled={darkModeEnabled} language={language} /> </Route>
+          <Route exact path="/volume-lash-extensions/"> <LashVolume darkModeEnabled={darkModeEnabled} language={language}/> </Route>
+          <Route exact path="/mega-volume-lash-extensions/"> <LashMega darkModeEnabled={darkModeEnabled} language={language} /> </Route>
+          <Route exact path="/lash-removal"> <LashRemoval darkModeEnabled={darkModeEnabled} language={language} /> </Route>
+          <Route exact path="/keratin-lashes"> <LashKeratin darkModeEnabled={darkModeEnabled} language={language}/> </Route>
+          <Route exact path="//mineral-lashes"> <LashMineral darkModeEnabled={darkModeEnabled} language={language} /> </Route>
+          <Route exact path="/booking"> <BookingForm darkModeEnabled={darkModeEnabled} language={language}/> </Route>
+          <Route exact path="/calendar"> <Calendar darkModeEnabled={darkModeEnabled} language={language}/> </Route>
+          <Route exact path="/checkout"> <Checkout darkModeEnabled={darkModeEnabled} language={language}/> </Route>
+          <Route exact path="/confirmation"> <ConfirmationPage darkModeEnabled={darkModeEnabled} language={language} /> </Route>
+          <Route exact path="/checkout"> <Policy isOpen={true} onClose={() => {}} darkModeEnabled={darkModeEnabled} language={language}/>
         </Route>
         </Switch>
       </Router>

@@ -3,8 +3,13 @@ import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import "./lashclassic.css"
 import eyebrush from "./eyelash-brush.jpeg"
+import englishText from "./englishHomePage";
+import spanishText from "./spanish";
 
-function LashStrip ({darkModeEnabled}) {
+function LashStrip ({darkModeEnabled, language}) {
+
+    const text = language === "english" ? englishText : spanishText;
+
 
     return (
         <div>
