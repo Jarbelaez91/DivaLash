@@ -132,6 +132,50 @@ const spanishText = {
         timeIcon: "🕒Tiempo",
       },
 
+      wetLookLashExtensionsPage:{
+        title: "Pestañas Efecto Mojado",
+        Description: "Este look imita el aspecto de tus extensiones de pestañas cuando se mojan, creando un efecto más puntiagudo y vaporoso. El Efecto de Pestañas Mojadas parece similar a las Extensiones de Pestañas Clásicas, pero son más gruesas y audaces debido a la apariencia más ancha de los paquetes de pestañas. Hay ciertas pestañas adecuadas para este look, especialmente aquellas con pestañas naturales de moderadas a completas. Si no estás seguro, envíanos una foto de tus pestañas para una consulta rápida. No recomendamos este look para alguien con pestañas escasas, ya que las pestañas escasas se benefician más de los abanicos de volumen que son gruesos y anchos en lugar de delgados y rectos como lo exige este estilo.",
+        fullSet: "Juego Completo",
+        priceFullSet: "$140",
+        Refill: "Relleno",
+        PriceRefill: "$70",
+        Duration: "~2 hours",
+        durationRefill:"~1h 30min",
+        priceRefill:"$65",
+     },
+
+     volumeLashExtensionsPage: {
+        title: "Pestañas de Volumen",
+        description: "Las extensiones de pestañas de volumen implican aplicar de 2 a 6 pestañas muy finas (2D - 6D) a cada pestaña natural. Las Extensiones de Volumen son más ligeras, esponjosas y dan al cliente un aspecto completo. Las pestañas de volumen son perfectas para clientes que no tienen muchas pestañas, tienen pestañas escasas, áreas sin pestañas o simplemente quieren un look más dramático sin tener que usar una extensión de pestaña más gruesa. Personalizamos cada juego usando diferentes longitudes, grosores y rizos.",
+        fullSet: "Juego Completo",
+        priceFullSet: "$150",
+        Refill: "Relleno",
+        PriceRefill: "$80",
+        durationFullSet: "~2h 30min",
+        durationRefill:"~1h 30min",
+        priceRefill:"$80",
+     },
+
+     megaVolumeLashExtensionsPage: {
+        title: "Pestañas Mega Volumen",
+        description: "Las extensiones de pestañas mega volumen son suaves y super ligeras. ¡Las pestañas más finas imaginables! Hermosas pestañas de 0.03, el peso más ligero posible, que son perfectas para un look de Mega Volumen. Estas pestañas están diseñadas para ser muy ligeras para hacer abanicos de 10-16D! Esto no daña la pestaña natural en absoluto. Un conjunto hecho de estas pestañas es dramático, suave, vaporoso, dando una densidad intensa y negrura a las pestañas. Personalizamos cada juego usando diferentes longitudes, grosores y rizos.",
+        fullSet: "Juego Completo",
+        priceFullSet: "$170",
+        refill: "Relleno",
+        priceRefill: "$90",
+        durationFullSet: "~3 horas",
+        durationRefill: "~2 horas"
+    },    
+
+    lashRemovalPage: {
+        title: "Remoción de Pestañas",
+        description: "Cuando reservas para una remoción de pestañas, se usa una crema especial para remover suavemente todas las extensiones de pestañas sin causar daño a tus pestañas naturales. Estas cremas especializadas para remover pestañas aseguran que todo el adhesivo de las pestañas se elimine de tus pestañas naturales. También incluimos un baño de pestañas usando un champú especial para pestañas que limpia a fondo las pestañas. Las extensiones de pestañas deben ser removidas correctamente por un artista de pestañas profesional con el removedor de adhesivo correcto. La remoción en casa y por uno mismo de las extensiones de pestañas no es recomendable y puede resultar en daño, pérdida de pestañas, o complicaciones de salud no deseadas como daño o irritación en los ojos o pestañas.",
+        price: "$30",
+        duration: "~30min"
+    },
+    
+
+
 
 
     bookNow: "¡Reserva Ahora!",
