@@ -142,7 +142,7 @@ function Services({darkModeEnabled, language}) {
         </div>
 </div>
         <div className="lash-lift-cont">
-                    <div className="lift-title">
+                    <div className={`lift-title ${darkModeEnabled ? "light-mode-lift-title" : ""}`}>
                         <h1>{text.keratinLashLift.header}</h1>
                     </div>
 
@@ -163,7 +163,7 @@ function Services({darkModeEnabled, language}) {
                             <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
                                 <p>{text.mineralBoostLashLift.description}</p>
                             </div>
-                            <div class="price-font">
+                            <div className="price-font">
                                 <h4>{text.mineralBoostLashLift.price}</h4>
                             </div>
                             <button onClick = { mineral } className="services-btn">{text.mineralBoostLashLift.button}</button>

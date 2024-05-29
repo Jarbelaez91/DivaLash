@@ -66,15 +66,15 @@ const spanishText = {
     },
     keratinLashLift: {
         header: "Levantamiento de Pestañas y Tinte",
-        title: "Levantamiento de Pestañas de Queratina y Tinte",
+        title: "Levantamiento con Queratina y Tinte",
         description: "Nuestro tratamiento de levantamiento de pestañas vegano y libre de crueldad está formulado específicamente para levantar y mantener la elasticidad del cabello controlando su pérdida de humedad, evitando la rotura del cabello. Esta fórmula incluso se puede usar en aquellos con lagunas o pestañas dañadas.",
-        price: "Levantamiento de Pestañas de Queratina: $155",
+        price: "Levantamiento con Queratina: $155",
         button: "Ver Fotos y Aprender Más →",
     },
     mineralBoostLashLift: {
-        title: "Levantamiento de Pestañas con Impulso Mineral y Tinte",
+        title: "Levantamiento con Impulso Mineral y Tinte",
         description: "Nuestro Levantamiento de Pestañas con Impulso Mineral tiene exactamente la misma fórmula que nuestro levantamiento de pestañas de queratina tradicional, excepto que agregamos esta mascarilla exclusiva. Extiende la longevidad de tu levantamiento de pestañas por hasta 3 semanas y proporciona máxima protección, fuerza e hidratación.",
-        price: "Levantamiento de Pestañas con Impulso Mineral y Tinte: $170",
+        price: "Levantamiento con Mineral y Tinte: $170",
         button: "Ver Fotos y Aprender Más →",
     },
 
@@ -173,7 +173,33 @@ const spanishText = {
         price: "$30",
         duration: "~30min"
     },
-    
+
+    lashKeratinPage: {
+        title: "Levantamiento y Tinte de Pestañas con Keratina",
+        description: "Nuestro tratamiento de levantamiento de pestañas vegano y libre de crueldad está específicamente formulado para levantar y mantener la elasticidad del cabello controlando la pérdida de humedad y previniendo la rotura del cabello. Esta fórmula incluso puede ser utilizada en aquellos con huecos o pestañas dañadas. El cabello de la pestaña dañada se infunde con proteínas especializadas, evitando así un mayor debilitamiento de la fibra capilar y reduciendo la caída del cabello. Cuanto más dañado esté el cabello, más fácil es que la fórmula penetre. Del mismo modo, este tratamiento hace que el cabello de la pestaña sea más fácil de peinar y desenredar, dándole una sensación suave y sedosa y hidratando completamente la raíz del cabello, ayudando a mantener su estructura natural. Todos estos beneficios se deben a la capacidad de la fórmula para fortalecer los folículos pilosos, generar producción de colágeno, manteniendo el cabello hidratado, nutrido y brillante. También previene el daño celular al evitar el envejecimiento prematuro del cabello y la sequedad.",
+        description2: "Este tratamiento único de levantamiento de pestañas también infunde poderosos potenciadores de crecimiento en el tallo del cabello mientras la cutícula está abierta y tus pestañas se están levantando. Mejora la tasa de crecimiento del cabello.", 
+        description3: "Este tratamiento es vegano, ecológico, libre de crueldad, libre de sulfatos, libre de bromato de sodio y de bajo olor. Nivel de pH suave, los químicos que se utilizan son de la más alta calidad. Desarrollado en Suecia. Si tienes pestañas extremadamente cortas, te recomendamos que compres nuestro suero para pestañas para hacer crecer tus pestañas hasta que tengan una longitud adecuada para este tratamiento. Dura de 4 a 8 semanas dependiendo del ciclo de las pestañas y del cuidado posterior.",
+        fullSet: "LEVANTAMIENTO Y TINTE DE PESTAÑAS CON KERATINA",
+        priceFullSet: "$155",
+        refill: "LEVANTAMIENTO Y TINTE DE PESTAÑAS CON KERATINA + MASCARILLA FACIAL HYDROJELLY",
+        priceRefill: "$175",
+        durationFullSet: "~1 hora",
+        durationRefill: "~1h 30min"
+    },
+
+    lashMineralPage:{
+        title: "Mineral Boost Lash Lift & Tint",
+        description: "Este es nuestro levantamiento de pestañas de mayor duración. Nuestro Mineral Boost Lash Lift tiene la misma fórmula exacta que nuestro levantamiento de pestañas tradicional de queratina, excepto que estamos agregando esta exclusiva máscara. En este tratamiento de levantamiento de pestañas, se aplican 4 productos en lugar de 3. ¡Permalift™ Mineral Boost es el primer producto de su tipo en el mundo! Nuestra fórmula única y patentada contiene 16 ingredientes activos (28 ingredientes en total) que se dirigen al crecimiento intensivo de las pestañas. Esta combinación única de ingredientes promueve el crecimiento de nuevo cabello y activa los folículos pilosos inactivos. Esta máscara especial de refuerzo mineral también prolongará la longevidad de su levantamiento de pestañas hasta 3 semanas. También evitará que las pestañas, después de ser levantadas, vayan en diferentes direcciones durante el proceso de crecimiento. Inmediatamente después del tratamiento, sus pestañas se sentirán muy acondicionadas e hidratadas, aliviando las pestañas de cualquier sequedad o inflamación causada por el estrés o el daño en el lecho de la pestaña. Recubiertas con un sensacional brillo mineral, sus pestañas irradiarán salud y se purificarán de cualquier toxina dañina que permita que el efecto completo del tratamiento se absorba, restaurando brillo y nutrición.",
+        description2: "RESULTADOS 3+ Semanas.",
+        description3: "Apuntando a condiciones como la tricotilomanía, la ansiedad y el envejecimiento, Permalift™ Mineral Boost trabaja inyectando los folículos pilosos y continúa trabajando durante tres semanas para proporcionar protección, fuerza e hidratación máximas. Pestañas notablemente más largas, más completas y más gruesas surgirán de este tratamiento. El cabello se expandirá en ancho, volumen y longitud, creando drásticamente fibras capilares nutridas.",
+        description4: "Este tratamiento es vegano, respetuoso con el medio ambiente, libre de crueldad, libre de sulfatos, libre de bromato de sodio y bajo en olor. Nivel de pH suave, los productos químicos que se utilizan son de la más alta calidad. Desarrollado en Suecia. Si tienes pestañas extremadamente cortas, te recomendamos que compres nuestro suero para pestañas para hacer crecer tus pestañas hasta que tengan una longitud adecuada para este tratamiento. Dura de 6 a 12 semanas dependiendo del ciclo de las pestañas y del cuidado posterior.",
+        fullSet: "MINERAL BOOST LASH LIFT & TINT",
+        priceFullSet: "$155",
+        refill: "MINERAL BOOST LASH LIFT & TINT + HYDROJELLY FACIAL MASK",
+        priceRefill: "$175",
+        durationFullSet: "~1 hora",
+        durationRefill: "~1h 30min"
+    },
 
 
 

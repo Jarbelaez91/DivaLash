@@ -27,7 +27,7 @@ margin-top: -350px;
 .services-card{
     padding: 20px; 
     width: 450px; 
-    height: 330px;
+    height: 350px;
     text-align: center; 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
     font-size: 16px;
@@ -125,4 +125,10 @@ margin-top: -350px;
 
 .light-mode-services-font{
     color: #08192A;
+}
+
+.light-mode-lift-title {
+    font-size: 26px;
+    color: #08192A;
+    padding-bottom: 20px;
 }

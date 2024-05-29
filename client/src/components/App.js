@@ -65,7 +65,7 @@ function App() {
           <Route exact path="/mega-volume-lash-extensions/"> <LashMega darkModeEnabled={darkModeEnabled} language={language} /> </Route>
           <Route exact path="/lash-removal"> <LashRemoval darkModeEnabled={darkModeEnabled} language={language} /> </Route>
           <Route exact path="/keratin-lashes"> <LashKeratin darkModeEnabled={darkModeEnabled} language={language}/> </Route>
-          <Route exact path="//mineral-lashes"> <LashMineral darkModeEnabled={darkModeEnabled} language={language} /> </Route>
+          <Route exact path="/mineral-lashes"> <LashMineral darkModeEnabled={darkModeEnabled} language={language} /> </Route>
           <Route exact path="/booking"> <BookingForm darkModeEnabled={darkModeEnabled} language={language}/> </Route>
           <Route exact path="/calendar"> <Calendar darkModeEnabled={darkModeEnabled} language={language}/> </Route>
           <Route exact path="/checkout"> <Checkout darkModeEnabled={darkModeEnabled} language={language}/> </Route>

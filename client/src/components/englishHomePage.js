@@ -174,6 +174,32 @@ lashRemovalPage: {
     type: "Lash Removal",
 },
 
+lashKeratinPage: {
+    title: "Keratin Lash Lift & Tint",
+    description: "Our vegan, cruelty-free lash lift treatment is specifically formulated to lift and maintain hair elasticity by controlling its loss of humidity, preventing hair breakage. This formula can even be used on those with gaps or damaged lashes. The damaged lash hair is infused with specialized proteins, thus preventing any further weakening of the hair fiber, and reducing hair loss. The more the hair has been damaged, the easier it is for the formula to penetrate.\n\n\n\nLikewise, this treatment makes the lash hair easier to comb and detangle, giving it a soft and silky feel and fully moisturizing the root of the hair helping maintain its natural structure. All of these benefits are due to the formula’s capacity to strengthen hair follicles, generate collagen production, keeping hair moisturized, nourished, and shiny. It also prevents cell damage by preventing premature hair aging and dryness.",
+    description2:"This unique lash lift treatment also infuses powerful growth enhancers into the hair shaft while the cuticle is open, and your lashes are being lifted. It improves the rate of hair growth.",
+    description3: "This treatment is vegan, environmentally friendly, cruelty-free, sulfate-free, sodium bromate-free, and low odor. Gentle Ph level, chemicals that are used are of the highest quality grades only. Developed in Sweden. If you have extremely short lashes, we recommend you purchase our lash serum to grow your lashes until they are a suitable length for this treatment. Lasts 4 - 8 weeks depending on lash cycle and aftercare.",    
+    fullSet: "KERATIN LASH LIFT & TINT",    
+    priceFullSet: "$155",
+    refill: "KERATIN LASH LIFT & TINT + HYDROJELLY FACIAL MASK",
+    priceRefill: "$175",
+    durationFullSet: "~1 hour",
+    durationRefill: "~1h 30min"
+},
+
+lashMineralPage : {
+    title: "Mineral Boost Lash Lift & Tint",
+    description: "This is our longest lasting lash lift. Our Mineral Boost Lash Lift has the exact same formula as our traditional keratin lash lift except we are adding on this exclusive mask. In this lash lift treatment, there are 4 products applied versus 3. Permalift™ Mineral Boost is the first product of its kind in the world! Our unique and patented formula contains 16 active ingredients (28 total ingredients) that target intensive growth of lashes. This unique combination of ingredients promotes new hair growth and activates dormant hair follicles. This special mineral boosting mask will also extend the longevity of your lash lift for up to 3 weeks. It will also prevent lashes after being lifted from going in different directions during the growing out process. Immediately after the treatment, your lashes will feel heavily conditioned and hydrated, relieving the lashes of any dryness or inflammation caused by stress or damage to the lash bed. Coated with a sensational mineral gloss, your lashes will radiate health and be purified of any bad toxins allowing the full effect of the treatment to be absorbed restoring shine and nourishment.",
+    description2: "RESULTS 3+ Weeks.",
+    description3: "Targeting conditions like Trichotillomania, anxiety, and ageing, Permalift™ Mineral Boost works by injecting the lash follicles and continues to work over three weeks to provide maximum protection, strength, and hydration. Extremely noticeable longer, fuller, and thicker lashes will emerge from this treatment. The hair will expand in width, volume, and length, drastically creating nutrified hair fibers.",
+    description4: "This treatment is vegan, environmentally friendly, cruelty free, sulfate free, sodium bromate free, and low odor. Gentle Ph level, chemicals that are used are of the highest quality grades only. Developed in Sweden. If you have extremely short lashes, we recommend you purchase our lash serum to grow your lashes until they are a suitable length for this treatment. Lasts 6 - 12 weeks depending on lash cycle and aftercare.",
+    fullSet: "MINERAL BOOST LASH LIFT & TINT",
+    priceFullSet: "$155",
+    refill: "MINERAL BOOST LASH LIFT & TINT + HYDROJELLY FACIAL MASK",
+    priceRefill: "$175",
+    durationFullSet: "~1 hour",
+    durationRefill: "~1h 30min"
+},
 
 
 
