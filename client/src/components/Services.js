@@ -56,7 +56,7 @@ function Services({darkModeEnabled, language}) {
         </div>
 
       <div>
-          <div className="services-cont">
+          <div className={`services-cont ${darkModeEnabled ? "light-mode-services-cont" : ""}`}>
     <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
 
             <h1>{text.classicLashExtension.title}</h1>
@@ -141,12 +141,12 @@ function Services({darkModeEnabled, language}) {
 
         </div>
 </div>
-        <div className="lash-lift-cont">
+        <div className={`lash-lift-cont ${darkModeEnabled ? "light-mode-lash-lift-cont" : ""}`}>
                     <div className={`lift-title ${darkModeEnabled ? "light-mode-lift-title" : ""}`}>
                         <h1>{text.keratinLashLift.header}</h1>
                     </div>
 
-                    <div className="services-cont">
+                    <div className={`services-cont ${darkModeEnabled ? "light-mode-services-cont" : ""}`}>
                     <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
                             <h1>{text.keratinLashLift.title}</h1>
                             <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>

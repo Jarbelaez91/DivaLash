@@ -201,6 +201,20 @@ lashMineralPage : {
     durationRefill: "~1h 30min"
 },
 
+calendarPage:{
+    appointment: "Appointment Summary",
+    backButton: "← Back",
+    availableTimes: "Available Times For",
+    sun:"Sun",
+    mon:"Mon",
+    tue:"Tue",
+    wed: "Wed",
+    thu: "Thu",
+    fri: "Fri",
+    sat: "Sat",
+
+},
+
 
 
 serviceButton: "← services",

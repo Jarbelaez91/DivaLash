@@ -12,8 +12,16 @@
     justify-content: center;
     max-width: 1900px; 
     gap: 1px;
-    margin-top: 20px;
+    background-color: #02121d;
+    height: 1000px;
+    padding-top: 60px;
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
 .calendar{
     justify-content: center;  
@@ -51,10 +59,9 @@
 .calendar-input2{
     font-size: 25px;
     color: white;
-    width: 210px;
+    width: auto;
     flex: 1; 
     margin-left: 140px;
-    white-space: normal;
 }
 
 
@@ -99,8 +106,10 @@
 .available-times{
     color: white;
     margin-left: 10px;
-
 }
+
+
+
   
 
 
@@ -124,4 +133,20 @@
 
 .light-mode-calendar-back-btn{
     background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+}
+
+.light-mode-available-times{
+    color: #08192A;
+    margin-left: 10px;
+}
+
+.light-mode-calendar-cont{
+    display:grid  ;
+    grid-template-columns: 2fr 1fr; 
+    justify-content: center;
+    max-width: 1900px; 
+    gap: 1px;
+    background-color: white;
+    height: 1000px;
+    padding-top: 60px;
 }

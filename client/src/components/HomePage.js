@@ -22,7 +22,7 @@ return (
     <div className="homepage">
     </div>
 
-    <div className="lash-cont">
+    <div className={`lash-cont ${darkModeEnabled ? "light-mode-lash-cont" : ""}`}>
     <div className={`lash-card ${darkModeEnabled ? "light-mode-lash-card" : ""}`}>
 
         <h1>{text.lashExtensions.title}</h1>
@@ -43,7 +43,7 @@ return (
             </div>
     </div>
 
-    <div className="home-container">
+    <div className={`home-container ${darkModeEnabled ? "light-mode-home-container" : ""}`}>
         <div className="content-container">
             <div className="brush-img">
                 <img src={brushing} alt="lash brush" />

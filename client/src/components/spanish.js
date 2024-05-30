@@ -201,6 +201,20 @@ const spanishText = {
         durationRefill: "~1h 30min"
     },
 
+    calendarPage:{
+        appointment: "Resumen de Cita",
+        backButton: "← Atras",
+        availableTimes: "Horarios Disponibles",
+        sun:"Dom",
+        mon:"Lun",
+        tue:"Mar",
+        wed: "Mie",
+        thu: "Jue",
+        fri: "Vie",
+        sat: "Sab",
+    
+    },
+
 
 
 

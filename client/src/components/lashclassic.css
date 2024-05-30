@@ -5,6 +5,7 @@
     justify-content: center;
     max-width: 1900px; 
     gap: 1px;
+    margin-top: 160px;
 }
 
 .classic-cont{
@@ -62,7 +63,7 @@
     background-color:#08192A;
     text-align: left;
     max-width: 410px;
-    max-height: 267px;
+    max-height: 290px;
     border-radius: 15px;
     padding: 14px;
     margin-bottom: 30px;
@@ -141,6 +142,7 @@
 .mineral-price{
     color: white;
     font-size: 1.4rem;
+    
 }
 
 .keratin-cont{
@@ -211,7 +213,7 @@
     background-color:#08192A;
     text-align: left;
     max-width: 400px;
-    max-height: 210px;
+    max-height: 250px;
     border-radius: 15px;
     padding: 18px;
 }
@@ -391,3 +393,52 @@
     color: #08192A;
     font-size: 1.4rem;
 }
+
+
+.light-mode-mineral-price-cont{ 
+    justify-content: center; 
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    text-align: left;
+    max-width: 410px;
+    border-radius: 15px;
+    padding: 14px;
+    margin-bottom: 30px;
+
+
+}
+.light-mode-mineral-price-cont-2{ 
+    justify-content: center; 
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    text-align: left;
+    max-width: 410px;
+    border-radius: 15px;
+    padding: 1px;
+    padding-bottom: 40px;
+}
+
+
+.light-mode-mineral-full-set{
+    color: #d826e2;
+    font-size: 22px;
+}
+.light-mode-mineral-price{
+    color: #08192A;
+    font-size: 1.4rem;
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+}
+
+
+
+.light-mode-mineral-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: white solid 1px;
+    box-sizing: border-box;
+    min-width: 0px;
+    font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 16px;
+
+}    

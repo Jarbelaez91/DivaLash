@@ -1,6 +1,7 @@
 .home-container {
     position: relative;
     display: flex;
+    background-color: #02121d;
 }
 
 .content-container {
@@ -24,7 +25,8 @@
     justify-content: center; /* Center the cards */
     gap: 50px; /* Decrease the gap to bring the cards closer together */
     padding: 20px; /* Add padding to the container */
-    border-bottom: 1px solid white
+    border-bottom: 1px solid white;
+    background-color: #02121d;
     
 }
 
@@ -128,10 +130,7 @@
     padding: 100px;
 }
 
-body{
-    background-color: #02121d;
-    
-}
+
 
 @media (max-width: 768px) {
     /* Adjust the flex direction to column */
@@ -232,3 +231,12 @@ body{
     background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
 }
 
+.light-mode-lash-cont {
+    background-color: white;
+}
+
+.light-mode-home-container {
+    position: relative;
+    display: flex;
+    background-color: white;
+}

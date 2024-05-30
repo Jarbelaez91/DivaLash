@@ -2,21 +2,22 @@ import React, { useState, useEffect } from "react";
 import "./Calendar.css";
 import { useHistory, useLocation } from "react-router-dom";
 import { Link } from 'react-router-dom';
+import englishText from "./englishHomePage";
+import spanishText from "./spanish";
 
-function Calendar({darkModeEnabled}) {
+function Calendar({darkModeEnabled, language}) {
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
   const currentMonth = currentDate.getMonth();
   const currentDay = currentDate.getDate();
+  const text = language === "english" ? englishText : spanishText;
 
   const getDayOfWeek = (date) => {
-    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    return days[date.getDay()];
+    return date.toLocaleString(language === "english" ? "en-US" : "es-ES", { weekday: 'long' });
   };
   
   const getMonthName = (date) => {
-    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    return months[date.getMonth()];
+    return date.toLocaleString(language === "english" ? "en-US" : "es-ES", { month: 'long' });
   };
 
   const history = useHistory();
@@ -58,7 +59,7 @@ function Calendar({darkModeEnabled}) {
   const appointmentPrice = "$" + formData.price + " ・ " + formData.duration;
 
   const handleNextMonth = () => {
-    if (displayedMonth === currentMonth + 2 && displayedYear === currentYear) return; // Only allow 2 months ahead
+    if (displayedMonth === currentMonth + 2 && displayedYear === currentYear) return; 
     const nextMonth = (displayedMonth + 1) % 12;
     const nextYear = nextMonth === 0 ? displayedYear + 1 : displayedYear;
     setDisplayedMonth(nextMonth);
@@ -66,7 +67,7 @@ function Calendar({darkModeEnabled}) {
   };
 
   const handlePrevMonth = () => {
-    if (displayedMonth === currentMonth && displayedYear === currentYear) return; // Prevent going back before current month
+    if (displayedMonth === currentMonth && displayedYear === currentYear) return; 
     const prevMonth = displayedMonth === 0 ? 11 : displayedMonth - 1;
     const prevYear = displayedMonth === 0 ? displayedYear - 1 : displayedYear;
     setDisplayedMonth(prevMonth);
@@ -112,28 +113,28 @@ function Calendar({darkModeEnabled}) {
     weeksArray.push(week);
   }
 
-  const getDisplayedMonthName = (year, month) => {
+  const getDisplayedMonthName = (year, month,language) => {
     const displayDate = new Date(year, month);
-    return displayDate.toLocaleString("default", { month: "long" });
+    return displayDate.toLocaleString(language === "english" ? "en-US" : "es-ES", { month: "long" });
   };
 
   return (
-    <div className="calendar-cont">
+    <div className={`calendar-cont ${darkModeEnabled ? "light-mode-calendar-cont" : ""}`}>
       <div>
-        <button className={`calendar-back-btn ${darkModeEnabled ? "light-mode-calendar-back-btn" : ""}`}  onClick={goBack}>← Back</button>
-        <h1 className="month">{getDisplayedMonthName(displayedYear, displayedMonth)} {displayedYear}</h1>
+        <button className={`calendar-back-btn ${darkModeEnabled ? "light-mode-calendar-back-btn" : ""}`}  onClick={goBack}>{text.calendarPage.backButton}</button>
+        <h1 className="month">{getDisplayedMonthName(displayedYear, displayedMonth,language)} {displayedYear}</h1>
         <button className={`prev-month ${darkModeEnabled ? "light-mode-calendar-back-btn" : ""}`} onClick={handlePrevMonth} disabled={displayedMonth === currentMonth && displayedYear === currentYear}>←</button>
         <button className={`prev-month ${darkModeEnabled ? "light-mode-calendar-back-btn" : ""}`} onClick={handleNextMonth} disabled={displayedMonth === currentMonth + 2 && displayedYear === currentYear}>→</button>
         <table className={`calendar ${darkModeEnabled ? "light-mode-calendar" : ""}`}>
           <thead className="daysofweek">
           <tr>
-            <th className="weekday">Sun</th>
-            <th className="weekday">Mon</th>
-            <th className="weekday">Tue</th>
-            <th className="weekday">Wed</th>
-            <th className="weekday">Thu</th>
-            <th className="weekday">Fri</th>
-            <th className="weekday">Sat</th>
+            <th className="weekday">{text.calendarPage.sun}</th>
+            <th className="weekday">{text.calendarPage.mon}</th>
+            <th className="weekday">{text.calendarPage.tue}</th>
+            <th className="weekday">{text.calendarPage.wed}</th>
+            <th className="weekday">{text.calendarPage.thu}</th>
+            <th className="weekday">{text.calendarPage.fri}</th>
+            <th className="weekday">{text.calendarPage.sat}</th>
         </tr>
           </thead>
           <tbody>
@@ -160,7 +161,7 @@ function Calendar({darkModeEnabled}) {
         </table>
         {selectedDate && (
           <div>
-            <h2 className={`available-times ${darkModeEnabled ? "light-mode-available-times" : ""}`}> Available Times For &nbsp;    
+            <h2 className={`available-times ${darkModeEnabled ? "light-mode-available-times" : ""}`}> {text.calendarPage.availableTimes} &nbsp;    
             {getDayOfWeek(selectedDate)}, {getMonthName(selectedDate)} {selectedDate.getDate()}, {selectedDate.getFullYear()}
             </h2>
 
@@ -189,15 +190,15 @@ function Calendar({darkModeEnabled}) {
         )}
       </div>
       <div className={`calendar-appointment ${darkModeEnabled ? "light-mode-calendar-appointment" : ""}`}>
-        <h2 className="calendar-summary"> Appointment Summary</h2>
-        <form>
+        <h2 className="calendar-summary"> {text.calendarPage.appointment}</h2>
+        
           <div>
             <h2 className={`calendar-input1 ${darkModeEnabled ? "light-mode-calendar-input1" : ""}`}> {appointmentSummary}  </h2>
           </div>
           <div className="classic-price">
             <h2 className={`calendar-input2 ${darkModeEnabled ? "light-mode-calendar-input1" : ""}`}> {appointmentPrice} </h2>
           </div>
-        </form>
+        
       </div>
     </div>
   );
