@@ -8,9 +8,11 @@
     overflow: hidden;
     padding: 20px;
     max-width: 1900px;
-    margin: 1px auto;
+    height: 900px;
+    margin: 4px auto;
     border-radius: 15px;
-
+    background-color:#02121d;
+    padding-top: 10px;
 }
 
 
@@ -72,14 +74,16 @@
     width: 490px;
     height: 60px;
     font-size: 25px;
-    margin-top: 60px;
+    margin-top: 90px;
     border-radius: 9px;
     background-color: #08192A;
     color: #d826e2;
     font-weight: bold;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    
-    
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;  
+}
+
+.checkout-background{
+  background-color: #02121d;
 }
 
 .name-container {
@@ -146,14 +150,18 @@
     color: white;
 }
 
+
 .cancellation-policy1{
     font-size: 25px;
     color: white;
+    padding-top: 10px;
 }
 
 .cancellation-policy2{
-    font-size: 18px;
+    font-size: 20px;
     color: white;
+    background-color: #02121d;
+    border-radius: 5px;
 }
 
 .appointment-time{
@@ -227,4 +235,17 @@
 
   .light-mode-appointment-sum{
     background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+  }
+
+  .light-mode-checkout-background{
+    background-color: white;
+  }
+
+  .light-mode-checkout-page{
+    background-color: white;
+  }
+
+  .light-mode-cancellation-policy2{
+    color: #08192A;
+    background-color: #fbb6ce;
   }

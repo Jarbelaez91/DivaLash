@@ -215,6 +215,29 @@ const spanishText = {
     
     },
 
+    checkoutPage: {
+        contactInfo: "Información de Contacto",
+        firstName: "Nombre",
+        lastName: "Apellido",
+        email: "Correo Electrónico",
+        phone: "Número de Teléfono",
+        card: "Número de Tarjeta",
+        exp: "Ven (MM/YY)",
+        cancelation: "Política de Cancelación",
+        cancelation2: "Por favor, comuníquese con Diva Lashes para cancelar o reprogramar  tu cita al menos 24 horas antes. Después de eso, se le puede cobrar una tarifa de cancelación de $50.00.",
+        seeFullPolicy: "Ver Política Completa",
+        checkBox: "He leído y acepto la política de cancelación de Diva Lashes.",
+        appointment: "Resumen de la Cita",
+        Tax: "Impuesto",
+        book: "Reservar Cita"
+    },
+    
+    policy: {
+        title: "Política de Cancelación",
+        p1: "Le pedimos que reprograma o cancele al menos 1 día antes del comienzo de su cita o se le puede cobrar una tarifa de cancelación de $50.00.",
+        p2: "Si necesita cancelar o reprogramar su cita, debe hacerlo con 24 horas de antelación o el sistema de reservas cobrará automáticamente una tarifa. Cualquier aviso con menos de 3 horas antes de su hora de cita programada se considerará una NO ASISTENCIA y se cobrará el precio completo del servicio. Somos conscientes de que pueden ocurrir emergencias, enfermedades y circunstancias imprevistas, pero lamentablemente nuestro sistema NO ACEPTA NINGÚN REEMBOLSO. Cancelar/reprogramar con menos de 24 horas de antelación o no responder a las confirmaciones por mensaje de texto impacta a Diva Lashes y la oportunidad de atender a otros clientes.",
+        p3: "No realizamos servicios de relleno en trabajos realizados por otro salón/artista externo. Si actualmente tiene extensiones de pestañas de otro salón/artista, debe retirarlas y tener una consulta antes de recibir su primer servicio de set completo con nosotros (se aplicará una tarifa de eliminación de pestañas).",
+    },
 
 
 
