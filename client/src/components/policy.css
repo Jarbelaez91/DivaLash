@@ -56,6 +56,6 @@
 
 /* Style for the modal in light mode */
 .light-mode .modal-content {
-  background-color: #fff; /* Light background for the content */
+  background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
   color: #08192A; /* Dark text color */
 }

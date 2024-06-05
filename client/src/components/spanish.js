@@ -239,6 +239,13 @@ const spanishText = {
         p3: "No realizamos servicios de relleno en trabajos realizados por otro salón/artista externo. Si actualmente tiene extensiones de pestañas de otro salón/artista, debe retirarlas y tener una consulta antes de recibir su primer servicio de set completo con nosotros (se aplicará una tarifa de eliminación de pestañas).",
     },
 
+    about: {
+        p1: "Diva Lashes, fundada por Vanessa Bedoya en 2024, surgió de su pasión por la moda y el maquillaje, lo que la llevó naturalmente a la industria de las pestañas. Vanessa perfeccionó sus habilidades en la reconocida Star Lash Academy en Barcelona, donde recibió una formación de primer nivel. Orgullosa de ser un pequeño negocio operado y propiedad de mujeres, Diva Lashes ahora prospera en Brooklyn, Nueva York.",
+        p2: "Especializándose exclusivamente en servicios de pestañas, Diva Lashes ofrece una variedad de opciones de extensiones de pestañas, incluyendo Sintéticas, de Seda, de Visón, Clásicas, Híbridas, Volumen, Mega Volumen y Look de Pestañas Postizas. Diva Lashes también ofrece Lifts de Pestañas con Keratina + Tintes, que incluyen Lift de Pestañas a Prueba de Agua y Botox para Pestañas. ¡Nuestra pasión son las pestañas y cejas! Nuestra misión es proporcionar servicios de calidad a un precio accesible, permitiendo a los clientes mantener sus hermosas pestañas regularmente. A través de una extensa investigación, formación, certificaciones y años de pruebas de varias marcas, garantizamos el uso de productos de la más alta calidad.",
+        p3: "Ponemos un énfasis significativo en la seguridad y la técnica adecuada, por lo que nuestra artista de pestañas está entre las más experimentadas de la ciudad. Certificada por las mejores compañías en América del Norte y Europa, nuestra artista es una esteticista y cosmetóloga licenciada. Esta combinación de formación de primer nivel y una experiencia extensa asegura que recibas el conjunto más fabuloso de pestañas en un entorno profesional, seguro y cómodo.",
+        p4: "Recuerda, si bajas tu mirada, ¡que sea solo para lucir tus pestañas!",
+    },
+    
 
 
     bookNow: "¡Reserva Ahora!",

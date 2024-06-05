@@ -13,7 +13,7 @@ function LashKeratin ({darkModeEnabled, language}) {
     return (
         <div>
             <Navbar/>
-        <div className="layout-container">
+            <div className = {`layout-container ${darkModeEnabled ? "light-mode-layout-container" : ""}`}>
         <div className= {`classic-cont ${darkModeEnabled ? "light-mode-classic-cont" : ""}`}>
         <NavLink className="classic-nav-link" to="/services">{text.serviceButton} </NavLink>
         <h1 className={`classic-title ${darkModeEnabled ? "light-mode-classic-title" : ""}`}>{text.lashKeratinPage.title}</h1>

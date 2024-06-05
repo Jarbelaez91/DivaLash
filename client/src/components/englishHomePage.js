@@ -239,6 +239,13 @@ policy: {
     p3: "We do not perform refill services on work that was done from another outside salon/artist . If you currently have lash extensions on from another salon/artist , you must have them removed and have a consultation before receiving your first full set service with us (lash removal fee will apply)",
 },
 
+about:{
+    p1: " Diva Lashes founded by Vanessa Bedoya in 2024, emerged from her passion for fashion and makeup, which naturally led her into the lash industry. Vanessa honed her skills at the renowned Star Lash Academy in Barcelona, where she received top-tier training. Proud to be a female-owned and operated small business, Diva Lashes now thrives in Brooklyn, New York.",
+    p2: "Specializing exclusively in lash services, Diva Lashes offers a variety of eyelash extension options, including Synthetic, Silk, Mink, Classic, Hybrid, Volume, Mega Volume, and Strip Lash Look. Diva Lashes also offer Keratin Lash Lifts + Tints, which include Waterproof Lash Lift and Lash Botox. Our passion is lashes and brows! Our mission is to provide quality services at an affordable price, allowing clients to maintain their gorgeous eyelashes regularly. Through extensive research, training, certifications, and years of testing various brands, we guarantee the use of the highest quality products.",
+    p3: "We place a significant emphasis on safety and proper technique, which is why our lash artist is among the most experienced in the city. Certified by top companies in North America and Europe, our artist is a licensed esthetician and cosmetologist. This combination of top-rated training and extensive experience ensures that you receive the most fabulous set of lashes in the most professional, safe, and comfortable environment.",
+    p4: "Remember, if you lower your gaze, let it be only to show off your lashes!",
+},
+
 
 
 serviceButton: "← services",

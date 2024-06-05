@@ -35,7 +35,7 @@ function Calendar({darkModeEnabled, language}) {
   const handleDayClick = (day) => {
     if (day && day.selectable) {
       setSelectedDate(new Date(displayedYear, displayedMonth, day.day));
-      setAvailableTimes(["10:00 AM", "12:00 PM", "2:30 PM", "4:30 PM"]);
+      setAvailableTimes([" 8:00AM "," 9:00 AM ","10:00 AM", "11:00 AM", " 1:00PM "," 2:00 PM ", " 3:00 PM ", " 4:00 PM "]);
     }
   };
 
@@ -160,12 +160,12 @@ function Calendar({darkModeEnabled, language}) {
           </tbody>
         </table>
         {selectedDate && (
-          <div>
+          <div >
             <h2 className={`available-times ${darkModeEnabled ? "light-mode-available-times" : ""}`}> {text.calendarPage.availableTimes} &nbsp;    
             {getDayOfWeek(selectedDate)}, {getMonthName(selectedDate)} {selectedDate.getDate()}, {selectedDate.getFullYear()}
             </h2>
 
-            <div>
+            <div className="calendar-button-container">
             {availableTimes.map((time, index) => (
   <Link
     to={{
