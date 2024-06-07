@@ -244,6 +244,11 @@ about:{
     p2: "Specializing exclusively in lash services, Diva Lashes offers a variety of eyelash extension options, including Synthetic, Silk, Mink, Classic, Hybrid, Volume, Mega Volume, and Strip Lash Look. Diva Lashes also offer Keratin Lash Lifts + Tints, which include Waterproof Lash Lift and Lash Botox. Our passion is lashes and brows! Our mission is to provide quality services at an affordable price, allowing clients to maintain their gorgeous eyelashes regularly. Through extensive research, training, certifications, and years of testing various brands, we guarantee the use of the highest quality products.",
     p3: "We place a significant emphasis on safety and proper technique, which is why our lash artist is among the most experienced in the city. Certified by top companies in North America and Europe, our artist is a licensed esthetician and cosmetologist. This combination of top-rated training and extensive experience ensures that you receive the most fabulous set of lashes in the most professional, safe, and comfortable environment.",
     p4: "Remember, if you lower your gaze, let it be only to show off your lashes!",
+    about: "Our Story",
+    story: "Sobre la Artista",
+    location: "Our Location",
+    reviews: "Our Reviews",
+    video: "Our Work",
 },
 
 

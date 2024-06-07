@@ -54,7 +54,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/"> <HomePage darkModeEnabled={darkModeEnabled} language={language} /> </Route>
-          <Route path="/about" component={About} />
+          <Route path="/about" > <About darkModeEnabled={darkModeEnabled} language={language} /> </Route>
           <Route exact path="/services"> <Services darkModeEnabled={darkModeEnabled} language={language} /> </Route>
           <Route path="/bookonline" component={BookOnline} />
           <Route exact path="/classic-lash-extensions"> <LashClassic darkModeEnabled={darkModeEnabled} language={language}/> </Route>

@@ -1,5 +1,42 @@
-.about-page{
-    display:grid  ;
+.about-container {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
+.diploma {
+    background-image: url('diploma7.jpeg');
+    background-size: cover; 
+    background-position: 85% 15%; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: 100%; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.about-us {
+    color: white;
+    font-size: 8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-transform: uppercase;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    text-shadow: rgb(51, 51, 51) 5px 5px 5px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-page {
+    display: grid;
     grid-template-columns: 2fr 1fr; 
     justify-content: center;
     max-width: 1900px; 
@@ -7,23 +44,74 @@
     height: 1000px;
     font-size: 22px;
     justify-content: center;  
-    background-color:#08192A;
+    background-color: #02121d;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     overflow: hidden;
-    padding: 30px;
-    margin: 30px auto;
+    padding: 10px;
+    margin: 0 auto;
     margin-left: 10px;
     border-radius: 15px;
-    padding-bottom: 400px;
+    padding-bottom: 500px;
+    padding-top: 1px;
 }
 
-.about-cont{
+.about-cont {
    color: white;
-   padding-top: 200px;
+   padding-top: 10px;
    margin-right: 350px;
+   background-color: #08192A;
+   border-radius: 10px;
+   margin-top: 50px;
+   margin-left: 60px;
+   padding-left: 25px;
+   padding-bottom: 30px;
 }
 
-.video-cont{
+.map-cont {
+    background-color: #08192A;
     color: white;
-    padding-top: 40px;
+    margin-top: 80px;
+    width: 60%;
+    padding-bottom: 80px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 160px;
+    padding-left: 1px;
 }
+
+.video-cont {
+    color: white;
+    padding-top: 20px;
+    background-color: #08192A;
+    margin: 10px 10px 10px;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 15px;
+    padding-left: 20px;
+    height: 520px;
+    width: 620px;
+}
+
+.motto {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.review-cont {
+    color: white;
+    background-color: #08192A;
+    margin: 10px 10px 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 15px;
+    padding-left: 20px;
+    height: 620px;
+    width: 620px;
+    margin-top: -100px;
+}
+
+.artist{
+    text-align: center;
+}
+
