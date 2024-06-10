@@ -9,7 +9,7 @@ const spanishText = {
       description: "Un tratamiento de pestañas de bajo mantenimiento que levanta, riza y realza tus pestañas naturales al instante sin necesidad de máscara, rizador de pestañas o extensiones.",
       button: "LEVANTAMIENTO DE PESTAÑAS"
     },
-    about: {
+    aboutHome: {
       title: "¿Qué hace Diva Lashes?",
       mission: "¡Nuestra misión en Diva Lashes es proporcionar los mejores servicios de pestañas y cejas en todo Nueva York! Nos esforzamos por lograr la satisfacción del cliente al 100% y tenemos los testimonios para demostrarlo.",
       certification: "Nuestra artista de pestañas está certificada por la mejor institución en Barcelona. Nuestra artista es una esteticista con licencia. Esta combinación de entrenamiento de alta calidad y experiencia extensa garantizará que recibas el conjunto de pestañas más fabuloso.",
@@ -249,8 +249,28 @@ const spanishText = {
         location: "Nuestra Ubicacion",
         reviews: "Comentarios",
         video: "Nuestro Trabajo",
+        r1: "¡Vanessa es una verdadera maga de pestañas! Mis pestañas nunca han lucido mejor. Recibo cumplidos donde quiera que vaya. ¡Muy recomendada! \n- Emma Smith",
+        r2: "He visitado a muchos técnicos de pestañas, pero Vanessa es sin duda la mejor. Es meticulosa y siempre se asegura de que salga luciendo fabulosa. \n- Sophia Johnson",
+        r3: "Vanessa transformó mis pestañas escasas en un conjunto completo y glamoroso. ¡Me siento mucho más segura ahora. Gracias! \n- Isabella Martinez",
+        r4: "Profesional, amable e increíblemente talentosa. Vanessa es todo lo que deseas en una técnica de pestañas. Mis pestañas están perfectas cada vez. \n- Olivia Brown",
+        r5: "¡Estoy obsesionada con mis pestañas! Vanessa escuchó exactamente lo que quería y superó mis expectativas. Definitivamente volveré. \n- Ava Taylor",
+        r6: "Vanessa es una verdadera artista. Se toma su tiempo para asegurarse de que cada pestaña sea perfecta. Estoy muy feliz con mis resultados. \n- Mia Wilson",
+        r7: "Mis pestañas lucen naturales y hermosas. Vanessa es increíble en lo que hace. La he recomendado a todos mis amigos. \n- Harper Anderson",
+        r8: "Tuve una experiencia maravillosa con Vanessa. Me hizo sentir cómoda y hizo un trabajo excepcional en mis pestañas. \n- Emily Thomas",
+        r9: "El trabajo de Vanessa es impecable. Es detallista y precisa. Mis pestañas siempre lucen impresionantes y duran mucho tiempo. \n- Lily Garcia",
+        r10: "No puedo decir suficientes cosas buenas sobre Vanessa. Es profesional, amable y mis pestañas nunca han lucido mejor. \n- Grace Hernandez",
+        r11: "Vanessa siempre supera mis expectativas. Su experiencia y atención al detalle son inigualables. ¡Amo mis pestañas! \n- Chloe Rodriguez",
+        r12: "Tuve mi primera cita con Vanessa hoy, y estoy impresionada. Mis pestañas lucen increíbles, y toda la experiencia fue muy relajante. \n- Zoe Perez",
+        r13: "Cada vez que visito a Vanessa, salgo con las pestañas más hermosas. Ella tiene un talento real en lo que hace. Recomiendo mucho sus servicios. \n- Stella Martinez",
+        r14: "Vanessa es la mejor técnica de pestañas que he tenido. Tiene mucho conocimiento y siempre se asegura de que esté cómoda durante el proceso. \n- Sofia Rivera",
+        r15: "Confío completamente en Vanessa con mis pestañas. Es muy hábil y siempre sabe exactamente cómo hacer que mis pestañas luzcan lo mejor posible. \n- Camila Flores",
+        directions: "Direcciones",
+        d1: "Toma el tren G hasta la Avenida Green Point.",
+        d2: "Sal por la salida de India Street.",
+        d3: "Camina hacia el oeste hacia el río Este 2 cuadras.",
+        d4: "El edificio está en la esquina de la calle India y West.",  
     },
-    
+            
 
 
     bookNow: "¡Reserva Ahora!",

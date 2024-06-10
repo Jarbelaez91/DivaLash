@@ -34,12 +34,11 @@ return (
 
 
             <div className={`lash-card ${darkModeEnabled ? "light-mode-lash-card" : ""}`}>
-            <h1>Lash Lifts</h1>
-            <div className={`card-font ${darkModeEnabled ? "light-mode-card-font" : ""}`}>
-            <h3>A low maintenance lash treatment that lifts, curls and boosts your natural 
-                lashes instantly without the use of mascara, lash curler or extensions.</h3>
+            <h1>{text.lashLifts.title}</h1>
+            <div className={`card-font ${darkModeEnabled ? "light-mode-card-font" : ""} ${language === 'spanish' ? 'spanish-font' : ''}`}>            
+            <h3>{text.lashLifts.description}</h3>
                 </div>
-                <button className={`lash-btn ${darkModeEnabled ? "light-mode-lash-btn" : ""}`}>LASH LIFTS</button>
+                <button className={`lash-btn ${darkModeEnabled ? "light-mode-lash-btn" : ""}`}>{text.lashLifts.button}</button>
             </div>
     </div>
 
@@ -49,13 +48,13 @@ return (
                 <img src={brushing} alt="lash brush" />
             </div>
             <div className={`text-container ${darkModeEnabled ? "light-mode-text-container" : ""}`}>
-            <h1>{text.about.title}</h1>
+            <h1>{text.aboutHome.title}</h1>
 
-                        <h3>{text.about.mission}</h3>
-                        <h3>{text.about.certification}</h3>
-                        <h1>{text.about.reminder}</h1>
+                        <h3>{text.aboutHome.mission}</h3>
+                        <h3>{text.aboutHome.certification}</h3>
+                        <h1>{text.aboutHome.reminder}</h1>
                 <div>
-            <button className={`service-btn ${darkModeEnabled ? "light-mode-service-btn" : ""}`} onClick={serviceMenu}> {text.about.serviceMenu}</button>
+            <button className={`service-btn ${darkModeEnabled ? "light-mode-service-btn" : ""}`} onClick={serviceMenu}> {text.aboutHome.serviceMenu}</button>
         </div>
             </div>
         </div>

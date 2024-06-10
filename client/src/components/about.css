@@ -17,6 +17,32 @@
     z-index: 1;
 }
 
+.artist-img{
+    background-image: url('artist.jpeg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: contain;
+    width: 80%; 
+    height: 70%; 
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin-top: -570px;
+    padding-left: 24px;
+    
+}
+.artist-cont{
+    background-color: #08192A;
+    width: 80%; 
+    height: 80%; 
+    z-index: 1;
+    margin-top: 120px;
+    padding-right: 20px;
+    border-radius: 10px ;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 .about-us {
     color: white;
     font-size: 8rem;
@@ -33,6 +59,8 @@
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    white-space: nowrap;
+    
 }
 
 .about-page {
@@ -51,7 +79,7 @@
     margin: 0 auto;
     margin-left: 10px;
     border-radius: 15px;
-    padding-bottom: 500px;
+    padding-bottom: 850px;
     padding-top: 1px;
 }
 
@@ -65,18 +93,22 @@
    margin-left: 60px;
    padding-left: 25px;
    padding-bottom: 30px;
+   width: 70%;
+   height: 635px;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .map-cont {
     background-color: #08192A;
     color: white;
     margin-top: 80px;
-    width: 60%;
-    padding-bottom: 80px;
+    width: 55%;
+    height: 55%;
     text-align: center;
     border-radius: 10px;
     margin-left: 160px;
     padding-left: 1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .video-cont {
@@ -84,18 +116,25 @@
     padding-top: 20px;
     background-color: #08192A;
     margin: 10px 10px 10px;
-    margin-top: 50px;
+    margin-top: 130px;
     text-align: center;
     border-radius: 10px;
-    margin-left: 15px;
+    margin-left: -80px;
     padding-left: 20px;
     height: 520px;
     width: 620px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.review-font{
+    border-bottom: solid 1px white;
 }
 
 .motto {
     font-weight: bold;
     font-size: 25px;
+    color:#ed64a6;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .review-cont {
@@ -104,14 +143,148 @@
     margin: 10px 10px 10px;
     text-align: center;
     border-radius: 10px;
-    margin-left: 15px;
+    margin-left: -74px;
     padding-left: 20px;
-    height: 620px;
+    height: 320px;
     width: 620px;
-    margin-top: -100px;
+    margin-top: 690px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+.review-list {
+    display: flex;
+    overflow: hidden;
+    width: 100%; 
+    position: relative;
+    white-space: nowrap; 
+}
+
+.review {
+    font-size: 30px;
+    display:block ;
+    box-sizing: border-box; 
+    padding: 10px; 
+}
+
+p {
+    white-space: pre-line;
+}
+
+
+.review-enter {
+    position: absolute;
+    top: 0;
+    left: 100%; 
+    opacity: 0;
+}
+
+.review-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 500ms, transform 500ms;
+}
+
+.review-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.review-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 50ms, transform 700ms;
+}
+
+
 
 .artist{
     text-align: center;
 }
 
+.directions{
+    margin-top: 125px;
+    background-color: #08192A;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+.directions2{
+    text-align: left;
+    font-size: 30px;
+    padding-bottom: 10px;
+    margin-left: -5px;
+    
+}
+
+.directions-border{
+    border-bottom: solid 1px white;
+    font-size: 35px;
+    padding-top: 15px;
+}
+
+
+
+
+/*light mode*/
+
+
+.light-mode-about-cont {
+    color: #02121d;
+    padding-top: 10px;
+    margin-right: 350px;
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+ }
+
+ .light-mode-artist-cont{
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    width: 80%; 
+    height: 80%; 
+    z-index: 1;
+    margin-top: 120px;
+    padding-right: 20px;
+    border-radius: 10px ;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.light-mode-video-cont{
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    color: #02121d;
+}
+
+.light-mode-map-cont{
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    color: #02121d;
+}
+
+.light-mode-directions{
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    color: #02121d;
+}
+
+.light-mode-directions-border{
+    border-bottom: solid 1px #02121d;
+}
+
+.light-mode-review-cont {
+    color: #02121d;
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.light-mode-review-font{
+    border-bottom: solid 1px #02121d
+}
+
+.light-mode-about-page {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    justify-content: center;
+    max-width: 1900px; 
+    gap: 1px;
+    height: 1000px;
+    font-size: 22px;
+    justify-content: center;  
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}

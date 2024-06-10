@@ -9,7 +9,7 @@ const englishText = {
       description: "A low maintenance lash treatment that lifts, curls and boosts your natural lashes instantly without the use of mascara, lash curler or extensions.",
       button: "LASH LIFTS"
     },
-    about: {
+    aboutHome: {
       title: "What does Diva Lashes do?",
       mission: "Our mission at Diva Lashes is to provide the best eyelash and eyebrow services in all of New York! We strive for 100% customer satisfaction and have the testimonials to prove it.",
       certification: "Our lash artist is certified by the best institution in Barcelona. Our artist is a licensed esthetician. This combination of high-quality training and extensive experience will ensure that you receive the most fabulous set of lashes.",
@@ -249,6 +249,26 @@ about:{
     location: "Our Location",
     reviews: "Our Reviews",
     video: "Our Work",
+    r1: "Vanessa is an absolute lash magician! My lashes have never looked better. I get compliments everywhere I go. Highly recommend! \n- Emma Smith",
+    r2: `I’ve been to many lash technicians, but Vanessa is by far the best. She’s meticulous and always makes sure I leave looking fabulous. \n-  Sophia Johnson`,
+    r3: "Vanessa transformed my sparse lashes into a full, glamorous set. I feel so much more confident now. Thank you!  \n-  Isabella Martinez",
+    r4: "Professional, friendly, and incredibly talented. Vanessa is everything you want in a lash technician. My lashes are perfect every time. \n-  Olivia Brown",
+    r5: "I’m obsessed with my lashes! Vanessa listened to exactly what I wanted and delivered beyond my expectations. Will definitely be back. \n-  Ava Taylor",
+    r6: "Vanessa is a true artist. She takes her time to make sure every lash is perfect. I’m so happy with my results! \n-  Mia Wilson",
+    r7: "My lashes look so natural and beautiful. Vanessa is amazing at what she does. I’ve recommended her to all my friends. \n-  Harper Anderson",
+    r8: "I had such a wonderful experience with Vanessa. She made me feel comfortable and did an outstanding job on my lashes. \n-  Emily Thomas",
+    r9: "Vanessa’s work is impeccable. She is so detailed and precise. My lashes always look stunning and last a long time. \n-  Lily Garcia",
+    r10: "I can’t say enough good things about Vanessa. She’s professional, kind, and my lashes have never looked better. \n-  Grace Hernandez",
+    r11: "Vanessa always exceeds my expectations. Her expertise and attention to detail are unmatched. I love my lashes! \n-  Chloe Rodriguez",
+    r12: "I had my first appointment with Vanessa today, and I’m blown away. My lashes look incredible, and the whole experience was so relaxing. \n-  Zoe Perez",
+    r13: "Every time I visit Vanessa, I leave with the most beautiful lashes. She is truly gifted at what she does. Highly recommend her services. \n-  Stella Martinez",
+    r14: "Vanessa is the best lash technician I’ve ever had. She’s so knowledgeable and always makes sure I’m comfortable during the process. \n-  Sofia Rivera",
+    r15: "I trust Vanessa completely with my lashes. She’s so skilled and always knows exactly how to make my lashes look their best. \n-  Camila Flores",
+    directions: "Directions",
+    d1:"Take the G train to Green Point Avenue.",
+    d2: "Get out through the India Street exit.",
+    d3: "Walk west towards east river 2 blocks.",
+    d4: "The building is on the corner of India st and West st.",
 },
 
 

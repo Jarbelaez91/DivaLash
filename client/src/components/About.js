@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import "./about.css";
 import ReactPlayer from 'react-player';
 import englishText from "./englishHomePage";
 import spanishText from "./spanish";
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 function About({ darkModeEnabled, language }) {
     const text = language === "english" ? englishText : spanishText;
+
+    const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
+    const reviews = [
+        text.about.r1, text.about.r2, text.about.r3, text.about.r4, text.about.r5,
+        text.about.r6, text.about.r7, text.about.r8, text.about.r9, text.about.r10,
+        text.about.r11, text.about.r12, text.about.r13, text.about.r14, text.about.r15
+    ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentReviewIndex((prevIndex) => (prevIndex + 1) % reviews.length);
+        }, 5000);
+        return () => clearInterval(interval);
+    }, [reviews.length]);
 
     return (
         <div>
@@ -14,16 +29,20 @@ function About({ darkModeEnabled, language }) {
                 <div className="diploma"></div>
                 <h2 className="about-us">{text.about.about}</h2>
             </div>
-            <div className="about-page">
+            <div className={`about-page ${darkModeEnabled ? "light-mode-about-page" : ""}`}>
                 <Navbar />
-                <div className="about-cont">
+                <div className={`about-cont ${darkModeEnabled ? "light-mode-about-cont" : ""}`}>
                     <h1 className="artist">{text.about.story}</h1>
                     <p>{text.about.p1}</p>
                     <p>{text.about.p2}</p>
                     <p>{text.about.p3}</p>
                     <p className="motto">{text.about.p4}</p>
                 </div>
-                <div className="video-cont">
+
+                <div>
+                    <h2 className={`artist-cont ${darkModeEnabled ? "light-mode-artist-cont" : ""}`}></h2>
+                    <h2 className="artist-img"></h2>
+                <div className={`video-cont ${darkModeEnabled ? "light-mode-video-cont" : ""}`}>
                     <h2>{text.about.video}</h2>
                     <ReactPlayer
                         url='https://www.youtube.com/shorts/ytFrPFVlAQk'
@@ -32,7 +51,9 @@ function About({ darkModeEnabled, language }) {
                         height='400px'
                     />
                 </div>
-                <div className="map-cont">
+                </div>
+
+                <div className={`map-cont ${darkModeEnabled ? "light-mode-map-cont" : ""}`}>
                     <h2>{text.about.location}</h2>
                     <iframe
                         width="600"
@@ -44,10 +65,32 @@ function About({ darkModeEnabled, language }) {
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>
+                    <div className={`directions ${darkModeEnabled ? "light-mode-directions" : ""}`}>
+                    <h3 className={`directions-border ${darkModeEnabled ? "light-mode-directions-border" : ""}`}>
+                        {text.about.directions}
+                    </h3>
+                    <ul className="directions2">
+                        <li>{text.about.d1}</li>
+                        <li> {text.about.d2}</li>
+                        <li> {text.about.d3}</li>
+                        <li> {text.about.d4}</li>
+                    </ul>
+                    </div>
                 </div>
-                <div className="review-cont">
-                    <h1>{text.about.reviews}</h1>
+                <div className={`review-cont ${darkModeEnabled ? "light-mode-review-cont" : ""}`}>
+                    <h1 className={`review-font ${darkModeEnabled ? "light-mode-review-font" : ""}`}>{text.about.reviews}</h1>
+                    <TransitionGroup>
+                        <CSSTransition
+                            key={currentReviewIndex}
+                            timeout={500}
+                            classNames="review"
+                        >
+                            <p className="review">{reviews[currentReviewIndex]}</p>
+                        </CSSTransition>
+                    </TransitionGroup>
+                    
                 </div>
+                    
             </div>
         </div>
     );
