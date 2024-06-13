@@ -20,6 +20,7 @@ import Calendar from "./Calendar";
 import Checkout from "./Checkout";
 import ConfirmationPage from "./ConfirmationPage";
 import Policy from "./Policy";
+import PhotoReel from "./PhotoReel";
 import "./app.css";
 
 function App() {

@@ -84,18 +84,35 @@ const englishText = {
     outsideFills: "Outside Fills for Lashes",
     outsideFillsDescription: "We do not perform refill services on work that was done from another outside salon/artist. If you currently have lash extensions on from another salon/artist, you must have them removed and have a consultation before receiving your first full set service with us (lash removal fee will apply). We encourage you when booking to allow yourself sufficient time and not bringing children or extra people to your appointment. We want to give you the best service possible and direct all of our time to you during your appointment.",
 },
+
+frequentlyasked:{
+    title: "FAQ's"
+},
+
 faq: {
-    title: "FAQ's",
     question1: "⦊ What do I do to prepare for my lash extension appointment?",
     question2: "⦊ How long do lash extensions last?",
     question3: "⦊ When should I get my lash extensions filled?",
-    question4: "⦊ I had my lashes done at a different salon or by another person; can I still get a fill at Lash Love Beauty Bar?",
+    question4: "⦊ I had my lashes done at a different salon or by another person; can I still get a fill at Diva Lashes?",
     question5: "⦊ Will lash extensions damage my natural lashes?",
     question6: "⦊ I just had my lashes done and a few have fallen out, or I had an allergic reaction what should I do?",
     question7: "⦊ I have a wedding, special occasion, trip coming up and I have never had lash extensions, what set should I get?",
     question8: "⦊ Can I swim, shower, exercise, or visit a spa while wearing eyelash extensions?",
     question9: "⦊ How do I take care of my new eyelash extensions?",
 },
+
+faqAnswers:{
+    answer1: "Please come to your appointment with clean lashes. Meaning no eye makeup or mascara on or near the eyes/lashes. Please avoid wearing any foundation, concealer or creams on or near the eye area. Failure to do so may affect your retention and a lash bath will be given to thoroughly cleanse the lashes at $15 cost to the client before lash fill is performed. (Please be aware that if we spend time cleaning your lashes we lose time applying lashes)",
+    answer2: "Because lash extensions are attached to the natural lash, they last as long as the natural growth cycle or about 4-6 weeks. You shed approximately 2 to 10 lashes a day. When extensions are placed on your natural lashes you notice the lash shed more because it has an extension attached to it. We recommend getting lash fills every 2 to 3 weeks to fill the lashes that have shedded and also remove the lashes that have grown out and place new ones. Filling your lash extensions at 2 to 3 weeks will maintain the health of your natural lashes. Waiting too long to get fills can cause breakage and make your natural lashes brittle. We also recommend using a lash serum with extensions. The longer, fuller and stronger your natural lashes can become, the better your lash extensions will last.",
+    answer3: "In order to keep your natural lashes healthy and your lash extensions looking flawless it is recommended that you get a lash fill every 2 to 3 weeks. During your lash fill appointment we will first remove any outgrown or wonky extensions. We will then apply extensions to all of the natural lashes that are long and strong enough to have an extension placed on them. Please not that you must have 40% of your lashes full for it to be considered a fill anything less than that will be considered a full set.",
+    answer4: "We do not perform refill services on work that was done from another outside salon/artist. If you currently have lash extensions on from another salon/artist, you must have them removed and have a consultation before receiving your first full set service with us (lash removal fee will apply).",
+    answer5: "No! As long as you have an experienced lash artist who properly isolates, uses appropriate glue amount and picks the appropriate lash extension length, thickness and curl, lash extensions will not damage your natural lashes. As far as the client it is their job to make sure they do not sleep, pull, pick or rub extensions, as this will cause breakage. Clients must gently wash lash extensions daily with appropriate soap, brush, water temperature and pressure.",
+    answer6: "It is completely normal to lose 3-5 extensions per day. If you’re losing significantly more within the first 3 days after your appointment, then please give us a call and we will book you in for a free fix. Failure to do so will result in having to pay full fill price. If you have had an allergic reaction to the lash extensions please contact us immediately so we can remove them. In some rare, unfortunate cases people develop or are allergic to the lash adhesive. Once this happens we can try using sensitive glue but if they still cause a reaction we will not be able to do another set. NO REFUNDS are given on any services performed.",
+    answer7: "If you have never had extensions applied before and or have a special event, then we recommend booking a classic full-set 1-2 weeks before the event. Then booking a fill appointment 1-2 days before the event. If you book a full-set right before an event and are not completely satisfied with the result then we may not have the time available to squeeze you in at the last minute for a fix. If you book the full-set 1-2 weeks ahead of time and then a fill, it gives us the opportunity to fix or change things before your special occasion or trip. You can always change up the length, curl or density at your fill appointment.",
+    answer8: "Yes. The bonding agent we use is waterproof and allows you to shower, swim, exercise etc. Special care is required but overall maintenance is low. We do recommend however that you do not wash your eye area for at least 24 hours after the eyelash application. If you are going to be in pool water, salt water or you’ve been sweating from your face we recommend you wash your lashes after to prevent the lashes from sticking or shedding early.",
+    answer9: "- No mascara\n - No prescription or over-the-counter eye drops in the first 24 hours. After 24 hours be cautious of placing in the eye. If solution gets on lashes please wash with lash soap.\n - No oil based products around the eye area\n - No water can come in contact with the eye area for 24 hours of the application\n - No tinting or perming of eyelash extensions can be done 2 weeks before extension application\n - No continuous pulling or rubbing of the eyelash extensions\n - Use oil-free eye makeup remover\n - Avoid hot steam or sauna (minimize hot yoga)\n - Avoid sleeping on your stomach to avoid pressure on the extensions\n - Avoid running water directly on your lashes\n - Do not use a mechanical eyelash curler\n - Wash lash extensions daily and brush through the lashes.",
+},
+
 classicLashExtensions: {
     title: "Classic Lash Extensions",
     description: "Classic lash extensions are created with one individual synthetic mink or silk lash extension placed on each of your natural lashes, creating a natural look. We customize each set using different lengths, thickness and curls.",

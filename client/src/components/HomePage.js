@@ -6,6 +6,7 @@ import brushing from './brushing.jpeg'
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import englishText from "./englishHomePage";
 import spanishText from "./spanish";
+import PhotoReel from "./PhotoReel";
 
 function HomePage ({ darkModeEnabled, language }) {
 
@@ -56,10 +57,13 @@ return (
                 <div>
             <button className={`service-btn ${darkModeEnabled ? "light-mode-service-btn" : ""}`} onClick={serviceMenu}> {text.aboutHome.serviceMenu}</button>
         </div>
-            </div>
         </div>
-        
-       
+        </div>
+        </div>
+        <div className={`photo-reel-cont ${darkModeEnabled ? "light-mode-photo-reel-cont" : ""}`}>
+        <div className={`photo-reel-container ${darkModeEnabled ? "light-mode-photo-reel-container" : ""}`}>
+        <PhotoReel darkModeEnabled={darkModeEnabled} />
+        </div>
     </div>
 </div>
 )

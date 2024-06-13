@@ -5,6 +5,15 @@ import "./lashclassic.css"
 import eyebrush from "./eyelash-brush.jpeg"
 import englishText from "./englishHomePage";
 import spanishText from "./spanish";
+import FAQSection from "./FAQSection";
+import reel9 from "./reel9.jpeg"
+import reel12 from "./reel12.jpeg"
+import reel14 from "./reel14.jpeg"
+import reel15 from "./reel15.jpeg"
+import reel10 from "./reel10.jpeg"
+import reel11 from "./reel11.jpeg"
+import reel16 from "./reel16.jpeg"
+import reel13 from "./reel13.jpeg"
 
 function LashHybrid ({darkModeEnabled, language}) {
 
@@ -23,38 +32,21 @@ function LashHybrid ({darkModeEnabled, language}) {
                         {text.classicLashExtensions.outsideFillsDescription}</p>
 
                 <div className="photo-grid">
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
+                        <img className="photo-item" src={reel9} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel10} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel11} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel12} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel13} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel14} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel15} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel16} alt="Eyelash Brush" />
+                        <img className="photo-item" src={eyebrush} alt="Eyelash Brush" />
+
                 </div>
                 <div className="faq">
-                <h2 className="faq">{text.faq.title}</h2>
-                        <div>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                  {text.faq.question1}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question2}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question3}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question4}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question5}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question6}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question7}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question8}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question9}</p>
-                    </div>
+                <h2> 
+                <FAQSection text={text} darkModeEnabled={darkModeEnabled} />
+                </h2> 
                     <div>
         </div>
         </div>

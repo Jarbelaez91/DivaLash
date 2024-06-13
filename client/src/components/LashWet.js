@@ -5,6 +5,7 @@ import "./lashclassic.css"
 import eyebrush from "./eyelash-brush.jpeg"
 import englishText from "./englishHomePage";
 import spanishText from "./spanish";
+import FAQSection from "./FAQSection";
 
 function LashWet ({darkModeEnabled, language}) {
 
@@ -33,27 +34,9 @@ function LashWet ({darkModeEnabled, language}) {
                     <img src={eyebrush} ></img>
                 </div>
                 <div className="faq">
-                <h2 className="faq">{text.faq.title}</h2>
-                        <div>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                  {text.faq.question1}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question2}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question3}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question4}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question5}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question6}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question7}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question8}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question9}</p>
-                                 </div>
+                <h2> 
+                <FAQSection text={text} darkModeEnabled={darkModeEnabled} />
+                </h2> 
                     </div>
                 </div>
                 <div className="side-boxes">

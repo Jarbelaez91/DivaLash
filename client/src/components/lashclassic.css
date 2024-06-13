@@ -20,7 +20,7 @@
     text-align: left;
     overflow: hidden;
     padding: 20px;
-    padding-bottom: 150px;
+    padding-bottom: 90px;
     max-width: 1000px;
     margin: 30px auto;
     margin-left: 165px;
@@ -267,17 +267,36 @@
     font-size: 22px;
     margin: 25px;
     padding: 20px;
+    border-radius: 5px;
 }
 
 .photo-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 10px solid white;
+    
     gap:10px;
-    background-color: white;
     margin-left: 10px;
     margin-right: 10px;
-    padding-left: 25px;
+    background-color: white;
+}
+
+.photo-item {
+    width: 90%;
+    height: auto;
+    margin-right: 100px;
+    border: 10px solid red;
+}
+
+.faq-answers{
+    color: white;
+    font-size: 20px;
+    margin-left: 34px;
+    margin-right: 34px;
+    padding: 10px;
+    border: solid 1px #02121d;
+    border-radius: 5px;
+    background-color: #02121d;
+
 }
 
 
@@ -446,4 +465,9 @@
 
 .light-mode-layout-container{
     background-color: white;
+}
+
+.light-mode-faq-answers{
+    background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    color: #02121d;
 }

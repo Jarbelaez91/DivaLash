@@ -5,6 +5,15 @@ import "./lashclassic.css"
 import eyebrush from "./eyelash-brush.jpeg"
 import englishText from "./englishHomePage";
 import spanishText from "./spanish";
+import FAQSection from "./FAQSection";
+import reel17 from "./reel17.jpeg"
+import lash2 from "./lash2.jpeg"
+import lash4 from "./lash4.jpeg"
+import lash5 from "./lash5.jpeg"
+import lash6 from "./lash6.jpeg"
+import lash1 from "./reel1.jpeg"
+import lash3 from "./lash3.jpeg"
+import reel9 from "./reel9.jpeg"
 
 function LashMega ({darkModeEnabled, language}) {
 
@@ -22,39 +31,23 @@ function LashMega ({darkModeEnabled, language}) {
                 <p className={`classic-desc ${darkModeEnabled ? "light-mode-classic-desc" : ""}`}>
                         {text.classicLashExtensions.outsideFillsDescription}</p>
                 <div className="photo-grid">
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
+                        <img className="photo-item" src={reel9} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel17} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash1} alt="Eyelash Brush" />
+                        <img className="photo-item" src={eyebrush} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash2} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash3} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash4} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash5} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash6} alt="Eyelash Brush" />
+
                 </div>
-                <div className="faq">
-                <h2 className="faq">{text.faq.title}</h2>
-                        <div>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                  {text.faq.question1}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question2}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question3}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question4}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question5}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question6}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question7}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question8}</p>
-                            <p className={`faq-questions ${darkModeEnabled ? "light-mode-faq-questions" : ""}`}>
-                                 {text.faq.question9}</p>
-                                 </div>
-                    </div>
+                <div >
+                <h2> 
+                <FAQSection text={text} darkModeEnabled={darkModeEnabled} />
+                </h2>    
+                </div>
+                
                 </div>
                 <div className="side-boxes">
                 <div className={`price-cont ${darkModeEnabled ? "light-mode-price-cont" : ""}`}>
