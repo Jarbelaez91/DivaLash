@@ -6,6 +6,15 @@ import eyebrush from "./eyelash-brush.jpeg"
 import englishText from "./englishHomePage";
 import spanishText from "./spanish";
 import FAQSection from "./FAQSection";
+import lash10 from "./lash10.jpeg"
+import lash12 from "./lash12.jpeg"
+import lash14 from "./lash14.jpeg"
+import lash5 from "./lash5.jpeg"
+import reel3 from "./reel3.jpeg"
+import reel4 from "./reel4.jpeg"
+import lash8 from "./lash8.jpeg"
+import reel13 from "./reel13.jpeg"
+import lash3 from "./lash3.jpeg"
 
 function LashVolume ({darkModeEnabled, language}) {
 
@@ -23,15 +32,15 @@ function LashVolume ({darkModeEnabled, language}) {
                 <p className={`classic-desc ${darkModeEnabled ? "light-mode-classic-desc" : ""}`}>
                         {text.classicLashExtensions.outsideFillsDescription}</p>
                 <div className="photo-grid">
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
+                        <img className="photo-item" src={lash10} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash12} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash14} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash5} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel13} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel3} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash8} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash3} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel4} alt="Eyelash Brush" />
                 </div>
                 <div className="faq">
                 <h2> 

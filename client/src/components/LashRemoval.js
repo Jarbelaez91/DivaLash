@@ -6,6 +6,14 @@ import eyebrush from "./eyelash-brush.jpeg";
 import englishText from "./englishHomePage";
 import spanishText from "./spanish";
 import FAQSection from "./FAQSection";
+import reel10 from "./reel10.jpeg"
+import reel6 from "./reel6.jpeg"
+import reel14 from "./reel14.jpeg"
+import reel5 from "./reel5.jpeg"
+import reel9 from "./reel9.jpeg"
+import reel11 from "./reel11.jpeg"
+import reel16 from "./reel16.jpeg"
+import lash12 from "./lash12.jpeg"
 
 function LashRemoval({ darkModeEnabled, language }) {
     const text = language === "english" ? englishText : spanishText;
@@ -31,15 +39,15 @@ function LashRemoval({ darkModeEnabled, language }) {
                         {text.classicLashExtensions.outsideFillsDescription}
                     </p>
                     <div className="photo-grid">
-                        <img src={eyebrush} alt="eyebrush" />
-                        <img src={eyebrush} alt="eyebrush" />
-                        <img src={eyebrush} alt="eyebrush" />
-                        <img src={eyebrush} alt="eyebrush" />
-                        <img src={eyebrush} alt="eyebrush" />
-                        <img src={eyebrush} alt="eyebrush" />
-                        <img src={eyebrush} alt="eyebrush" />
-                        <img src={eyebrush} alt="eyebrush" />
-                        <img src={eyebrush} alt="eyebrush" />
+                        <img className="photo-item" src={reel10} alt="Eyelash Brush" />
+                        <img className="photo-item" src={eyebrush} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel6} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel14} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash12} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel5} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel9} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel11} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel16} alt="Eyelash Brush" />
                     </div>
                     <div className="faq">
                     <h2> 

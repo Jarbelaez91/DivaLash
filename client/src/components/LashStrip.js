@@ -2,10 +2,18 @@ import React from "react";
 import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import "./lashclassic.css"
-import eyebrush from "./eyelash-brush.jpeg"
 import englishText from "./englishHomePage";
 import spanishText from "./spanish";
 import FAQSection from "./FAQSection";
+import lash1 from "./lash1.jpeg"
+import reel6 from "./reel6.jpeg"
+import lash13 from "./lash13.jpeg"
+import lash14 from "./lash14.jpeg"
+import lash12 from "./lash12.jpeg"
+import lash11 from "./lash11.jpeg"
+import lash10 from "./lash10.jpeg"
+import lash9 from "./lash9.jpeg"
+import reel5 from "./reel5.jpeg"
 
 function LashStrip ({darkModeEnabled, language}) {
 
@@ -23,15 +31,15 @@ function LashStrip ({darkModeEnabled, language}) {
                 <p className={`classic-desc ${darkModeEnabled ? "light-mode-classic-desc" : ""}`}>
                         {text.classicLashExtensions.outsideFillsDescription}</p>
                 <div className="photo-grid">
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
-                    <img src={eyebrush} ></img>
+                        <img className="photo-item" src={lash1} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel6} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash13} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash14} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash12} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash11} alt="Eyelash Brush" />
+                        <img className="photo-item" src={reel5} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash9} alt="Eyelash Brush" />
+                        <img className="photo-item" src={lash10} alt="Eyelash Brush" />
                 </div>
                 <div className="faq">
                 <h2> 

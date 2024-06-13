@@ -27,11 +27,13 @@ const photos = [
     reel11, lashlights, reel12, reel13, reel14, reel15, reel16, reel17, lashworker,
 ];
 
+const duplicatedPhotos = [...photos, ...photos];
+
 const PhotoReel = ({ darkModeEnabled }) => {
     return (
         <div className={`photo-reel-container ${darkModeEnabled ? "light-mode-photo-reel-container" : ""}`}>
             <div className="photo-reel">
-                {photos.map((photo, index) => (
+                {duplicatedPhotos.map((photo, index) => (
                     <div className={`photo-item-reel ${darkModeEnabled ? "light-mode-photo-item" : ""}`} key={index}>
                         <img src={photo} alt={`Photo ${index + 1}`} />
                     </div>
