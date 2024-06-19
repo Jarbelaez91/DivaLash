@@ -1,7 +1,8 @@
 .about-container {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: auto;
+    min-height: 90vh;
 }
 
 .diploma {
@@ -66,8 +67,8 @@
 .about-page {
     display: grid;
     grid-template-columns: 2fr 1fr; 
-    justify-content: center;
-    max-width: 1900px; 
+    justify-content: center; 
+    width: 100%;
     gap: 1px;
     height: 1000px;
     font-size: 22px;
@@ -75,10 +76,7 @@
     background-color: #02121d;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     overflow: hidden;
-    padding: 10px;
     margin: 0 auto;
-    margin-left: 10px;
-    border-radius: 15px;
     padding-bottom: 850px;
     padding-top: 1px;
 }
@@ -287,4 +285,130 @@ p {
     justify-content: center;  
     background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+
+/*phone screens*/
+
+@media screen and (max-width: 768px) {
+
+    
+    .about-page {
+        grid-template-columns: 1fr; 
+        height: 2400px;
+        width: 100%;
+    }
+
+    .about-cont {
+        width: 80% ;
+        height: 960px;
+        border-radius: 0;
+        margin: 10px 2px 0 70px;
+        margin-bottom: 300px;
+    }
+
+
+    .p1{
+        width: 90%;
+        padding-left: 5px;
+    }
+
+    .motto{
+        text-align: center;
+        width: 90%;
+        margin-left: 2%;
+    }
+
+    .artist-img {
+        margin-top: -590px;
+        width: cover;
+        height: 590px;
+        margin-left: 56px;
+    }
+
+    .artist-cont {
+        grid-column: 1 / span 1; 
+        width: 100%; 
+        margin-top: -280px;
+        height: 550px;
+      
+    }
+
+    .about-us {
+        padding: 20px;
+        font-size: 4rem;
+    }
+
+
+    .video-cont{
+        margin-top: -10px;
+        margin-left: 50px;
+        width: 100%;
+        height: 30%;
+        padding: 0 10px;
+        grid-column: 1 / span 1; 
+        padding-bottom: 10px;
+    }
+
+    .reactPlayer {
+        width: 50%;
+    }
+
+    .videoText{
+        width: 90%;
+    }
+
+    .map-cont,
+    .review-cont {
+        grid-column: 1 / span 1; 
+        width: calc(100% - 20px); 
+        margin-left: 12px;
+        margin-right: 0;
+        padding: 20px;
+        margin-top: 280px;
+    }
+
+    .map-cont{
+        margin-bottom: -315px;
+        margin-top: 0
+    }
+    .directions{
+        width: 90%;
+        margin-top: -22px;
+        background-color: #08192A;
+        border-radius: 10px;
+        margin: 20px;
+        
+    }
+    
+    .directions2{
+        text-align: left;
+        font-size: 18px;
+        padding-bottom: 15px;
+        margin-left: 10px;
+        margin-bottom: 40px;
+        
+    }
+    
+    .directions-border{
+        border-bottom: solid 1px white;
+        font-size: 35px;
+        padding-top: 15px;
+    }
+
+
+    .review {
+        font-size: 18px;
+        margin-left: 40px;
+        margin-right: 85px;
+       
+    }
+
+    .review-font{
+        font-size: 35px;
+    }
+
+    .review-cont{
+        height: 190px;
+    }
 }

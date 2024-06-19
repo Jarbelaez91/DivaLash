@@ -59,7 +59,7 @@ function Services({darkModeEnabled, language}) {
           <div className={`services-cont ${darkModeEnabled ? "light-mode-services-cont" : ""}`}>
     <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
 
-            <h1>{text.classicLashExtension.title}</h1>
+            <h1 className="mobile-font">{text.classicLashExtension.title}</h1>
                 <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
             <p> {text.classicLashExtension.description}</p>
                 </div>
@@ -72,7 +72,7 @@ function Services({darkModeEnabled, language}) {
 
 
             <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
-            <h1>{text.hybridLashExtensions.title}</h1>
+            <h1 className="mobile-font">{text.hybridLashExtensions.title}</h1>
             <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
             <p>{text.hybridLashExtensions.description}</p>
                 </div>
@@ -84,7 +84,7 @@ function Services({darkModeEnabled, language}) {
             </div>
 
             <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
-            <h1>{text.stripLashLookExtensions.title}</h1>
+            <h1 className="mobile-font">{text.stripLashLookExtensions.title}</h1>
             <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
             <p>{text.stripLashLookExtensions.description}.</p>
                 </div>
@@ -95,7 +95,7 @@ function Services({darkModeEnabled, language}) {
             </div>
 
             <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
-            <h1>{text.wetLookLashExtensions.title}</h1>
+            <h1 className="mobile-font">{text.wetLookLashExtensions.title}</h1>
             <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
             <p>{text.wetLookLashExtensions.description}</p>
                 </div>
@@ -106,7 +106,7 @@ function Services({darkModeEnabled, language}) {
             </div>
 
             <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
-            <h1>{text.volumeLashExtensions.title}</h1>
+            <h1 className="mobile-font">{text.volumeLashExtensions.title}</h1>
             <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
             <p>{text.volumeLashExtensions.description}</p>
                 </div>
@@ -117,7 +117,7 @@ function Services({darkModeEnabled, language}) {
             </div>
 
             <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
-            <h1>{text.megaVolumeExtensions.title}</h1>
+            <h1 className="mobile-font">{text.megaVolumeExtensions.title}</h1>
             <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
             <p>{text.megaVolumeExtensions.description}</p>
                 </div>
@@ -128,7 +128,7 @@ function Services({darkModeEnabled, language}) {
             </div>
 
             <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
-            <h1>{text.lashRemoval.title}</h1>
+            <h1 className="mobile-font">{text.lashRemoval.title}</h1>
             <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
             <p>{text.lashRemoval.description}</p>
                 </div>
@@ -148,7 +148,7 @@ function Services({darkModeEnabled, language}) {
 
                     <div className={`services-cont ${darkModeEnabled ? "light-mode-services-cont" : ""}`}>
                     <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
-                            <h1>{text.keratinLashLift.title}</h1>
+                            <h1 className="mobile-font">{text.keratinLashLift.title}</h1>
                             <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
                                 <p>{text.keratinLashLift.description}</p>
                             </div>
@@ -159,7 +159,7 @@ function Services({darkModeEnabled, language}) {
                         </div>
 
                         <div className={`services-card ${darkModeEnabled ? "light-mode-service-card" : ""}`}>
-                            <h1>{text.mineralBoostLashLift.title}</h1>
+                            <h1 className="mobile-font">{text.mineralBoostLashLift.title}</h1>
                             <div className={`services-font ${darkModeEnabled ? "light-mode-services-font" : ""}`}>
                                 <p>{text.mineralBoostLashLift.description}</p>
                             </div>

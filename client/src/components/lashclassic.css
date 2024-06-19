@@ -35,6 +35,7 @@
     max-height: 210px;
     border-radius: 15px;
     padding: 18px;
+    border: 4px solid #02121d;
 
 }
 
@@ -300,32 +301,6 @@
 }
 
 
-@media (max-width: 768px) {
-    .classic-cont {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 16px;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 15px;
-    }
-
-    .classic-title,
-    .classic-desc,
-    .class-sub-title,
-    .classic-nav-link,
-    .faq,
-    .faq-questions {
-        padding: 0 10px 16px;
-    }
-
-    .photo-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
-        padding: 5px;
-    }
-}
-
-
 
 /* light mode */
 
@@ -470,4 +445,318 @@
 .light-mode-faq-answers{
     background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
     color: #02121d;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .layout-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        margin: 0 auto; 
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .classic-cont {
+        width: 100%;
+        margin: 0 auto;
+        order:2;
+    }
+    
+    .side-boxes {
+        order: 1;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0 auto;
+        gap: 20px;
+        margin-top: 130px;
+    }
+    
+    .price-cont, .refill-cont {
+        background-color: #08192A;
+        border: 4px solid #02121d;
+        border-radius: 15px;
+        color: white;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+    .keratin-price-cont, .keratin-price-cont2{
+        width: 60%;
+        background-color: #08192A;
+        border-radius: 15px;
+        color: white;
+        box-sizing: border-box;
+        margin: 10px;
+        margin-left: -20px;
+        height: 240px;
+        
+    }
+
+    .keratin-cont{
+        width: 100%;
+        background-color: #08192A;
+        border-radius: 15px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    .photo-grid {
+        order: 3;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+    }
+    
+    .photo-item {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border: 10px solid #02121d;
+    }
+    
+    .classic-title, .classic-desc, .class-sub-title, .classic-nav-link, .faq {
+        padding: 0 25px;
+        text-align: left;
+    }
+
+    .classic-title {
+        font-size: 30px;
+    }
+
+    .fullset-cont {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-content: space-between;
+        border-bottom: white solid 1px;
+        box-sizing: border-box;
+        margin: 1px;
+        min-width: 0px;
+        font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    
+    .price-full-set {
+        color: #d826e2;
+        font-size: 18px;
+    }
+    
+    .keratin-full-set {
+        color: #d826e2;
+        font-size: 18px;
+    }
+
+    .keratin-price {
+        color: white;
+        font-size: 1.4rem;
+    }
+    
+    .mineral-full-set {
+        color: #d826e2;
+        font-size: 18px;
+    }
+
+    .mineral-price {
+        color: white;
+        font-size: 18px;
+    }
+
+
+    .price {
+        color: white;
+        font-size: 18px;
+    }
+    
+    .time-font {
+        color: white;
+        font-size: 18px;
+    }
+    
+    .duration {
+        color: white;
+        font-size: 18px;
+    }
+    
+    .booknow {
+        margin-left: 25px;
+        margin-top: 9px;
+        font-size: 18px;
+        border-radius: 10px;
+        font-weight: bold;
+        background-color: #08192A;
+        border-color: #d826e2;
+        color: #d826e2;
+    }
+
+    .faq-questions {
+        order: 4;
+        font-size: 18px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        margin-left: -5px;
+    }
+
+    .faq-answers {
+        order: 4;
+        font-size: 17px;
+        width: 95%;
+        margin-left: -2px;
+    }
+
+    .light-mode-classic-cont {
+        background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    }
+    
+    .light-mode-classic-title {
+        color: #02121d;
+    }
+    
+    .light-mode-classic-desc {
+        color: #02121d;
+    }
+    
+    .light-mode-faq-questions {
+        background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+        border: 1px solid #02121d;
+        color: #02121d;
+    }
+    
+    .light-mode-price-cont {
+        background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    }
+    
+    .light-mode-classic-price {
+        color: #02121d;
+    }
+    
+    .light-mode-booknow {
+        background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    }
+    
+    .light-mode-keratin-price {
+        justify-content: center; 
+        background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+        text-align: left;
+        max-width: 400px;
+        max-height: 250px;
+        border-radius: 15px;
+        padding: 18px;
+    }
+    
+    .light-mode-keratin-price-cont { 
+        justify-content: center; 
+        background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+        text-align: left;
+        max-width: 410px;
+        max-height: 267px;
+        border-radius: 15px;
+        padding: 14px;
+        margin-bottom: 30px;
+    }
+    
+    .light-mode-keratin-price-cont-2 { 
+        justify-content: center; 
+        background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+        text-align: left;
+        max-width: 410px;
+        border-radius: 15px;
+        padding: 1px;
+        padding-bottom: 16px;
+    }
+    
+    .light-mode-keratin-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: white solid 1px;
+        box-sizing: border-box;
+        min-width: 0px;
+        font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+    
+    .light-mode-keratin-full-set {
+        color: #08192A;
+        font-size: 22px;
+    }
+    
+    .light-mode-keratin-price {
+        color: #08192A;
+        font-size: 1.4rem;
+    }
+    
+    .light-mode-mineral-price-cont { 
+        justify-content: center; 
+        background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+        text-align: left;
+        max-width: 410px;
+        border-radius: 15px;
+        padding: 14px;
+        margin-bottom: 30px;
+    }
+    
+    .light-mode-mineral-price-cont-2 { 
+        justify-content: center; 
+        background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+        text-align: left;
+        max-width: 410px;
+        border-radius: 15px;
+        padding: 1px;
+        padding-bottom: 40px;
+    }
+    
+    .light-mode-mineral-full-set {
+        color: #d826e2;
+        font-size: 22px;
+    }
+    
+    .light-mode-mineral-price {
+        color: #08192A;
+        font-size: 1.4rem;
+        background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    }
+    
+    .light-mode-mineral-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: white solid 1px;
+        box-sizing: border-box;
+        min-width: 0px;
+        font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }    
+    
+    .light-mode-layout-container {
+        background-color: white;
+    }
+    
+    .light-mode-faq-answers {
+        background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+        color: #02121d;
+    }
 }

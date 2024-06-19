@@ -19,10 +19,12 @@ function HomePage ({ darkModeEnabled, language }) {
 
 return (
     <div>
-    <Navabr/>
+    <div className="nav-container">
+    
+    </div>
     <div className="homepage">
     </div>
-
+    
     <div className={`lash-cont ${darkModeEnabled ? "light-mode-lash-cont" : ""}`}>
     <div className={`lash-card ${darkModeEnabled ? "light-mode-lash-card" : ""}`}>
 
@@ -35,6 +37,7 @@ return (
 
 
             <div className={`lash-card ${darkModeEnabled ? "light-mode-lash-card" : ""}`}>
+            <Navabr/>
             <h1>{text.lashLifts.title}</h1>
             <div className={`card-font ${darkModeEnabled ? "light-mode-card-font" : ""} ${language === 'spanish' ? 'spanish-font' : ''}`}>            
             <h3>{text.lashLifts.description}</h3>
@@ -52,8 +55,8 @@ return (
             <h1>{text.aboutHome.title}</h1>
 
                         <h3>{text.aboutHome.mission}</h3>
-                        <h3>{text.aboutHome.certification}</h3>
-                        <h1>{text.aboutHome.reminder}</h1>
+                        <h3 className="home-cert">{text.aboutHome.certification}</h3>
+                        <h1 className="home-motto">{text.aboutHome.reminder}</h1>
                 <div>
             <button className={`service-btn ${darkModeEnabled ? "light-mode-service-btn" : ""}`} onClick={serviceMenu}> {text.aboutHome.serviceMenu}</button>
         </div>

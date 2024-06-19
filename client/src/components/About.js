@@ -33,9 +33,9 @@ function About({ darkModeEnabled, language }) {
                 <Navbar />
                 <div className={`about-cont ${darkModeEnabled ? "light-mode-about-cont" : ""}`}>
                     <h1 className="artist">{text.about.story}</h1>
-                    <p>{text.about.p1}</p>
-                    <p>{text.about.p2}</p>
-                    <p>{text.about.p3}</p>
+                    <p className="p1">{text.about.p1}</p>
+                    <p className="p1">{text.about.p2}</p>
+                    <p className="p1"> {text.about.p3}</p>
                     <p className="motto">{text.about.p4}</p>
                 </div>
 
@@ -43,8 +43,9 @@ function About({ darkModeEnabled, language }) {
                     <h2 className={`artist-cont ${darkModeEnabled ? "light-mode-artist-cont" : ""}`}></h2>
                     <h2 className="artist-img"></h2>
                 <div className={`video-cont ${darkModeEnabled ? "light-mode-video-cont" : ""}`}>
-                    <h2>{text.about.video}</h2>
+                    <h2 className="videoText">{text.about.video}</h2>
                     <ReactPlayer
+                        className= "reactPlayer"
                         url='https://www.youtube.com/shorts/ytFrPFVlAQk'
                         controls={true}
                         width='600px'

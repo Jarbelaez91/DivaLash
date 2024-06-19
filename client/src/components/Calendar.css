@@ -160,3 +160,181 @@ html, body {
     height: 1000px;
     padding-top: 60px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/*phone screens*/
+
+    @media screen and (max-width: 768px) {
+        html, body {
+            height: auto; /* Adjusted height to fit content */
+            margin: 0;
+            padding: 0;
+            background-color: #02121d;
+        }
+    
+        .calendar-button {
+            font-size: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            flex: 1 1 calc(30% - 40px); 
+            box-sizing: border-box; 
+            text-align: center; 
+        }
+    
+        .calendar-button-container {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 10px; 
+            width: 100%;
+        }
+    
+        .calendar-cont {
+            display: grid;
+            grid-template-columns: 1fr; 
+            justify-content: center;
+            max-width: 1000px; 
+            gap: 1px;
+            background-color: #02121d;
+            height: auto; /* Adjusted to fit content */
+            margin: 30px auto; /* Center the calendar container */
+            padding: 20px; /* Added padding for spacing */
+        }
+    
+        .calendar {
+            background-color: #08192A;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            overflow: hidden;
+            padding: 30px;
+            padding-bottom: 50px;
+            max-width: 500px;
+            margin: 0 auto; /* Center the calendar */
+            border-radius: 15px;
+            font-size: 30px;
+        }
+    
+        .calendar-appointment {
+            background-color: #08192A;
+            grid-template-columns: 1fr;
+            align-items: center;
+            margin-top: 20px; /* Adjusted margin to separate from previous element */
+        }
+    
+        .calendar-input1 {
+            font-size: 25px;
+            color: white;
+            margin-left: 10px;
+            overflow-wrap: break-word;
+        }
+    
+        .calendar-input2 {
+            font-size: 25px;
+            color: white;
+            margin-left: 10px; /* Adjusted margin */
+            margin-top: 10px; /* Added margin top for spacing */
+        }
+    
+        .calendar-summary {
+            color: #d826e2;
+            text-align: center;
+            font-size: 30px;
+            width: 100%;
+            margin-bottom: 20px; /* Added margin for spacing */
+        }
+    
+        .month {
+            color: #d826e2;
+            text-align: center; /* Centered the month */
+            margin: 0;
+        }
+    
+        .prev-month {
+            color: #d826e2;
+            background-color: #02121d;
+            font-size: 25px; 
+            padding: 5px 10px; 
+            margin-top: 10px; 
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+        }
+    
+        .calendar-back-btn {
+            color: #d826e2;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #02121d;
+            border: 1px #02121d;
+            margin-top: 65px
+        }
+    
+        .available-times {
+            color: white;
+            margin-left: 10px;
+        }
+    
+        .daysofweek {
+            color: #d826e2;
+        }
+    
+        .weekday {
+            padding: 0 6px;
+            text-align: center;
+        }
+    }
+    
+    
+    
+      
+    
+    
+    
+    
+    .light-mode-calendar{
+        background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    }
+    
+    .light-mode-available-times{
+        color: #02121d;
+    }
+    
+    .light-mode-calendar-appointment{
+        background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    }
+    
+    .light-mode-calendar-input1{
+        color: #02121d;
+    }
+    
+    .light-mode-calendar-back-btn{
+        background: linear-gradient(315deg, #fbb6ce, #fff5f7 20%, #fed7e2 90%);
+    }
+    
+    .light-mode-available-times{
+        color: #08192A;
+        margin-left: 10px;
+    }
+    
+    .light-mode-calendar-cont{
+        display:grid  ;
+        grid-template-columns: 2fr 1fr; 
+        justify-content: center;
+        max-width: 1900px; 
+        gap: 1px;
+        background-color: white;
+        height: 1000px;
+        padding-top: 60px;
+    }
+
+
+

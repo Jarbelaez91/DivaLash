@@ -43,22 +43,7 @@
     background-color: #ccc; /* Button background color on hover */
   }
   
-  .nav-box {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border: 2px solid #d826e2;
-    border-radius: 8px;
-    margin: -8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6px;
-    background-color: #02121d;
-    z-index: 999;
-  }
+  
   
 
 .light-mode .nav-box {

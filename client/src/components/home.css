@@ -137,35 +137,40 @@
 
 
 @media (max-width: 768px) {
-    /* Adjust the flex direction to column */
     .content-container {
         flex-direction: column;
-        align-items: center; /* Align the content centrally */
+        align-items: center; 
+        grid-template-columns: 1fr; 
     }
 
-    /* Adjust the width and layout of the brush image */
     .brush-img {
-        position: static; /* Change to static for proper layout */
-        width: 100%; /* Let the image take the full width */
-        margin: 0; /* Remove margins */
+        position: relative; 
+        width: 60%; 
+        grid-template-columns: 1fr; 
+        
     }
 
-    /* Set the image to take full width */
+    
     .brush-img img {
-        width: 100%; /* Full width on smaller screens */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%; 
+        height: auto;
+        margin-left: -320px; 
+        grid-template-columns: 1fr; 
+        margin-top: -80px;
     }
 
-    /* Adjust the text container to be full width */
+    
     .text-container {
-        width: 100%; /* Take up full width */
-        padding: 100px; /* Add some padding for spacing */
-        text-align: center; /* Center the text */
-        margin-top: 20px; /* Add some spacing from the image */
-        margin-left: 350px;
+        width: 500px; 
+        text-align: left; 
+        grid-template-columns: 1fr; 
+        padding: 0 10px 10px 0;
+        margin-left: -500px;
+        margin-top: -50px;
+        padding-left: 20px;
     }
 
-    /* Adjust service button margin */
+   
     .service-btn {
         width: 90%; /* Reduce width for smaller screens */
         max-width: none; /* Remove maximum width constraint */
@@ -176,11 +181,12 @@
 
     .homepage{
         background-image: url('lashtech1.jpeg');
-        background-size: cover; /* Stretch the image to cover the entire area */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        width: 100%; /* Full width */
-        height: 100vh;
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        width: 100%;
+        height: 130vh;
+        background-position: 80% 20%; 
     }
 
     .homebox {
@@ -199,6 +205,31 @@
     .lash-card {
         width: 90%; /* Adjust card width for smaller screens */
     }
+
+    .nav-container{
+        width: 50%;
+    }
+
+    .home-motto{
+        color: #ed64a6;
+        text-align: center;
+    }
+
+    .service-btn{
+        margin-left: 20px;
+    }
+
+    .photo-reel-cont{
+        margin-top: -60px;
+    }
+    .lash-btn{
+        margin-top: 25px;
+    }
+
+    .home-cert{
+        padding-top: 10px;
+    }
+
 }
 
 
