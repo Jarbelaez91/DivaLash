@@ -57,7 +57,7 @@ function About({ darkModeEnabled, language }) {
                 <div className={`map-cont ${darkModeEnabled ? "light-mode-map-cont" : ""}`}>
                     <h2>{text.about.location}</h2>
                     <iframe
-                        width="600"
+                        width="300"
                         height="450"
                         frameBorder="0"
                         style={{ border: 0 }}
